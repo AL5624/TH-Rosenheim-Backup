@@ -1,0 +1,7 @@
+﻿  liste01.c
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü12\listen\listen\listen\liste01.c(30): warning C4100: "s": Unreferenzierter formaler Parameter
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü12\listen\listen\listen\liste01.c(30): warning C4100: "li": Unreferenzierter formaler Parameter
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü12\listen\listen\listen\liste01.c(35): warning C4100: "s": Unreferenzierter formaler Parameter
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(948): warning C4710: "int printf(const char *const ,...)": Funktion ist nicht "inline"
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(948): note: Siehe Deklaration von "printf"
+  listen.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü12\listen\listen\Debug\listen.exe

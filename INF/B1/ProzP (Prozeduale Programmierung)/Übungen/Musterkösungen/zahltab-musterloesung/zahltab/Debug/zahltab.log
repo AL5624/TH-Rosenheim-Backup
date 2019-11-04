@@ -1,0 +1,21 @@
+﻿Build started 03.10.2012 21:56:20.
+     1>Project "C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\zahltab\zahltab.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\zahltab.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt zahltab.c
+         zahltab.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\zahltab.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.lib" /MACHINE:X86 Debug\zahltab.obj
+         LINK : C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+         zahltab.vcxproj -> C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\Debug\zahltab.exe;#1" /manifest Debug\zahltab.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\zahltab.unsuccessfulbuild".
+         Touching "Debug\zahltab.lastbuildstate".
+     1>Done Building Project "C:\daten\vorlesungen\PRG1-WS2012-13\prg1_uebung\Uebung02 zahltab\zahltab-musterloesung\zahltab\zahltab.vcxproj" (build target(s)).
+
+Das Erstellen war erfolgreich.
+
+Time Elapsed 00:00:01.49

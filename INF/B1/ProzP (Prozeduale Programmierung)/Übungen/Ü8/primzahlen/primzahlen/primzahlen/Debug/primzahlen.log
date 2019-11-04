@@ -1,0 +1,4 @@
+﻿  funktionen.c
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü8\primzahlen\primzahlen\primzahlen\funktionen.c(22): warning C4028: Formaler Parameter "1" unterscheidet sich von der Deklaration
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü8\primzahlen\primzahlen\primzahlen\funktionen.c(42): warning C4716: "sieb": Muss einen Wert zurückgeben
+  primzahlen.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü8\primzahlen\primzahlen\Debug\primzahlen.exe

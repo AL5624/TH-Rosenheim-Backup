@@ -1,0 +1,5 @@
+﻿  funktionen.c
+  mainfile.c
+  Code wird generiert...
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü8\primzahlen2\primzahlen\primzahlen\primzahlen\funktionen.c(45): warning C4716: "sieb": Muss einen Wert zurückgeben
+  primzahlen.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü8\primzahlen2\primzahlen\primzahlen\Debug\primzahlen.exe

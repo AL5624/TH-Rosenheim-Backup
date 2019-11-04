@@ -1,0 +1,26 @@
+﻿Der Buildvorgang wurde am 16.01.2014 09:02:45 gestartet.
+     1>Projekt "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Sortieren\Sortieren.vcxproj" auf Knoten "2", build Ziel(e).
+     1>PrepareForBuild:
+         Das Verzeichnis "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\" wird erstellt.
+       InitializeBuildStatus:
+         "Release\Sortieren.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Sortieren.cpp stdafx.cpp
+         Sortieren.cpp
+         stdafx.cpp
+       Link:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\Sortieren.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Sortieren.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\Sortieren.pdb" /SUBSYSTEM:CONSOLE /STACK:"50000000" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\Sortieren.lib" /MACHINE:X86 Release\Sortieren.obj
+         Release\stdafx.obj
+         Code wird generiert.
+         Codegenerierung ist abgeschlossen.
+         Sortieren.vcxproj -> C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\Sortieren.exe
+       Manifest:
+         C:\Programme\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Release\Sortieren.exe;#1" /manifest Release\Sortieren.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Release\Sortieren.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Release\Sortieren.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Sortieren\Sortieren.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:01.65

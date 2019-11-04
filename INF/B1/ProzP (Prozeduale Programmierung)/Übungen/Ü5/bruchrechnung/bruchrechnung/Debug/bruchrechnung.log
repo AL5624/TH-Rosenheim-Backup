@@ -1,0 +1,5 @@
+﻿  mainfile.c
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü5\bruchrechnung\bruchrechnung\mainfile.c(42): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü5\bruchrechnung\bruchrechnung\mainfile.c(43): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü5\bruchrechnung\bruchrechnung\mainfile.c(45): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+  bruchrechnung.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü5\bruchrechnung\Debug\bruchrechnung.exe

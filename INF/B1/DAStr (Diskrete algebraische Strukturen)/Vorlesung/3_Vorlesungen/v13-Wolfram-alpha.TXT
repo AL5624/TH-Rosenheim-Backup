@@ -1,0 +1,2 @@
+positive Lösungen von 440x+198y=22000:
+http://www.wolframalpha.com/input/?i=solve+440+x+%2B+198+y+%3D+22000%2C+x%3E%3D0%2C+y%3E%3D0+over+integers

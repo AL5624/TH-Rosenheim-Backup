@@ -1,0 +1,27 @@
+﻿Der Buildvorgang wurde am 16.01.2014 10:51:16 gestartet.
+     1>Projekt "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Sortieren\Sortieren.vcxproj" auf Knoten "2", build Ziel(e).
+     1>InitializeBuildStatus:
+         "Debug\Sortieren.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Sortieren.cpp
+         Sortieren.cpp
+       ManifestResourceCompile:
+         Alle Ausgaben sind aktuell.
+       Link:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Debug\Sortieren.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Sortieren.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Debug\Sortieren.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Debug\Sortieren.lib" /MACHINE:X86 Debug\Sortieren.exe.embed.manifest.res
+         Debug\Sortieren.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Programme\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Sortieren.exe.embed.manifest" /manifest Debug\Sortieren.exe.intermediate.manifest
+         Alle Ausgaben sind aktuell.
+       LinkEmbedManifest:
+         Alle Ausgaben sind aktuell.
+         Sortieren.vcxproj -> C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Debug\Sortieren.exe
+       FinalizeBuildStatus:
+         Die Datei "Debug\Sortieren.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\Sortieren.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung16 Rekursion\Sortieren\Sortieren\Sortieren.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:01.07

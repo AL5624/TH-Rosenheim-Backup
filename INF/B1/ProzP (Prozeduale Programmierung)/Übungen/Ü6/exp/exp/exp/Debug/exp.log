@@ -1,0 +1,4 @@
+﻿  exp.c
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü6\exp\exp\exp\exp.c(76): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü6\exp\exp\exp\exp.c(79): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+  exp.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü6\exp\exp\Debug\exp.exe

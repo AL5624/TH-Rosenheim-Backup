@@ -1,0 +1,21 @@
+﻿Der Buildvorgang wurde am 31.10.2013 08:45:43 gestartet.
+     1>Projekt "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\dreieck\dreieck.vcxproj" auf Knoten "2", build Ziel(e).
+     1>InitializeBuildStatus:
+         "Debug\dreieck.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt mainfile.c
+         mainfile.c
+       Link:
+         c:\Programme\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\dreieck.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.lib" /MACHINE:X86 Debug\mainfile.obj
+         LINK : C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+         dreieck.vcxproj -> C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.exe
+       Manifest:
+         C:\Programme\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\Debug\dreieck.exe;#1" /manifest Debug\dreieck.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Debug\dreieck.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\dreieck.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Dokumente und Einstellungen\FJS\Desktop\Vorlesungen\PRG1\prg1_uebung\Uebung03 Dreieck\dreieck_Musterloesung\dreieck\dreieck.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:00.95

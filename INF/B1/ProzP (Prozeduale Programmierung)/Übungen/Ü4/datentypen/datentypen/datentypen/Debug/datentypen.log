@@ -1,0 +1,4 @@
+﻿  mainfile.c
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü4\datentypen\datentypen\datentypen\mainfile.c(34): warning C4700: Die nicht initialisierte lokale Variable "max" wurde verwendet.
+c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü4\datentypen\datentypen\datentypen\mainfile.c(27): warning C4700: Die nicht initialisierte lokale Variable "min" wurde verwendet.
+  datentypen.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü4\datentypen\datentypen\Debug\datentypen.exe
