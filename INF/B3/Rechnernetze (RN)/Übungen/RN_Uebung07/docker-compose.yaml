@@ -1,0 +1,49 @@
+version: "3"
+services:
+    host1:
+        container_name: host1
+        hostname: host1
+        build: .
+        image: rechnernetze
+        command: /bin/bash -c "ifconfig eth0 0.0.0.0; sysctl -w net.ipv4.ip_forward=0 && tail -f /dev/null"
+        privileged: true
+        networks:
+            network1:
+    host2:
+        container_name: host2
+        hostname: host2
+        image: rechnernetze
+        depends_on:
+            - "host1"
+        command: /bin/bash -c "ifconfig eth0 0.0.0.0; ifconfig eth1 0.0.0.0; sysctl -w net.ipv4.ip_forward=0 && tail -f /dev/null"
+        privileged: true
+        networks:
+            network1:
+            network2:
+    host3:  
+        container_name: host3
+        hostname: host3
+        image: rechnernetze
+        depends_on: 
+            - "host1"
+        command: /bin/bash -c "ifconfig eth0 0.0.0.0; sysctl -w net.ipv4.ip_forward=0 && tail -f /dev/null"
+        privileged: true
+        networks:
+            network2:
+
+networks:
+    network1:
+        driver: bridge
+#        name: network1
+#        ipam:
+#            driver: default
+#            config:
+#                - subnet: 10.0.0.0/8 
+    network2:
+        driver: bridge
+#        name: network2
+#        ipam:
+#            driver: default
+#            config:
+#                - subnet: 192.168.0.0/16
+

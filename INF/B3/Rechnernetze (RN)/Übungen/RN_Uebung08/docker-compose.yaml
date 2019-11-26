@@ -1,0 +1,46 @@
+version: "3"
+services:
+    host1:
+        container_name: host1
+        hostname: host1
+        build: .
+        image: routing
+        command: /bin/bash -c "ip route del 0.0.0.0/0 && tail -f /dev/null"
+        privileged: true
+        networks:
+            net1:
+    host2:
+        container_name: host2
+        hostname: host2
+        image: routing
+        depends_on:
+            - "host1"
+        command: /bin/bash -c "ip route del 0.0.0.0/0; tail -f /dev/null"
+        privileged: true
+        networks:
+            net1:
+            net2:
+    host3:  
+        container_name: host3
+        hostname: host3
+        image: routing
+        depends_on: 
+            - "host1"
+        command: /bin/bash -c "ip route del 0.0.0.0/0; tail -f /dev/null"
+        privileged: true
+        networks:
+            net2:
+
+networks:
+    net1:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+            - subnet: 10.10.10.0/24 
+    net2:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+            - subnet: 20.20.20.0/24
