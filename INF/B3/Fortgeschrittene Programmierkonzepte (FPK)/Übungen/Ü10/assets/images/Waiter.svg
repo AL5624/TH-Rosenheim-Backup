@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="297px" preserveAspectRatio="none" style="width:534px;height:297px;" version="1.1" viewBox="0 0 534 297" width="534px" zoomAndPan="magnify"><defs><filter height="300%" id="f1xi2o59b5lzb1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster java.lang--><polygon fill="#FFFFFF" filter="url(#f1xi2o59b5lzb1)" points="213,16,281,16,288,41.0679,313,41.0679,313,117,213,117,213,16" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="213" x2="288" y1="41.0679" y2="41.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="217" y="32.9659">java.lang</text><!--cluster de.thro.inf.prg3.a10.kitchen.workers--><polygon fill="#FFFFFF" filter="url(#f1xi2o59b5lzb1)" points="14,139,274,139,281,164.0679,512,164.0679,512,285,14,285,14,139" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="14" x2="281" y1="164.0679" y2="164.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="254" x="18" y="155.9659">de.thro.inf.prg3.a10.kitchen.workers</text><!--class Runnable--><rect fill="#FEFECE" filter="url(#f1xi2o59b5lzb1)" height="62.9819" id="Runnable" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="221.5" y="46"/><ellipse cx="236.5" cy="62" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M239.0625,68.5 L233.5469,68.5 L233.5469,67.0313 L235.0156,66.3594 L235.0156,58.5 L233.5469,57.8281 L233.5469,56.3594 L239.0625,56.3594 L239.0625,57.8281 L237.5938,58.5 L237.5938,66.3594 L239.0625,67.0313 L239.0625,68.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="51" x="250.5" y="66.656">Runnable</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="222.5" x2="303.5" y1="78" y2="78"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="222.5" x2="303.5" y1="86" y2="86"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="227.5" y="101.7589">run();</text><!--class Waiter--><rect fill="#FEFECE" filter="url(#f1xi2o59b5lzb1)" height="107.9276" id="Waiter" style="stroke: #A80036; stroke-width: 1.5;" width="482" x="22" y="169"/><ellipse cx="234.75" cy="185" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M234.4375,181.3281 Q232.9531,181.3281 232.1719,182.4375 Q231.3906,183.5469 231.3906,185.4688 Q231.3906,187.4063 232.1094,188.4688 Q232.8281,189.5313 234.4375,189.5313 Q235.1719,189.5313 235.9063,189.3594 Q236.6563,189.1875 237.5313,188.875 L237.5313,191.0469 Q236.7188,191.3594 235.9375,191.5156 Q235.1563,191.6719 234.1875,191.6719 Q232.3281,191.6719 231.1094,190.9063 Q229.8906,190.125 229.3125,188.7188 Q228.7344,187.3125 228.7344,185.4531 Q228.7344,183.6094 229.3906,182.2031 Q230.0625,180.7969 231.3281,180 Q232.5938,179.1875 234.4375,179.1875 Q235.3281,179.1875 236.2344,179.4219 Q237.1563,179.6563 237.9844,180.0469 L237.1563,182.1406 Q236.4688,181.8125 235.7813,181.5781 Q235.0938,181.3281 234.4375,181.3281 Z "/><ellipse cx="260.25" cy="184.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="266.25" y="189.656">Waiter</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="23" x2="503" y1="201" y2="201"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="30" y="210.9909"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="42" y="216.7589">name: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="30" y="225.9728"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194" x="42" y="231.7408">progressReporter: ProgressReporter</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="30" y="240.9547"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="42" y="246.7227">kitchenHatch: KitchenHatch</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="23" x2="503" y1="253.9457" y2="253.9457"/><ellipse cx="33" cy="266.9366" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="456" x="42" y="269.7046">Waiter(name: String, kitchenHatch: KitchenHatch, progressReporter: ProgressReporter)</text><!--link Runnable to Waiter--><path d="M263,129.42 C263,142.2253 263,155.9708 263,168.8777 " fill="none" id="Runnable-Waiter" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="256.0001,129.0714,263,109.0713,270.0001,129.0713,256.0001,129.0714" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml Waiter
+
+package java.lang {
+    interface Runnable {
+        run();
+    }
+}
+
+package de.thro.inf.prg3.a10.kitchen.workers {
+
+    +class Waiter implements Runnable {
+        -name: String
+        -progressReporter: ProgressReporter
+        -kitchenHatch: KitchenHatch
+        +Waiter(name: String, kitchenHatch: KitchenHatch, progressReporter: ProgressReporter)
+    }
+}
+
+@enduml
+
+PlantUML version 1.2018.13(Mon Nov 26 18:11:51 CET 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.1+13
+Operating System: Linux
+OS Version: 4.19.8-arch1-1-ARCH
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
