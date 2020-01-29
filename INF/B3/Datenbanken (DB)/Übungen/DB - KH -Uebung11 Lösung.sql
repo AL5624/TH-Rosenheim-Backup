@@ -70,6 +70,7 @@ insert into Student_in_Veranstaltung (Student, Veranstaltung, Semester, Note) va
 
 
 -- Aufgabe 11.1 Division: Alle Veranstaltungen die vollständig bewertet wurden
+
 select SinV.Veranstaltung, SinV.Semester
 from Student_in_Veranstaltung as SinV
 	except

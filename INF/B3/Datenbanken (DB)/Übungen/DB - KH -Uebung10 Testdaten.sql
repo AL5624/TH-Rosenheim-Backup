@@ -97,7 +97,16 @@ insert into Ahnen (Name, Vater, Mutter) values
 	('Josef','Jakob',null) ,
 	('Maria',null,null) ,
 	('Jesus','Josef','Maria');
-	
+
+	with ersteVerwandtschaftsverhaeltnisse(Name, Ahne, Grad) as(
+	select Name, Vater as Ahne, 1 as Grad
+	from Ahnen
+	union
+	select Name, Mutter as Ahne, 1 as Grad
+	from Ahnen)
+
+
+
 drop table Student_in_Veranstaltung;
 drop table Veranstaltungen;
 drop table Dozenten;

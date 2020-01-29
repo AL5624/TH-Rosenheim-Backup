@@ -8,7 +8,7 @@ create table Studenten(
 	Matrikel decimal(4,0),
 	Geburtstag date,
 	primary key (Matrikel),
-	constraint matrikel_nicht_negativ check(Matrikel>=0)
+	constraint matrikel_nicht_negativ2 check(Matrikel>=0)
 );
 create table Dozenten(
 	Name varchar(30),
@@ -71,16 +71,15 @@ insert into Student_in_Veranstaltung (Student, Veranstaltung, Semester, Note) va
 -- Aufgabe 10.1.a
 -- Beste Note
 select
-	D.Name,
-	V.Name,
+	V.Dozent,
+	SinV.Veranstaltung,
 	min(SinV.Note)
 from 
-	Dozenten as D
-	inner join Veranstaltungen as V 
-	on V.Dozent=D.Name
-	inner join Student_in_Veranstaltung as SinV 
+	Veranstaltungen as V 
+	join Student_in_Veranstaltung as SinV 
 	on SinV.Veranstaltung = V.Name and SinV.Semester=V.Semester
-group by D.Name,V.Name;
+group by V.Dozent,SinV.Veranstaltung
+order by MIN(SinV.Note);
 
 -- Aufgabe 10.1.b
 -- schlechteste Note eines Dozenten

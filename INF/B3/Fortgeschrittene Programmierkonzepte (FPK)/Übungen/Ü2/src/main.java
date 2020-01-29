@@ -12,7 +12,7 @@ public class main
        test.add(Test_2);
        test.add(Test_3);
 
-      // System.out.println("Listengroeße: " + test.size());
+       System.out.println("Listengroeße: " + test.size());
 
 
       //int i = (int)test.get(1);
