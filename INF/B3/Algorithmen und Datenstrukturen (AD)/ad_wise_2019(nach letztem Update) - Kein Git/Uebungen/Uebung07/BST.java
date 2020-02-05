@@ -103,123 +103,18 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // deletes key from tree
-    public void delete2(Key key)
-    {
+    public void delete(Key key) {
 
         // TODO
 
-        if(this.contains(key) == false)return;
-        Node toDelete = root;
-        Node tmp;
-        while (!toDelete.key.equals(key))
-        {
-            if(key.compareTo(toDelete.key) < 0)toDelete = toDelete.left;
-            if(key.compareTo(toDelete.key) > 0)toDelete = toDelete.right;
-        }
-
-        if(toDelete.left == null && toDelete.right == null)
-        {
-            if(toDelete != root)
-            {
-                if (toDelete.parent.left == toDelete) toDelete.parent.left = null;
-                else toDelete.parent.right = null;
-            }
-        }
-        else if(toDelete.left == null && toDelete.right != null)
-        {
-            if(toDelete != root)
-            {
-                if (toDelete.parent.left == toDelete) toDelete.parent.left = toDelete.right;
-                else toDelete.parent.right = toDelete.right;
-            }
-            else
-            {
-                root = toDelete.right;
-            }
-        }
-        else if(toDelete.left != null && toDelete.right == null)
-        {
-            if(toDelete != root)
-            {
-                if (toDelete.parent.left == toDelete) toDelete.parent.left = toDelete.left;
-                else toDelete.parent.right = toDelete.left;
-            }
-            else
-            {
-                root = toDelete.left;
-            }
-        }
-        else
-        {
-            if(toDelete.right.left == null)
-            {
-                if(toDelete != root)
-                {
-                    if (toDelete.parent.left == toDelete) toDelete.parent.left = toDelete.right;
-                    else toDelete.parent.right = toDelete.right;
-                }
-                toDelete.right.left = toDelete.left;
-            }
-            else
-            {
-                tmp = toDelete.right.left;
-                while(tmp.left != null)
-                {
-                    tmp = tmp.left;
-                }
-                if(tmp.right != null)tmp.parent.left = tmp.right;
-                else tmp.parent.left = null;
-                if(toDelete != root)
-                {
-                    if (toDelete.parent.left == toDelete) toDelete.parent.left = tmp;
-                    else toDelete.parent.right = tmp;
-                }
-                tmp.left = toDelete.left;
-                tmp.right = toDelete.right;
-
-            }
-        }
-
-        toDelete.right = null;
-        toDelete.left = null;
-        toDelete.val = null;
-        toDelete.key = null;
-
-
     }
 
-    public void delete(Key key)
-    {
-        if(!this.contains(key))return;
-        Node toDelete = root;
-        while(toDelete.key != key)
-        {
-            if(toDelete.key.compareTo(key) < 0) toDelete = toDelete.left;
-            else if(toDelete.key.compareTo(key) > 0)toDelete = toDelete.right;
-        }
 
-        if(toDelete.right == null && toDelete.left == null && toDelete.equals(root))root = null;
-        else if(toDelete.right == null && toDelete.left == null && toDelete.parent.left.equals(toDelete))toDelete.parent.left = null;
-        else if(toDelete.right == null && toDelete.left == null && toDelete.parent.right.equals(toDelete))toDelete.parent.right = null;
-        else if (toDelete.left == null && toDelete.parent.left.equals(toDelete))
-        {
-            toDelete.right.parent = toDelete.parent;
-            toDelete.parent.left = toDelete.right;
-        }
-        else if (toDelete.right == null);
-        else
-        {
-            Node tmp = new Node(successor(root, root.key).key, successor(root, root.key).val);
-            delete(successor(root, root.key).key);
-            root.val = tmp.val;
-            root.key = tmp.key;
+
+
 
     // returns smalles key in tree ("recursion wrapper")
     public Key min() {
-    }
-
-}
-
         if (isEmpty()) throw new NoSuchElementException("calls min() with empty symbol table");
         return min(root).key;
     }
@@ -298,26 +193,9 @@ public class BST<Key extends Comparable<Key>, Value> {
      * @param x node for which height of subtree is computed
      * @return
      */
-    public int height(Node x)
-    {
+    public int height(Node x) {
         // TODO
-        int max = -1, tmpHeight = 0;
-        if(x.left == null && x.right == null)return 0;
-        else
-        {
-            if(x.left != null)
-            {
-                tmpHeight = height(x.left);
-                if (tmpHeight > max) max = tmpHeight;
-            }
-            if(x.right != null)
-            {
-                tmpHeight = height(x.right);
-                if (tmpHeight > max) max = tmpHeight;
-            }
-        }
-
-        return max + 1;
+        return 0;
     }
 
     public int height() {
