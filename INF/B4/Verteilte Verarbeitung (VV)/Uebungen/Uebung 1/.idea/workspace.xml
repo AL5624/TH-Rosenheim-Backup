@@ -1,64 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b155d5d-7cb5-4f90-9e6d-085860b317e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/libraries/junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/classes/java/main/training/kata/roman/Roman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/classes/java/test/training/kata/roman/RomanTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/classes/training.kata.roman.RomanTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/reports/tests/test/packages/training.kata.roman.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/test-results/test/TEST-training.kata.roman.RomanTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/src/main/java/training/kata/roman/Roman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Übungen/src/test/java/training/kata/roman/RomanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +55,6 @@
                 <item name="training.kata" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="training.kata" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -115,12 +76,63 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.RomanTest">
+    <configuration name="Roman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.kata.roman.Roman" />
+      <module name="training.kata.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.kata.roman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;training.kata.roman.RomanTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RomanTest.MyRomanToArabics" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;training.kata.roman.RomanTest.MyRomanToArabics&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Uebung 1 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,6 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RomanTest" />
+        <item itemvalue="Application.Roman" />
+        <item itemvalue="Gradle.RomanTest.MyRomanToArabics" />
         <item itemvalue="Gradle.Uebung 1 [clean]" />
       </list>
     </recent_temporary>
@@ -159,30 +174,69 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1586532056858">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1586683347250">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532056858" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1586532830079">
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586683347250" />
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1586951365888">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532830079" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1586532830079">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1586951365888">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532830079" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1586532830079">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1586951365888">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532830079" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1586532830079">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1586951365888">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532830079" />
-    <state x="461" y="191" key="SettingsEditor" timestamp="1586532139792">
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1586950101202">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="461" y="191" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586532139792" />
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
+    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1586950101202">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
+    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1586950101202">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
+    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1586950101202">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
+    <state x="461" y="191" key="SettingsEditor" timestamp="1586683354996">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="461" y="191" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586683354996" />
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586949992719">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586949992719" />
+    <state x="690" y="309" key="extract.method.dialog" timestamp="1586951258593">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="690" y="309" key="extract.method.dialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951258593" />
+    <state x="666" y="316" key="refactoring.ChangeSignatureDialog" timestamp="1586948920291">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="666" y="316" key="refactoring.ChangeSignatureDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586948920291" />
   </component>
 </project>
