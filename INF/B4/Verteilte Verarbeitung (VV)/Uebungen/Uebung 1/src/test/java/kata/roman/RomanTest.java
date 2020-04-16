@@ -1,6 +1,7 @@
-package training.kata.roman;
+package kata.roman;
 
 import org.junit.Test;
+import training.kata.roman.Roman;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;

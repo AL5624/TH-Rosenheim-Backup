@@ -1,0 +1,20 @@
+@startuml
+class Logger
+abstract class Handler
+abstract class Formatter
+class SimpleFormatter
+class Kill_Formatter
+class StreamHandler
+class FileHandler
+class ConsoleHandler
+class SocketHandler
+
+Logger o-- Handler
+Handler o-- Formatter
+Formatter <|- SimpleFormatter
+Formatter <|- Kill_Formatter
+Handler <|-- StreamHandler
+StreamHandler <|-- FileHandler
+StreamHandler <|-- ConsoleHandler
+StreamHandler <|-- SocketHandler
+@enduml

@@ -20,17 +20,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b155d5d-7cb5-4f90-9e6d-085860b317e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/echo.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Echo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/EchoWithLogging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Employee.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Logging.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/training/lecture/reactive/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/training/kata/roman/Roman.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/training/kata/roman/Roman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/training/kata/roman/RomanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/training.kata.roman.RomanTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/training.kata.roman.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-training.kata.roman.RomanTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kata/roman/RomanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -62,6 +94,15 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="UML Sequence" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
     <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
@@ -70,24 +111,56 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="ProjectId" id="1aM4C2lempEcgAEZV1sUwH2KUho" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="I:/IntelliJ/commons-cli-1.4/commons-cli-1.4-javadoc.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="Gradle.RomanTest">
-    <configuration name="Roman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="training.kata.roman.Roman" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="training.lecture.reactive" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Configuration">
+    <configuration name="Configuration" type="Application" factoryName="Application">
+      <envs>
+        <env name="USER" value="Anton" />
+        <env name="PASSWORD" value="nix" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="training.lecture.reactive.Configuration" />
+      <module name="training.kata.main" />
+      <option name="PROGRAM_PARAMETERS" value="-u Anton -p nix" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoWithLogging" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.lecture.reactive.EchoWithLogging" />
       <module name="training.kata.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="training.kata.roman.*" />
+          <option name="PATTERN" value="training.lecture.reactive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;training.kata.roman.RomanTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -114,12 +187,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RomanTest.MyRomanToArabics" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeTest.testAbsentToAbsent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;training.kata.roman.RomanTest.MyRomanToArabics&quot;" />
+        <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest.testAbsentToAbsent&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -133,7 +206,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Uebung 1 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmployeeTest.testAbsentToPassageToPresentToError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest.testAbsentToPassageToPresentToError&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Uebung 1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +236,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,12 +244,19 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Configuration" />
+      <item itemvalue="Application.EchoWithLogging" />
+      <item itemvalue="Gradle.EmployeeTest" />
+      <item itemvalue="Gradle.EmployeeTest.testAbsentToAbsent" />
+      <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
+      <item itemvalue="Gradle.Uebung 1 [dependencies]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RomanTest" />
-        <item itemvalue="Application.Roman" />
-        <item itemvalue="Gradle.RomanTest.MyRomanToArabics" />
-        <item itemvalue="Gradle.Uebung 1 [clean]" />
+        <item itemvalue="Gradle.Uebung 1 [dependencies]" />
+        <item itemvalue="Gradle.EmployeeTest.testAbsentToAbsent" />
+        <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
       </list>
     </recent_temporary>
   </component>
@@ -184,52 +283,84 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1586683347250">
+    <state x="880" y="134" key="#Project_Structure" timestamp="1587039455722">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586683347250" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1586951365888">
+    <state x="880" y="134" key="#Project_Structure/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587039455722" />
+    <state x="711" y="299" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587041401367">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1586951365888">
+    <state x="711" y="299" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041401367" />
+    <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1586958406014">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1586951365888">
+    <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586958406014" />
+    <state x="2017" y="491" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586954475944">
+      <screen x="1920" y="56" width="1280" height="1024" />
+    </state>
+    <state x="2017" y="491" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.40.1920.1040/1920.56.1280.1024@1920.56.1280.1024" timestamp="1586954475944" />
+    <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1587028830858">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1586951365888">
+    <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028830858" />
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1587037885376">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951365888" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1586950101202">
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587037885376" />
+    <state width="903" height="240" key="GridCell.Tab.0.bottom" timestamp="1587041586991">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1586950101202">
+    <state width="903" height="240" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586991" />
+    <state width="903" height="240" key="GridCell.Tab.0.center" timestamp="1587041586991">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1586950101202">
+    <state width="903" height="240" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586991" />
+    <state width="903" height="240" key="GridCell.Tab.0.left" timestamp="1587041586991">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1586950101202">
+    <state width="903" height="240" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586991" />
+    <state width="903" height="240" key="GridCell.Tab.0.right" timestamp="1587041586991">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586950101202" />
-    <state x="461" y="191" key="SettingsEditor" timestamp="1586683354996">
+    <state width="903" height="240" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586991" />
+    <state width="904" height="334" key="GridCell.Tab.1.bottom" timestamp="1587041586987">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="461" y="191" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586683354996" />
+    <state width="904" height="334" key="GridCell.Tab.1.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
+    <state width="904" height="334" key="GridCell.Tab.1.center" timestamp="1587041586987">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="904" height="334" key="GridCell.Tab.1.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
+    <state width="904" height="334" key="GridCell.Tab.1.left" timestamp="1587041586987">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="904" height="334" key="GridCell.Tab.1.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
+    <state width="904" height="334" key="GridCell.Tab.1.right" timestamp="1587041586987">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="904" height="334" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
+    <state x="180" y="291" width="1633" height="738" key="SettingsEditor" timestamp="1587040578595">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="180" y="291" width="1633" height="738" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587040578595" />
+    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587037415381">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587037415381" />
     <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586949992719">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586949992719" />
+    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587028387123">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028387123" />
     <state x="690" y="309" key="extract.method.dialog" timestamp="1586951258593">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

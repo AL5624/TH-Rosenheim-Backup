@@ -1,0 +1,15 @@
+@startuml
+state absent
+state present
+state error
+state passage
+
+[*] --> absent
+absent --> passage : left
+passage --> present : right
+present --> passage : right
+passage --> absent : left
+absent --> error : right
+present --> error : left
+error --> error : left, right
+@enduml

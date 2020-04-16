@@ -2,7 +2,7 @@ package training.kata.roman;
 
 public class Roman
 {
-    static int romanToArabic(String romanNumber)
+    public static int romanToArabic(String romanNumber)
     {
         char[] romanNumberDigits = romanNumber.toCharArray();
         int arabicNumber = 0;
