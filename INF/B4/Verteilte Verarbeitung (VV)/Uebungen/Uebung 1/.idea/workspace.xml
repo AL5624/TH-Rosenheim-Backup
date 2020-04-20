@@ -20,41 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b155d5d-7cb5-4f90-9e6d-085860b317e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/echo.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Echo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/EchoWithLogging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Employee.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/reactive/Logging.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/training/lecture/reactive/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/PStA 1/bertramanton" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/training/kata/roman/Roman.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/training/kata/roman/Roman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/training/kata/roman/RomanTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/training.kata.roman.RomanTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/training.kata.roman.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-training.kata.roman.RomanTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/kata/roman/Roman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kata/roman/RomanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="I:/IntelliJ/commons-cli-1.4/commons-cli-1.4-javadoc.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -309,10 +276,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028830858" />
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1587037885376">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1587215395565">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587037885376" />
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587215395565" />
     <state width="903" height="240" key="GridCell.Tab.0.bottom" timestamp="1587041586991">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -365,6 +332,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="690" y="309" key="extract.method.dialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586951258593" />
+    <state x="342" y="169" key="new project wizard" timestamp="1587215461297">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="342" y="169" key="new project wizard/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587215461297" />
     <state x="666" y="316" key="refactoring.ChangeSignatureDialog" timestamp="1586948920291">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
