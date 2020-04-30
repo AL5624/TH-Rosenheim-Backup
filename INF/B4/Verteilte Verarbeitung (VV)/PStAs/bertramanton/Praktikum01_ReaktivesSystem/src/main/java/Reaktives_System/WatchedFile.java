@@ -1,28 +1,22 @@
 package Reaktives_System;
-import java.io.IOException;
+
 import java.nio.file.Path;
 import java.time.LocalDateTime;
-import java.util.LinkedList;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
-import java.util.logging.SimpleFormatter;
 
-import static Reaktives_System.DirectoryWatcher.Zustandsuebergang;
+import static Reaktives_System.DirectoryWatcher.state_transitions;
 
 public class WatchedFile
 {
-    /**Name der Datei*/
-    private String        dateiname;
-    /**Verzeichnis, in dem sich Datei befindet*/
-    private Path          verzeichnis;
-    /**Zeit der letzten synchronisation*/
-    private LocalDateTime zeitstempel;
-    /**derzeitiger Zustand*/
-    private Zustand       state;
+    /**name of the file*/
+    private String        name;
+    /**directory in which the file is located*/
+    private Path          directory;
+    /**last synchronization time*/
+    private LocalDateTime time_stamp;
+    /**current state*/
+    private State         state;
 
-    private static LinkedList<WatchedFile> allWatchedFiles = new LinkedList<WatchedFile>();
-
-   public enum Zustand
+   public enum State
     {
         /**Lokal wurde eine neue Datei erzeugt[0]*/
         CREATED,
@@ -36,51 +30,52 @@ public class WatchedFile
         GONE
     }
 
-    public WatchedFile(String dateiname, Path verzeichnis)
+    public WatchedFile(String name, Path directory)
     {
-        this.dateiname = dateiname;
-        this.verzeichnis = verzeichnis;
-        zeitstempel = LocalDateTime.now();
-        state = Zustand.CREATED;
+        this.name      = name;
+        this.directory = directory;
+        time_stamp     = LocalDateTime.now();
+        state          = State.CREATED;
     }
 
-    public static LinkedList<WatchedFile> getAllWatchedFiles()
+
+    public String getName()
     {
-        return allWatchedFiles;
+        return name;
     }
 
-    public String getDateiname()
+    public void setName(String name)
     {
-        return dateiname;
+        this.name = name;
     }
 
-    public void setDateiname(String dateiname)
+    public void setDirectory(Path directory)
     {
-        this.dateiname = dateiname;
+        this.directory = directory;
     }
 
-    public void setVerzeichnis(Path verzeichnis)
+    public void setTime_stamp()
     {
-        this.verzeichnis = verzeichnis;
+        this.time_stamp = LocalDateTime.now();
     }
 
-    /**Methode, um von einem Zustand in den naechsten zu gelangen*/
+    /**Method for moving from one state to the next*/
     public void setState(DirectoryWatcher.Symbol symbol)
     {
-        state = Zustandsuebergang[state.ordinal()][symbol.ordinal()];
+        state = state_transitions[state.ordinal()][symbol.ordinal()];
     }
 
-    public Path getVerzeichnis()
+    public Path getDirectory()
     {
-        return verzeichnis;
+        return directory;
     }
 
-    public LocalDateTime getZeitstempel()
+    public LocalDateTime getTime_stamp()
     {
-        return zeitstempel;
+        return time_stamp;
     }
 
-    public Zustand getState()
+    public State getState()
     {
         return state;
     }

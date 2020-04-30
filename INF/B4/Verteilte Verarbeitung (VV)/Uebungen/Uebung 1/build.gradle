@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'training.kata'
+group 'training.training.kata'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

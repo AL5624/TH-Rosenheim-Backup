@@ -1,4 +1,5 @@
 @startuml
+
 state created
 state insync
 state modified
@@ -30,13 +31,5 @@ created -up-> insync : SYNC
 created -up-> gone : DELETED
 created --> created : CREATE
 created --> created : MODIFY
-
-
-
-
-
-
-
-
 
 @enduml

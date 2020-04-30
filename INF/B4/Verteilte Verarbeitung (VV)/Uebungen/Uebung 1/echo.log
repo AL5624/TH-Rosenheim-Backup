@@ -1,25 +1,25 @@
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Echo starting ...
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Java Properties
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Betriebssystem: Windows 7
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Version des BS: 6.1
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Benutzer: Anton
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Java Home: I:\IntelliJ\JDKs\jdk-13.0.2
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Java Version: 13.0.2
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Java hersteller: Oracle Corporation
-Apr. 16, 2020 1:35:01 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:01 PM EchoWithLogging main
 INFO: Class Path: D:\Eigene Dokumente\Fh-Rosenheim\TH-Rosenheim-Backup\INF\B4\Verteilte Verarbeitung (VV)\Uebungen\Uebung 1\build\classes\java\main;D:\Eigene Dokumente\Fh-Rosenheim\TH-Rosenheim-Backup\INF\B4\Verteilte Verarbeitung (VV)\Uebungen\Uebung 1\build\resources\main
-Apr. 16, 2020 1:35:05 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:05 PM EchoWithLogging main
 SEVERE: Kill entered by user
 java.lang.IllegalArgumentException: Kill not allowed
-	at training.lecture.reactive.EchoWithLogging.main(EchoWithLogging.java:45)
+	at EchoWithLogging.main(EchoWithLogging.java:45)
 
-Apr. 16, 2020 1:35:05 PM training.lecture.reactive.EchoWithLogging main
+Apr. 16, 2020 1:35:05 PM EchoWithLogging main
 INFO: Echo terminated with error
