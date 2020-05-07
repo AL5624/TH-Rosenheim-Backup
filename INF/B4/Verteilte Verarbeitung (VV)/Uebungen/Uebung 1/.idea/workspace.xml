@@ -20,55 +20,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b155d5d-7cb5-4f90-9e6d-085860b317e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Embedded Systems (ESy)/Vorlesung/01_ESY_Mikrocontroller-Grundlagen.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Embedded Systems (ESy)/Übungen/ESy_Uebung01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/01-Projektbeispiele-VASA.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/02-Projektbeispiel-FlughafenBerlin.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/03-Projektbeispiel-SW.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/2020-PM-01-Einführung_a_Lernziele.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/2020-PM-01-Einführung_b_MotivationenBegriffsdefinitionenPraxis.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/01 Einführung und Grundlagen/PM-Übung01_E-Learning .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/02 Klassisches Projektmanagement - Das Fundament - Ziel und Projektauftrag/15123_Projektziele_Teil1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/02 Klassisches Projektmanagement - Das Fundament - Ziel und Projektauftrag/16122_Projektziele_Teil2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projektmanagement (PM)/02 Klassisches Projektmanagement - Das Fundament - Ziel und Projektauftrag/2020-03-29-PM-02-01-Ziel-Projektauftrag.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Software-Engineering (SE)/Skripte/SE-01-Einführung.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Software-Engineering (SE)/Skripte/SE-03-Konfigurationsmanagement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Software-Engineering (SE)/Übungen/SE_Übung00.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Software-Engineering (SE)/Übungen/SE_Übung01.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Projektmanagement (PM)/Einführung und Grundlagen/01-Projektbeispiele-VASA.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Projektmanagement (PM)/Einführung und Grundlagen/02-Projektbeispiel-FlughafenBerlin.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Projektmanagement (PM)/Einführung und Grundlagen/03-Projektbeispiel-SW.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Projektmanagement (PM)/Einführung und Grundlagen/2020-PM-01-Einführung_a_Lernziele.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Projektmanagement (PM)/Einführung und Grundlagen/2020-PM-01-Einführung_b_MotivationenBegriffsdefinitionenPraxis.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/Text File.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cutomers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/CSVSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/streams/ConsoleEcho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/streams/NummerFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Stochastik und Numerik (SN)/2. Elementare Wahrscheinlichkeitsrechnung/blatt02.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Stochastik und Numerik (SN)/2. Elementare Wahrscheinlichkeitsrechnung/blatt03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/19Praktikum01_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/20BuildPipeline_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/21FeatureBranch_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/22MergeRequests_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/Praktikum01_ReaktivesSystem.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/DirWatcher.log.lck" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/DirectoryWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/DirectoryWatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/UML_Files/Zustandsautomat WatchedFile.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/UML_Files/Zustandsautomat WatchedFile.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/DirectoryWatcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/DirectoryWatcherTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/training/lecture/reactive/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/training/lecture/reactive/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/training.lecture.reactive.EmployeeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/training.lecture.reactive.EmployeeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/training.lecture.reactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/training.lecture.reactive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-training.lecture.reactive.EmployeeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-training.lecture.reactive.EmployeeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/echo.log" beforeDir="false" afterPath="$PROJECT_DIR$/echo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kata/roman/RomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/training/kata/roman/RomanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +130,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -156,7 +144,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EmployeeTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Configuration" type="Application" factoryName="Application">
       <envs>
         <env name="USER" value="Anton" />
@@ -165,6 +153,19 @@
       <option name="MAIN_CLASS_NAME" value="training.lecture.reactive.Configuration" />
       <module name="training.kata.main" />
       <option name="PROGRAM_PARAMETERS" value="-u Anton -p nix" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleEcho" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.lecture.streams.ConsoleEcho" />
+      <module name="training.training.kata.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,31 +183,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.lecture.serialize.Main" />
+      <module name="training.training.kata.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.serialize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NummerFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.lecture.streams.NummerFilter" />
+      <module name="training.training.kata.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EmployeeTest.testAbsentToAbsent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest.testAbsentToAbsent&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -261,16 +269,20 @@
     <list>
       <item itemvalue="Application.Configuration" />
       <item itemvalue="Application.EchoWithLogging" />
+      <item itemvalue="Application.ConsoleEcho" />
+      <item itemvalue="Application.NummerFilter" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.EmployeeTest" />
-      <item itemvalue="Gradle.EmployeeTest.testAbsentToAbsent" />
       <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
       <item itemvalue="Gradle.Uebung 1 [dependencies]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.NummerFilter" />
+        <item itemvalue="Application.ConsoleEcho" />
         <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
         <item itemvalue="Gradle.Uebung 1 [dependencies]" />
-        <item itemvalue="Gradle.EmployeeTest.testAbsentToAbsent" />
       </list>
     </recent_temporary>
   </component>
@@ -311,10 +323,15 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="711" y="299" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041401367" />
-    <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1586958406014">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state x="708" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588781429485">
+      <screen x="0" y="82" width="1920" height="998" />
     </state>
-    <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586958406014" />
+    <state x="708" y="382" key="#com.intellij.fileTypes.FileTypeChooser/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588781429485" />
+    <state x="1245" y="308" key="#com.intellij.ide.util.MemberChooser" timestamp="1588789953534">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588767661836" />
+    <state x="1245" y="308" key="#com.intellij.ide.util.MemberChooser/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588789953534" />
     <state x="146" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588177692431">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -324,54 +341,60 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028830858" />
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1588242451702">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1588614341430">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588242451702" />
-    <state width="1876" height="244" key="GridCell.Tab.0.bottom" timestamp="1587663675569">
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588614341430" />
+    <state width="1876" height="243" key="GridCell.Tab.0.bottom" timestamp="1588808096689">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state width="1876" height="243" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="243" key="GridCell.Tab.0.bottom/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
+    <state width="1876" height="243" key="GridCell.Tab.0.center" timestamp="1588808096689">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state width="1876" height="243" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="243" key="GridCell.Tab.0.center/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
+    <state width="1876" height="243" key="GridCell.Tab.0.left" timestamp="1588808096689">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state width="1876" height="243" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="243" key="GridCell.Tab.0.left/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
+    <state width="1876" height="243" key="GridCell.Tab.0.right" timestamp="1588808096689">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state width="1876" height="243" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="243" key="GridCell.Tab.0.right/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
+    <state width="1920" height="349" key="GridCell.Tab.1.bottom" timestamp="1588770843529">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587663675569" />
-    <state width="1876" height="244" key="GridCell.Tab.0.center" timestamp="1587663675569">
+    <state width="1920" height="349" key="GridCell.Tab.1.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588770843529" />
+    <state width="1920" height="349" key="GridCell.Tab.1.center" timestamp="1588770843529">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587663675569" />
-    <state width="1876" height="244" key="GridCell.Tab.0.left" timestamp="1587663675569">
+    <state width="1920" height="349" key="GridCell.Tab.1.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588770843529" />
+    <state width="1920" height="349" key="GridCell.Tab.1.left" timestamp="1588770843529">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587663675569" />
-    <state width="1876" height="244" key="GridCell.Tab.0.right" timestamp="1587663675569">
+    <state width="1920" height="349" key="GridCell.Tab.1.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588770843529" />
+    <state width="1920" height="349" key="GridCell.Tab.1.right" timestamp="1588770843529">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587663675569" />
-    <state width="904" height="334" key="GridCell.Tab.1.bottom" timestamp="1587041586987">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1920" height="349" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588770843529" />
+    <state x="180" y="323" width="1633" height="738" key="SettingsEditor" timestamp="1588790824140">
+      <screen x="0" y="82" width="1920" height="998" />
     </state>
-    <state width="904" height="334" key="GridCell.Tab.1.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
-    <state width="904" height="334" key="GridCell.Tab.1.center" timestamp="1587041586987">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="904" height="334" key="GridCell.Tab.1.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
-    <state width="904" height="334" key="GridCell.Tab.1.left" timestamp="1587041586987">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="904" height="334" key="GridCell.Tab.1.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
-    <state width="904" height="334" key="GridCell.Tab.1.right" timestamp="1587041586987">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="904" height="334" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041586987" />
-    <state x="180" y="291" width="1633" height="738" key="SettingsEditor" timestamp="1587660677620">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="180" y="291" width="1633" height="738" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587660677620" />
+    <state x="180" y="291" width="1633" height="738" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588767526711" />
+    <state x="180" y="323" key="SettingsEditor/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588790824140" />
     <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587037415381">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587037415381" />
-    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586949992719">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588789822861">
+      <screen x="0" y="82" width="1920" height="998" />
     </state>
-    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586949992719" />
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588765075736" />
+    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588789822861" />
     <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587028387123">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -388,5 +411,9 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="666" y="316" key="refactoring.ChangeSignatureDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586948920291" />
+    <state x="623" y="296" width="672" height="678" key="search.everywhere.popup" timestamp="1588790800629">
+      <screen x="0" y="82" width="1920" height="998" />
+    </state>
+    <state x="623" y="296" width="672" height="678" key="search.everywhere.popup/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588790800629" />
   </component>
 </project>
