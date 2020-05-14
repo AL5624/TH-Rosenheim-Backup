@@ -20,35 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b155d5d-7cb5-4f90-9e6d-085860b317e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/Text File.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cutomers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/CSVSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/serialize/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/streams/ConsoleEcho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/streams/NummerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/gildedrose/GildedRose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/gildedrose/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/threads/ClientProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/threads/Discussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/threads/ProducerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/threads/SlowServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/threads/Terminator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/training/lecture/gildedrose/GildedRoseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/19Praktikum01_kompakt.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/20BuildPipeline_kompakt.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/21FeatureBranch_kompakt.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/22MergeRequests_kompakt.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Reaktive Systeme/Praktikum/Praktikum01_ReaktivesSystem.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/DirWatcher.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/DirectoryWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/DirectoryWatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/DirectoryWatcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/DirectoryWatcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedDirectoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedDirectoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
@@ -57,6 +50,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/training/lecture/serialize/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/training/lecture/serialize/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/kata/roman/RomanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/training.lecture.reactive.EmployeeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/training.lecture.reactive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-training.lecture.reactive.EmployeeTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,17 +79,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="training.kata" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="training.kata" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -99,9 +89,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="UML Sequence" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -127,24 +117,28 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="training.lecture.gildedrose" />
+      <recent name="training.lecture.CodeQualitaet" />
       <recent name="training.lecture.reactive" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.GildedRoseTest">
     <configuration name="Configuration" type="Application" factoryName="Application">
       <envs>
         <env name="USER" value="Anton" />
@@ -157,51 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleEcho" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="training.lecture.streams.ConsoleEcho" />
-      <module name="training.training.kata.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="training.lecture.streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EchoWithLogging" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="training.lecture.reactive.EchoWithLogging" />
       <module name="training.kata.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="training.lecture.reactive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="training.lecture.serialize.Main" />
-      <module name="training.training.kata.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="training.lecture.serialize.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NummerFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="training.lecture.streams.NummerFilter" />
-      <module name="training.training.kata.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="training.lecture.streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,12 +183,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmployeeTest.testAbsentToPassageToPresentToError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GildedRoseTest.foo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;training.lecture.reactive.EmployeeTest.testAbsentToPassageToPresentToError&quot;" />
+        <option name="scriptParameters" value="--tests &quot;training.lecture.gildedrose.GildedRoseTest.foo&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -247,42 +202,91 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Uebung 1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RomanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;training.kata.roman.RomanTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="GildedRoseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="training.training.kata.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.gildedrose.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="training.lecture.gildedrose" />
+      <option name="MAIN_CLASS_NAME" value="training.lecture.gildedrose.GildedRoseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GildedRoseTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="training.training.kata.test" />
+      <useClassPathOnly />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.gildedrose.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="training.lecture.gildedrose" />
+      <option name="MAIN_CLASS_NAME" value="training.lecture.gildedrose.GildedRoseTest" />
+      <option name="METHOD_NAME" value="foo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GildedRoseTest.testUpdateQuality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="training.training.kata.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="training.lecture.gildedrose.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="training.lecture.gildedrose" />
+      <option name="MAIN_CLASS_NAME" value="training.lecture.gildedrose.GildedRoseTest" />
+      <option name="METHOD_NAME" value="testUpdateQuality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.Configuration" />
       <item itemvalue="Application.EchoWithLogging" />
-      <item itemvalue="Application.ConsoleEcho" />
-      <item itemvalue="Application.NummerFilter" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.EmployeeTest" />
-      <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
-      <item itemvalue="Gradle.Uebung 1 [dependencies]" />
+      <item itemvalue="Gradle.GildedRoseTest.foo" />
+      <item itemvalue="Gradle.RomanTest" />
+      <item itemvalue="JUnit.GildedRoseTest" />
+      <item itemvalue="JUnit.GildedRoseTest.foo" />
+      <item itemvalue="JUnit.GildedRoseTest.testUpdateQuality" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.NummerFilter" />
-        <item itemvalue="Application.ConsoleEcho" />
-        <item itemvalue="Gradle.EmployeeTest.testAbsentToPassageToPresentToError" />
-        <item itemvalue="Gradle.Uebung 1 [dependencies]" />
+        <item itemvalue="JUnit.GildedRoseTest" />
+        <item itemvalue="Gradle.RomanTest" />
+        <item itemvalue="JUnit.GildedRoseTest.testUpdateQuality" />
+        <item itemvalue="JUnit.GildedRoseTest.foo" />
+        <item itemvalue="Gradle.GildedRoseTest.foo" />
       </list>
     </recent_temporary>
   </component>
@@ -315,55 +319,64 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="880" y="134" key="#Project_Structure" timestamp="1587039455722">
+    <state x="563" y="178" key="#GildedRoseTest" timestamp="1589272968580">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="880" y="134" key="#Project_Structure/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587039455722" />
-    <state x="711" y="299" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587041401367">
+    <state x="563" y="178" key="#GildedRoseTest/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589272968580" />
+    <state x="880" y="134" key="#Project_Structure" timestamp="1589272958099">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="711" y="299" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587041401367" />
-    <state x="708" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588781429485">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state x="880" y="134" key="#Project_Structure/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589272958099" />
+    <state x="412" y="241" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589274174971">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state x="412" y="241" width="1092" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589274174971" />
+    <state x="708" y="353" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589272644239">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="708" y="353" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589272644239" />
     <state x="708" y="382" key="#com.intellij.fileTypes.FileTypeChooser/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588781429485" />
     <state x="1245" y="308" key="#com.intellij.ide.util.MemberChooser" timestamp="1588789953534">
       <screen x="0" y="82" width="1920" height="998" />
     </state>
     <state x="1245" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588767661836" />
     <state x="1245" y="308" key="#com.intellij.ide.util.MemberChooser/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588789953534" />
-    <state x="146" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588177692431">
+    <state x="640" y="295" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589272376559">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="146" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588177692431" />
+    <state x="640" y="295" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589272376559" />
+    <state x="146" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588857092964">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="146" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588857092964" />
     <state x="2017" y="491" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.40.1920.1040/1920.56.1280.1024@1920.56.1280.1024" timestamp="1586954475944" />
     <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1587028830858">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="336" y="320" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028830858" />
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1588614341430">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1589273949015">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588614341430" />
-    <state width="1876" height="243" key="GridCell.Tab.0.bottom" timestamp="1588808096689">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589273949015" />
+    <state width="1876" height="244" key="GridCell.Tab.0.bottom" timestamp="1589280558890">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="243" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="244" key="GridCell.Tab.0.bottom/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589280558890" />
     <state width="1876" height="243" key="GridCell.Tab.0.bottom/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
-    <state width="1876" height="243" key="GridCell.Tab.0.center" timestamp="1588808096689">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state width="1876" height="244" key="GridCell.Tab.0.center" timestamp="1589280558890">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="243" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="244" key="GridCell.Tab.0.center/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589280558890" />
     <state width="1876" height="243" key="GridCell.Tab.0.center/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
-    <state width="1876" height="243" key="GridCell.Tab.0.left" timestamp="1588808096689">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state width="1876" height="244" key="GridCell.Tab.0.left" timestamp="1589280558890">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="243" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="244" key="GridCell.Tab.0.left/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589280558890" />
     <state width="1876" height="243" key="GridCell.Tab.0.left/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
-    <state width="1876" height="243" key="GridCell.Tab.0.right" timestamp="1588808096689">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state width="1876" height="244" key="GridCell.Tab.0.right" timestamp="1589280558890">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1876" height="243" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588801354244" />
+    <state width="1876" height="244" key="GridCell.Tab.0.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589280558890" />
     <state width="1876" height="243" key="GridCell.Tab.0.right/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588808096689" />
     <state width="1920" height="349" key="GridCell.Tab.1.bottom" timestamp="1588770843529">
       <screen x="0" y="40" width="1920" height="1040" />
@@ -381,24 +394,24 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1920" height="349" key="GridCell.Tab.1.right/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588770843529" />
-    <state x="180" y="323" width="1633" height="738" key="SettingsEditor" timestamp="1588790824140">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state x="180" y="291" width="1633" height="738" key="SettingsEditor" timestamp="1589278293434">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="180" y="291" width="1633" height="738" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588767526711" />
+    <state x="180" y="291" width="1633" height="738" key="SettingsEditor/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589278293434" />
     <state x="180" y="323" key="SettingsEditor/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588790824140" />
-    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587037415381">
+    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589272784844">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587037415381" />
-    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588789822861">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state x="747" y="544" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589272784844" />
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588864012935">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588765075736" />
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588864012935" />
     <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588789822861" />
-    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587028387123">
+    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589273525451">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1587028387123" />
+    <state x="1211" y="370" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1589273525451" />
     <state x="690" y="309" key="extract.method.dialog" timestamp="1586951258593">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -411,9 +424,15 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="666" y="316" key="refactoring.ChangeSignatureDialog/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1586948920291" />
-    <state x="623" y="296" width="672" height="678" key="search.everywhere.popup" timestamp="1588790800629">
-      <screen x="0" y="82" width="1920" height="998" />
+    <state x="623" y="263" width="672" height="707" key="search.everywhere.popup" timestamp="1588865054453">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state x="623" y="263" width="672" height="707" key="search.everywhere.popup/0.40.1920.1040/1920.56.1280.1024@0.40.1920.1040" timestamp="1588865054453" />
     <state x="623" y="296" width="672" height="678" key="search.everywhere.popup/0.82.1920.998/1920.56.1280.1024@0.82.1920.998" timestamp="1588790800629" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/training_training_kata$GildedRoseTest_foo.ic" NAME="GildedRoseTest.foo Coverage Results" MODIFIED="1589276489408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>training.lecture.gildedrose.*</FILTER>
+    </SUITE>
   </component>
 </project>

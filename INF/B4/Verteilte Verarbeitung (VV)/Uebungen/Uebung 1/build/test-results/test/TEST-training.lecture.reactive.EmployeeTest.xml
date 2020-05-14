@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="training.lecture.reactive.EmployeeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-23T16:51:21" hostname="ANTON-PC" time="0.004">
-  <properties/>
-  <testcase name="testAbsentToPassageToPresentToError" classname="training.lecture.reactive.EmployeeTest" time="0.004"/>
-  <testcase name="testAbsentToError" classname="training.lecture.reactive.EmployeeTest" time="0.0"/>
-  <testcase name="testAbsentToAbsent" classname="training.lecture.reactive.EmployeeTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
