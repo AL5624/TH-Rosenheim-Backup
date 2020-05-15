@@ -7,16 +7,18 @@ stages:
     
 build:
   stage: compile
-  image: gradle:6.2.2-jdk13
+  image: gradle:6.3-jdk13
   script:
     - echo "compiling"
+    - cd ./Praktikum01_ReaktivesSystem/
     - gradle assemble
     
 #Test
 #This stage will also trigger integration tests
 test_unit:
   stage: test
-  image: gradle:6.2.2-jdk13
+  image: gradle:6.3-jdk13
   script:
     - echo "Executing Checks"
+    - cd ./Praktikum01_ReaktivesSystem/
     - gradle check
