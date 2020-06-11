@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.serialize</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package training.lecture.serialize;
+
+import com.google.gson.*;
+
+import java.lang.reflect.Type;
+import java.time.LocalDate;
+import java.util.Arrays;
+
+<span class="nc" id="L9">public class Main</span>
+{
+    public static void main(String[] args)
+    {
+<span class="nc" id="L13">        Customer harry = new Customer(1L, &quot;Harry&quot;, &quot;Hirsch&quot;,</span>
+<span class="nc" id="L14">                                      LocalDate.of(1950, 3, 18),</span>
+                                      new Address(&quot;Hochschulstr. 1&quot;, &quot;83024&quot;, &quot;Rosenheim&quot;), true);
+<span class="nc" id="L16">        harry.setHobbies(Arrays.asList(&quot;Laufen, Spinnen, Groelen&quot;.split(&quot;,&quot;)));</span>
+
+<span class="nc" id="L18">        Customer gerd = new Customer(2L, &quot;Gerd&quot;, &quot;Beneken&quot;,</span>
+<span class="nc" id="L19">                                     LocalDate.of(1971, 5, 18),</span>
+                                     new Address(&quot;SchÃ¼tteweg 4&quot;, &quot;26384&quot;, &quot;Wilhelmshaven&quot;), false);
+<span class="nc" id="L21">        gerd.setHobbies(Arrays.asList(&quot;Schach, Halma, Fussball&quot;.split(&quot;,&quot;)));</span>
+
+
+<span class="nc" id="L24">        JsonSerializer&lt;LocalDate&gt; ser = new JsonSerializer&lt;LocalDate&gt;() {</span>
+            @Override
+            public JsonElement serialize(LocalDate src, Type typeOfSrc, JsonSerializationContext context)
+            {
+<span class="nc bnc" id="L28" title="All 2 branches missed.">                if(src != null)</span>
+                {
+<span class="nc" id="L30">                    return new JsonPrimitive(src.toString());</span>
+                }
+<span class="nc" id="L32">                return null;</span>
+            }
+        };
+
+<span class="nc" id="L36">        JsonDeserializer&lt;LocalDate&gt; dser = new JsonDeserializer&lt;LocalDate&gt;() {</span>
+            @Override
+            public LocalDate deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
+            {
+<span class="nc bnc" id="L40" title="All 2 branches missed.">                if(json != null)</span>
+                {
+<span class="nc" id="L42">                    return LocalDate.parse(json.getAsString());</span>
+                }
+<span class="nc" id="L44">                return null;</span>
+            }
+        };
+
+<span class="nc" id="L48">        Gson gson = new GsonBuilder()</span>
+<span class="nc" id="L49">                .registerTypeAdapter(LocalDate.class, ser)</span>
+<span class="nc" id="L50">                .registerTypeAdapter(LocalDate.class, dser)</span>
+<span class="nc" id="L51">                .create();</span>
+
+
+
+<span class="nc" id="L55">        String gerdAlsJson = gson.toJson(gerd);</span>
+
+<span class="nc" id="L57">        System.out.println(gerdAlsJson);</span>
+
+<span class="nc" id="L59">        Customer test = gson.fromJson(gerdAlsJson, Customer.class);</span>
+
+<span class="nc" id="L61">        System.out.println(test);</span>
+
+        //Ser04_JavaSerialisierung_kompakt:
+/*        try (OutputStream outputStream = new FileOutputStream(&quot;customers.ser&quot;))
+        {
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+
+            objectOutputStream.writeObject(harry);
+            objectOutputStream.writeObject(gerd);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try
+        {
+            InputStream       inputStream       = new FileInputStream(&quot;customers.ser&quot;);
+            ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+
+            Customer eins = (Customer) objectInputStream.readObject();
+            Customer zwei = (Customer) objectInputStream.readObject();
+
+            System.out.println(&quot;Gelesen: &quot; + eins);
+            System.out.println(&quot;Gelesen: &quot; + zwei);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }*/
+
+
+
+
+
+        //Ser3_CSV_komp:
+/*        try (PrintStream printStream = new PrintStream(&quot;cutomers.csv&quot;))
+        {
+            harry.writeTo(printStream);
+            printStream.println();
+            gerd.writeTo(printStream);
+            printStream.println();
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+
+        try
+        {
+            InputStream in = new FileInputStream(&quot;cutomers.csv&quot;);
+
+            Scanner inputScanner = new Scanner(in);
+
+            while (inputScanner.hasNext())
+            {
+                Customer read = new Customer();
+
+                read.readFrom(inputScanner);
+                inputScanner.nextLine();
+                System.out.println(&quot;READ: &quot; + read);
+            }
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }*/
+<span class="nc" id="L128">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

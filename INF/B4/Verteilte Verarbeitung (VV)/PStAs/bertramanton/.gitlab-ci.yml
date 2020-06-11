@@ -10,7 +10,7 @@ build:
   image: gradle:6.3-jdk13
   script:
     - echo "compiling"
-    - cd ./Praktikum01_ReaktivesSystem/
+    - cd ./messaging/customerservice/
     - gradle assemble
     
 #Test
@@ -20,5 +20,5 @@ test_unit:
   image: gradle:6.3-jdk13
   script:
     - echo "Executing Checks"
-    - cd ./Praktikum01_ReaktivesSystem/
+    - cd ./messaging/customerservice/
     - gradle check

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="training.kata.roman.RomanTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-05-12T10:11:41" hostname="ANTON-PC" time="0.004">
+<testsuite name="training.kata.roman.RomanTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-05-18T09:09:21" hostname="ANTON-PC" time="0.026">
   <properties/>
-  <testcase name="testLshouldReturn50" classname="training.kata.roman.RomanTest" time="0.002"/>
-  <testcase name="testCshouldReturn100" classname="training.kata.roman.RomanTest" time="0.0"/>
+  <testcase name="testLshouldReturn50" classname="training.kata.roman.RomanTest" time="0.025"/>
+  <testcase name="testCshouldReturn100" classname="training.kata.roman.RomanTest" time="0.001"/>
   <testcase name="testIshouldReturn1" classname="training.kata.roman.RomanTest" time="0.0"/>
   <testcase name="testXshouldReturn10" classname="training.kata.roman.RomanTest" time="0.0"/>
   <testcase name="testMshouldReturn1000" classname="training.kata.roman.RomanTest" time="0.0"/>

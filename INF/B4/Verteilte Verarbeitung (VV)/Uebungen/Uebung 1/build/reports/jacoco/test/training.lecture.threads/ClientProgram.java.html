@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ClientProgram.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.threads</a> &gt; <span class="el_source">ClientProgram.java</span></div><h1>ClientProgram.java</h1><pre class="source lang-java linenums">package training.lecture.threads;
+
+import java.util.concurrent.*;
+
+<span class="nc" id="L5">public class ClientProgram</span>
+{
+    public static void main(String[] args) throws Exception
+    {
+<span class="nc" id="L9">        SlowServer slow = new SlowServer();</span>
+
+<span class="nc" id="L11">        ExecutorService exe = Executors.newSingleThreadExecutor();</span>
+
+<span class="nc bnc" id="L13" title="All 2 branches missed.">        for(int i = 1; i &lt;= 20; i++)</span>
+        {
+<span class="nc" id="L15">            String input = &quot;text: &quot; + i;</span>
+<span class="nc" id="L16">            System.out.println(&quot;Start     :&quot; + i);</span>
+
+<span class="nc" id="L18">            CompletableFuture&lt;Void&gt; serverCall = CompletableFuture.supplyAsync(() -&gt;</span>
+                                                                                 {
+<span class="nc" id="L20">                                                                                     String result = slow.veryWichtigServerCall(input);</span>
+<span class="nc" id="L21">                                                                                     return result;</span>
+                                                                                 },exe)
+<span class="nc" id="L23">                    .thenAccept((s)-&gt; {System.out.println(&quot;Ergebnis = &quot; + s);});</span>
+
+/*            Future&lt;String&gt; futureResult = exe.submit(serverCall);
+
+            //Hier kann ich noch was machen
+
+            while(!futureResult.isDone())
+            {
+                Thread.currentThread().sleep(1000);
+                System.out.println(&quot;Poll&quot;);
+            }*/
+
+//            System.out.println(&quot;Berechnet: &quot; + futureResult.get(1, TimeUnit.SECONDS));
+<span class="nc" id="L36">            System.out.println(&quot;Ende     : &quot; + i + &quot;\n&quot;);</span>
+        }
+<span class="nc" id="L38">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

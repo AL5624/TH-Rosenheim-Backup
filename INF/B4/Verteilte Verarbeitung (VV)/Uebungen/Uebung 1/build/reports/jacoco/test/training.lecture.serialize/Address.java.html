@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Address.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.serialize</a> &gt; <span class="el_source">Address.java</span></div><h1>Address.java</h1><pre class="source lang-java linenums">package training.lecture.serialize;
+
+import java.io.PrintStream;
+import java.io.Serializable;
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Address implements Serializable
+{
+    public static final String DELIMITER = &quot;;&quot;;
+    private String street;
+    private String postalCode;
+    private String city;
+
+
+
+    public Address()
+<span class="nc" id="L18">    {</span>
+<span class="nc" id="L19">    }</span>
+
+    public Address(String street, String postalCode, String city)
+<span class="nc" id="L22">    {</span>
+<span class="nc" id="L23">        this.street     = street;</span>
+<span class="nc" id="L24">        this.postalCode = postalCode;</span>
+<span class="nc" id="L25">        this.city       = city;</span>
+<span class="nc" id="L26">    }</span>
+
+    public String getStreet()
+    {
+<span class="nc" id="L30">        return street;</span>
+    }
+
+    public void setStreet(String street)
+    {
+<span class="nc" id="L35">        this.street = street;</span>
+<span class="nc" id="L36">    }</span>
+
+    public String getPostalCode()
+    {
+<span class="nc" id="L40">        return postalCode;</span>
+    }
+
+    public void setPostalCode(String postalCode)
+    {
+<span class="nc" id="L45">        this.postalCode = postalCode;</span>
+<span class="nc" id="L46">    }</span>
+
+    public String getCity()
+    {
+<span class="nc" id="L50">        return city;</span>
+    }
+
+    public void setCity(String city)
+    {
+<span class="nc" id="L55">        this.city = city;</span>
+<span class="nc" id="L56">    }</span>
+
+    @Override
+    public boolean equals(Object o)
+    {
+<span class="nc bnc" id="L61" title="All 2 branches missed.">        if (this == o) return true;</span>
+<span class="nc bnc" id="L62" title="All 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc" id="L63">        Address address = (Address) o;</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">        return Objects.equals(street, address.street) &amp;&amp;</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">               Objects.equals(postalCode, address.postalCode) &amp;&amp;</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">               Objects.equals(city, address.city);</span>
+    }
+
+    @Override
+    public int hashCode()
+    {
+<span class="nc" id="L72">        return Objects.hash(street, postalCode, city);</span>
+    }
+
+    @Override
+    public String toString()
+    {
+<span class="nc" id="L78">        return &quot;Address{&quot; +</span>
+               &quot;street='&quot; + street + '\'' +
+               &quot;, postalCode='&quot; + postalCode + '\'' +
+               &quot;, city='&quot; + city + '\'' +
+               '}';
+    }
+
+    //Ser3_CSV_komp:
+
+
+    public void readFrom(Scanner in)
+    {
+<span class="nc" id="L90">        in.useDelimiter(DELIMITER);</span>
+<span class="nc" id="L91">        street = in.next();</span>
+<span class="nc" id="L92">        postalCode = in.next();</span>
+<span class="nc" id="L93">        city = in.next();</span>
+<span class="nc" id="L94">    }</span>
+
+
+    public void writeTo(PrintStream out)
+    {
+<span class="nc" id="L99">        out.print(street);</span>
+<span class="nc" id="L100">        out.print(DELIMITER);</span>
+
+<span class="nc" id="L102">        out.print(postalCode);</span>
+<span class="nc" id="L103">        out.print(DELIMITER);</span>
+
+<span class="nc" id="L105">        out.print(city);</span>
+<span class="nc" id="L106">        out.print(DELIMITER);</span>
+<span class="nc" id="L107">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

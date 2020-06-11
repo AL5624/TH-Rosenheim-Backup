@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Discussion.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.threads</a> &gt; <span class="el_source">Discussion.java</span></div><h1>Discussion.java</h1><pre class="source lang-java linenums">package training.lecture.threads;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+<span class="nc" id="L6">public class Discussion</span>
+{
+    public static void main(String[] args)
+    {
+<span class="nc" id="L10">        Runnable rosenheim = new Runnable() {</span>
+            @Override
+            public void run()
+            {
+                try
+                {
+<span class="nc bnc" id="L16" title="All 2 branches missed.">                    for(int i = 1; i &lt;= 1000; i++)</span>
+                    {
+<span class="nc" id="L18">                        System.out.println(&quot;Rosenheim is super! &quot; + i);</span>
+<span class="nc" id="L19">                        Thread.sleep(10);</span>
+                    }
+                }
+<span class="nc" id="L22">                catch (InterruptedException e)</span>
+                {
+<span class="nc" id="L24">                    e.printStackTrace();</span>
+<span class="nc" id="L25">                    return;</span>
+<span class="nc" id="L26">                }</span>
+<span class="nc" id="L27">            }</span>
+        };
+
+<span class="nc" id="L30">        Runnable muenchen = () -&gt;</span>
+        {
+            try
+            {
+<span class="nc bnc" id="L34" title="All 2 branches missed.">                for(int i = 1; i &lt;= 1000; i++)</span>
+                {
+<span class="nc" id="L36">                    System.out.println(&quot;Muenchen is super! &quot; + i);</span>
+<span class="nc" id="L37">                    Thread.sleep(10);</span>
+                }
+            }
+<span class="nc" id="L40">            catch (InterruptedException e)</span>
+            {
+<span class="nc" id="L42">                e.printStackTrace();</span>
+<span class="nc" id="L43">                return;</span>
+<span class="nc" id="L44">            }</span>
+<span class="nc" id="L45">        };</span>
+
+<span class="nc" id="L47">        ExecutorService exe = Executors.newSingleThreadExecutor();</span>
+<span class="nc" id="L48">        exe.execute(rosenheim);</span>
+<span class="nc" id="L49">        exe.execute(muenchen);</span>
+<span class="nc" id="L50">        exe.shutdown();</span>
+
+<span class="nc" id="L52">        System.out.println(&quot;fertig&quot;);</span>
+<span class="nc" id="L53">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

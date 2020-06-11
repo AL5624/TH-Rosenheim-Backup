@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProducerConsumer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.threads</a> &gt; <span class="el_source">ProducerConsumer.java</span></div><h1>ProducerConsumer.java</h1><pre class="source lang-java linenums">package training.lecture.threads;
+
+import java.util.concurrent.*;
+
+<span class="nc" id="L5">public class ProducerConsumer</span>
+{
+    public static void main(String[] args) throws Exception
+    {
+<span class="nc" id="L9">        BlockingQueue&lt;String&gt; orders = new ArrayBlockingQueue&lt;&gt;(5);</span>
+<span class="nc" id="L10">        ExecutorService exe = Executors.newCachedThreadPool();</span>
+
+<span class="nc" id="L12">        Runnable producer = () -&gt;</span>
+        {
+            try
+            {
+<span class="nc bnc" id="L16" title="All 2 branches missed.">                for(int i = 1; i &lt;= 30; i++)</span>
+                {
+<span class="nc" id="L18">                    Thread.currentThread().sleep(1000);</span>
+<span class="nc" id="L19">                    System.out.println(&quot;Sending: Order (&quot;+i+&quot;) &quot;);</span>
+<span class="nc" id="L20">                    orders.put(&quot;Order (&quot;+i+&quot;) &quot;);</span>
+                }
+<span class="nc" id="L22">                orders.put(&quot;EXIT&quot;);</span>
+            }
+<span class="nc" id="L24">            catch (InterruptedException e)</span>
+            {
+<span class="nc" id="L26">                return;</span>
+<span class="nc" id="L27">            }</span>
+<span class="nc" id="L28">        };</span>
+<span class="nc" id="L29">        exe.execute(producer);</span>
+
+<span class="nc" id="L31">        Runnable consumer = () -&gt;</span>
+        {
+            try
+            {
+<span class="nc bnc" id="L35" title="All 2 branches missed.">                while(!Thread.currentThread().isInterrupted())</span>
+                {
+<span class="nc" id="L37">                    Thread.currentThread().sleep(10);</span>
+<span class="nc" id="L38">                    String order = orders.take();</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">                    if(order.equals(&quot;EXIT&quot;))break;</span>
+<span class="nc" id="L40">                    System.out.println(&quot;Receiving: &quot; + order);</span>
+<span class="nc" id="L41">                }</span>
+            }
+<span class="nc" id="L43">            catch (InterruptedException e)</span>
+            {
+<span class="nc" id="L45">                return;</span>
+<span class="nc" id="L46">            }</span>
+<span class="nc" id="L47">        };</span>
+<span class="nc" id="L48">        exe.execute(consumer);</span>
+<span class="nc" id="L49">        exe.shutdown();</span>
+<span class="nc" id="L50">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

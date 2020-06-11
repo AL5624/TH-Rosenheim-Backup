@@ -5,26 +5,20 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class ConsoleEcho
-{
+public class ConsoleEcho {
 
-    public static final int EOF = -1;
+  public static final int EOF = -1;
 
-    public static void main(String[] args)
-    {
-        try (InputStream in = System.in;
-             OutputStream out = new FileOutputStream("test.txt"))
-        {
-            int c = 0;
+  public static void main(String[] args) {
+    try (InputStream in = System.in;
+         /*OutputStream out = new FileOutputStream("test.txt")*/OutputStream out = System.out) {
+      int c = 0;
 
-            while ((c = in.read()) != EOF)
-            {
-                out.write(c);
-            }
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+      while ((c = in.read()) != EOF) {
+        out.write(c);
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+  }
 }

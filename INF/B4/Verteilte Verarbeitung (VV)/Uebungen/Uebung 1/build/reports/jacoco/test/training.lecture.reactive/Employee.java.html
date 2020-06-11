@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.reactive</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package training.lecture.reactive;
+
+public class Employee
+{
+    //Zustandsmenge
+<span class="fc" id="L6">    enum State{ABSENT, PRESENT, PASSAGE, ERROR}</span>
+    //Eingabealphabet, Eingabesymbole
+<span class="fc" id="L8">    enum Symbol{LEFT, RIGHT}</span>
+
+    //ZustandsÃ¼bergangsfunktion
+        //      ABSENT,         PRESENT,    PASSAGE,        ERROR
+<span class="fc" id="L12">    private State[][] transitionTable = {</span>
+                {State.PASSAGE, State.ERROR, State.ABSENT, State.ERROR}, //LEFT
+                {State.ERROR, State.PASSAGE, State.PRESENT, State.ERROR }//RIGHT
+    };
+
+    public void transition(Symbol symbol)
+    {
+<span class="fc" id="L19">        currentState = transitionTable[symbol.ordinal()][currentState.ordinal()];</span>
+<span class="fc" id="L20">    }</span>
+
+    //Startzustand / Aktuellen Zustand
+
+<span class="fc" id="L24">    private State currentState = State.ABSENT;</span>
+
+    public Employee()
+<span class="fc" id="L27">    {</span>
+<span class="fc" id="L28">        currentState = State.ABSENT;</span>
+<span class="fc" id="L29">    }</span>
+
+    public State getCurrentState()
+    {
+<span class="fc" id="L33">        return currentState;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

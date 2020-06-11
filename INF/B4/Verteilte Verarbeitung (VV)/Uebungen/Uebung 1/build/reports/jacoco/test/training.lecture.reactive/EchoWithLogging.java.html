@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EchoWithLogging.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">training.training.kata</a> &gt; <a href="index.source.html" class="el_package">training.lecture.reactive</a> &gt; <span class="el_source">EchoWithLogging.java</span></div><h1>EchoWithLogging.java</h1><pre class="source lang-java linenums">package training.lecture.reactive;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.logging.*;
+
+<span class="nc" id="L6">public class EchoWithLogging</span>
+{
+<span class="nc" id="L8">    public static Logger LOGGER = Logger.getLogger(EchoWithLogging.class.getName());</span>
+
+    public static void main(String[] args)
+    {
+        try
+        {
+<span class="nc" id="L14">            Handler fileHandler = new FileHandler(&quot;echo.log&quot;);</span>
+<span class="nc" id="L15">            fileHandler.setFormatter(new SimpleFormatter());</span>
+<span class="nc" id="L16">            LOGGER.addHandler(fileHandler);</span>
+<span class="nc" id="L17">            LOGGER.setUseParentHandlers(false);</span>
+<span class="nc" id="L18">            LOGGER.setLevel(Level.WARNING);</span>
+        }
+<span class="nc" id="L20">        catch (IOException e)</span>
+        {
+<span class="nc" id="L22">            System.err.println(&quot;Logfile &quot; + &quot;echo.log&quot; + &quot; not accessible&quot;);</span>
+<span class="nc" id="L23">            System.err.println(&quot;Please ask the administrator&quot;);</span>
+<span class="nc" id="L24">            System.exit(1);</span>
+<span class="nc" id="L25">        }</span>
+
+        try
+        {
+<span class="nc" id="L29">            LOGGER.info(&quot;Echo starting ...&quot;);</span>
+
+<span class="nc" id="L31">            LOGGER.info(&quot;Java Properties&quot;);</span>
+<span class="nc" id="L32">            LOGGER.info(&quot;Betriebssystem: &quot; + System.getProperty(&quot;os.name&quot;));</span>
+<span class="nc" id="L33">            LOGGER.info(&quot;Version des BS: &quot; + System.getProperty(&quot;os.version&quot;));</span>
+<span class="nc" id="L34">            LOGGER.info(&quot;Benutzer: &quot; + System.getProperty(&quot;user.name&quot;));</span>
+<span class="nc" id="L35">            LOGGER.info(&quot;Java Home: &quot; + System.getProperty(&quot;java.home&quot;));</span>
+<span class="nc" id="L36">            LOGGER.info(&quot;Java Version: &quot; + System.getProperty(&quot;java.version&quot;));</span>
+<span class="nc" id="L37">            LOGGER.info(&quot;Java hersteller: &quot; + System.getProperty(&quot;java.vendor&quot;));</span>
+<span class="nc" id="L38">            LOGGER.info(&quot;Class Path: &quot; + System.getProperty(&quot;java.class.path&quot;));</span>
+
+<span class="nc" id="L40">            Scanner scanner = new Scanner(System.in);</span>
+            while(true)
+            {
+<span class="nc" id="L43">                String line = scanner.nextLine();</span>
+<span class="nc bnc" id="L44" title="All 2 branches missed.">                if(line.equals(&quot;Kill&quot;))</span>
+<span class="nc" id="L45">                    throw new IllegalArgumentException(&quot;Kill not allowed&quot;);</span>
+<span class="nc" id="L46">                String output = &quot;Echo: &quot; + line;</span>
+<span class="nc" id="L47">                System.out.println(output);</span>
+<span class="nc" id="L48">            }</span>
+        }
+<span class="nc" id="L50">        catch (IllegalArgumentException e)</span>
+        {
+<span class="nc" id="L52">            LOGGER.log(Level.SEVERE, &quot;Kill entered by user&quot;, e);</span>
+<span class="nc" id="L53">            LOGGER.info(&quot;Echo terminated with error&quot;);</span>
+<span class="nc" id="L54">            System.err.println(&quot;Program terminates due to an internal problem&quot;);</span>
+<span class="nc" id="L55">            System.err.println(&quot;Please ask th administrator&quot;);</span>
+<span class="nc" id="L56">            System.exit(1);</span>
+        }
+<span class="nc" id="L58">        LOGGER.info(&quot;Echo terminated&quot;);</span>
+<span class="nc" id="L59">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-05-15T20:43:53.908">
+<file name="D:\Eigene Dokumente\Fh-Rosenheim\TH-Rosenheim-Backup\INF\B4\Verteilte Verarbeitung (VV)\Uebungen\Uebung 1\src\test\java\training\kata\roman\RomanTest.java">
+<violation beginline="8" endline="57" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Class comments are required
+</violation>
+<violation beginline="8" endline="57" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="training.kata.roman" class="RomanTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="11" endline="14" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testIshouldReturn1" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="13" endline="13" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testIshouldReturn1" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="17" endline="20" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testVshouldReturn5" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="19" endline="19" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testVshouldReturn5" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="23" endline="26" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testXshouldReturn10" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="25" endline="25" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testXshouldReturn10" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="29" endline="32" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testLshouldReturn50" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="31" endline="31" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testLshouldReturn50" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="35" endline="38" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testCshouldReturn100" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="37" endline="37" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testCshouldReturn100" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="41" endline="44" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testDshouldReturn500" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="43" endline="43" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testDshouldReturn500" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="47" endline="50" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testMshouldReturn1000" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="49" endline="49" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testMshouldReturn1000" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="53" endline="56" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.kata.roman" class="RomanTest" method="testIIshouldReturn2" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="55" endline="55" begincolumn="9" endcolumn="18" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.kata.roman" class="RomanTest" method="testIIshouldReturn2" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+<file name="D:\Eigene Dokumente\Fh-Rosenheim\TH-Rosenheim-Backup\INF\B4\Verteilte Verarbeitung (VV)\Uebungen\Uebung 1\src\test\java\training\lecture\gildedrose\GildedRoseTest.java">
+<violation beginline="13" endline="46" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Class comments are required
+</violation>
+<violation beginline="15" endline="15" begincolumn="13" endcolumn="24" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="15" endline="15" begincolumn="20" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="training.lecture.gildedrose" class="GildedRoseTest" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="20" endcolumn="23" rule="ImmutableField" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="16" endline="16" begincolumn="13" endcolumn="26" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="training.lecture.gildedrose" class="GildedRoseTest" variable="sellin" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="25" rule="ImmutableField" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" variable="sellin" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'sellin' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="17" endline="17" begincolumn="13" endcolumn="27" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="training.lecture.gildedrose" class="GildedRoseTest" variable="quality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="26" rule="ImmutableField" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" variable="quality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'quality' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="28" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="18" endline="18" begincolumn="20" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="training.lecture.gildedrose" class="GildedRoseTest" variable="expected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="20" endcolumn="27" rule="ImmutableField" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" variable="expected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'expected' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="20" endline="20" begincolumn="65" endcolumn="79" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="GildedRoseTest" variable="expected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'expected' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="27" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="GildedRoseTest" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="52" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="GildedRoseTest" variable="quality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'quality' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="40" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="GildedRoseTest" variable="sellin" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sellin' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="26" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" method="GildedRoseTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="29" endline="36" begincolumn="19" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" method="data" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="39" endline="45" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="41" endline="41" begincolumn="20" endcolumn="70" rule="UseShortArrayInitializer" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" variable="items" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#useshortarrayinitializer" priority="3">
+Array initialization can be written shorter
+</violation>
+<violation beginline="41" endline="41" begincolumn="9" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'items' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'app' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="20" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="55" rule="LawOfDemeter" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="55" rule="LawOfDemeter" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="44" endline="44" begincolumn="32" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="44" endline="44" begincolumn="32" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="training.lecture.gildedrose" class="GildedRoseTest" method="testUpdateQuality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+</file>
+<file name="D:\Eigene Dokumente\Fh-Rosenheim\TH-Rosenheim-Backup\INF\B4\Verteilte Verarbeitung (VV)\Uebungen\Uebung 1\src\test\java\training\lecture\reactive\EmployeeTest.java">
+<violation beginline="8" endline="51" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="training.lecture.reactive" class="EmployeeTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Class comments are required
+</violation>
+<violation beginline="8" endline="51" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="training.lecture.reactive" class="EmployeeTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="12" endline="22" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToError" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="12" endline="22" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToError" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="14" endline="14" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToError" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'employee' could be declared final
+</violation>
+<violation beginline="25" endline="35" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToPassageToPresentToError" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="25" endline="35" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToPassageToPresentToError" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="27" endline="27" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToPassageToPresentToError" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'employee' could be declared final
+</violation>
+<violation beginline="38" endline="50" begincolumn="12" endcolumn="5" rule="CommentRequired" ruleset="Documentation" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToAbsent" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+<violation beginline="38" endline="50" begincolumn="12" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToAbsent" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="40" endline="40" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="training.lecture.reactive" class="EmployeeTest" method="testAbsentToAbsent" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'employee' could be declared final
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

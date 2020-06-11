@@ -29,7 +29,9 @@ public class GildedRoseTest
     public static Collection<Object[]> data()
     {
         return Arrays.asList(new Object[][]{
-                {"foo", 0, 0, "foo, -1, 0"}
+                {"foo", 0, 0, "foo, -1, 0"},
+                {"Aged Brie", 0, 0, "Aged Brie, -1, 2"},
+                {"Backstage passes to a TAFKAL80ETC concert", 0, 0, "Backstage passes to a TAFKAL80ETC concert, -1, 0"}
         });
     }
 
