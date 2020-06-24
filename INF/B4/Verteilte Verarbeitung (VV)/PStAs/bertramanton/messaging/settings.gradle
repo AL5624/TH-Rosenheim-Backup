@@ -1,2 +1,0 @@
-include ":customerservice", ":common", ":accountingservice", ":teamleadservice"
-
