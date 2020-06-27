@@ -24,85 +24,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd47e9ed-0f3b-4170-a8f4-494bde45f78d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Uebungen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/network/DNSundIP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/network/DateTimeReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/network/DateTimeSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/network/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/network/SimpleHTTPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/.gitlab-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/Text File.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/DirectoryWatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/FileEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/UML_Files/Zustandsautomat WatchedFile.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedDirectory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/main/java/Reaktives_System/WatchedFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/DirectoryWatcherTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedDirectoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/Praktikum01_ReaktivesSystem/src/test/java/Reaktives_System/WatchedFileTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/CustomerService/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/CustomerService/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/CustomerService/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/CustomerService/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/CustomerService/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/configuration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/accountingservice/src/main/java/AccountingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/src/main/java/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/src/main/java/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/src/main/java/MyConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/src/main/java/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/common/src/main/java/TestForApprovedOrdersQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/config/checkstyle/rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/customerservice/configuration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/customerservice/src/main/java/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/customerservice/src/test/java/CustomerServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/configuration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PStAs/bertramanton/messaging/teamleadservice/src/main/java/TeamLeadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/inbox/bestellung1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/inbox/bestellung2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/inbox/bestellung3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/training/lecture/eai/CopySomeFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/11_HTTP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/EAI06_TranslatorPattern_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/EAI07_RouterPattern_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/HTTP01_Grundlagen_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/Http02_Verben_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/Http03_StatusCodes_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/Http04_Parameter_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10 Das HTTP-Protokoll/Http05_Ressourcen_kompakt.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PStA2/bertramanton" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStA2/bertramanton" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../test/bertramanton" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,13 +128,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Application.DateTimeSender">
-    <configuration name="DNSundIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="training.lecture.network.DNSundIP" />
+  <component name="RunManager" selected="Application.CopySomeFiles">
+    <configuration name="CopySomeFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="training.lecture.eai.CopySomeFiles" />
       <module name="training.training.kata.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="training.lecture.network.*" />
+          <option name="PATTERN" value="training.lecture.eai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CopySomeFiles" />
         <item itemvalue="Application.DateTimeReceiver" />
         <item itemvalue="Application.DateTimeSender" />
         <item itemvalue="Application.EchoServer" />
         <item itemvalue="Application.SimpleHTTPClient" />
-        <item itemvalue="Application.DNSundIP" />
       </list>
     </recent_temporary>
   </component>
