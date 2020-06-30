@@ -2,7 +2,7 @@
   "name": "Georg2",
   "alter": 47,
   "verheiratet": false,
-  "beruf": "Beruf2",
+  "beruf": null,
   "kinder": [
     {
       "name": "Lukas2",
