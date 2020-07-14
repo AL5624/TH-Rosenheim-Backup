@@ -1,22 +1,37 @@
 package de.thro.inf.pvs;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import de.thro.inf.pvs.bsp.Member;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Entity
+@Entity(name = "THPROJECT")
 public class Project {
     @Id
     @GeneratedValue
     private  Long id;
+    @Column(name = "projectname", length = 255, unique = true, nullable = false)
     private String name;
 
     @Transient
     @JsonIgnore
     private String internalInformation;
 
+    @OneToMany(mappedBy = "project")
+    //@ManyToMany
+    private List<Member> members;
+
     @Version
     private Integer version;
+
+    public List<Member> getMembers() {
+        return members;
+    }
+
+    public void setMembers(List<Member> members) {
+        this.members = members;
+    }
 
     public Project() {
         this.name = "";
@@ -59,7 +74,9 @@ public class Project {
         return "Project{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", internalInformation='" + internalInformation +
+                ", internalInformation='" + internalInformation + '\'' +
+                ", members=" + members +
+                ", version=" + version +
                 '}';
     }
 }
