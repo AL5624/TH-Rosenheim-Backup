@@ -24,13 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd47e9ed-0f3b-4170-a8f4-494bde45f78d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PStA3/bertramanton" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rechnerarchitektur (RA)/RA_exercises" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PStA2/bertramanton" beforeDir="false" afterPath="$PROJECT_DIR$/../../PStA2/bertramanton" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uebung 2/src/main/java/de/thro/inf/pvs/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uebung 2/src/main/java/de/thro/inf/pvs/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uebung 2/src/main/java/de/thro/inf/pvs/PvsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uebung 2/src/main/java/de/thro/inf/pvs/PvsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uebung 2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Uebung 2/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
