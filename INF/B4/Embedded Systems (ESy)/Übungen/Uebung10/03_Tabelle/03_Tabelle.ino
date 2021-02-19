@@ -1,5 +1,5 @@
 int microPin = 24;
-int ledPin = 21;
+int ledPin = 13;
 
 typedef enum {
   START, 
@@ -42,9 +42,9 @@ void toStartToggle() {
 // transition table
 void (*state_table[3][4]) (void) = {
   //                  NONE    MICRO_PIN_HIGH    TIMER100_EXPIRED    TIMER300_EXPIRED
-  /*START*/          {  ??,   ??,                           ??,               ??},
-  /*CLAP1_DETECTED*/ {  ??,   ??,                           ??,               ??},
-  /*CLAP2_PENDING*/  {  ??,   ??,                           ??,               ??}
+  /*START*/          {idle, toClap1Detected, idle,         idle},
+  /*CLAP1_DETECTED*/ {idle,    idle,        toClap2Pending,      idle},
+  /*CLAP2_PENDING*/  {idle,   toStartToggle, idle,              toStart}
 };
 
 void setup() {
@@ -59,6 +59,16 @@ void loop() {
 
 void state_machine() {
   // detect events
-  
+  event_t event = NONE;
+  if(digitalRead(microPin) == HIGH) {
+    event = MICRO_PIN_HIGH;
+  }else if(timer100 && millis() - timer100 > 100) {
+    event = TIMER100_EXPIRED;
+    timer100 = 0;
+  }else if(timer300 && millis() - timer300 > 300) {
+    event = TIMER300_EXPIRED;
+    timer300 = 0;
+  }
   // TODO 
+  state_table[state][event]();
 }

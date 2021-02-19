@@ -42,6 +42,7 @@ void vUARTTask(void *pvParameters)  {
   
   for (;;) {
    // TODO: if-Abfrage ob etwas in Queue ist und ggfs. rausnehmen
+   
    if (...) {
    
       while (!(UCSR0A & (1 << UDRE0)));   // echo back 

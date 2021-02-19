@@ -16,8 +16,8 @@ void setup() {
   UBRR0L = (unsigned int) MYUBRR;
   UBRR0H = (unsigned int) (MYUBRR >> 8);
   //UBRR0 = 103;              // set baud rate
-  UCSR0B |= (1 << TXEN0);   // enable transmitter
-  UCSR0C |= (0 << USBS0);   // set 1 stop bit
+  UCSR0B |= (1 << 3);   // enable transmitter TXEN0
+  UCSR0C &= ~(0 << 3);   // set 1 stop bit
   UCSR0C |= (1 << UCSZ01) | (1 << UCSZ00);  //set frame with 8 data bits
 }
 
@@ -36,5 +36,7 @@ void loop() {
     uart_putchar(text[i]);
     delay(100);
   }
+  Serial.println();
   delay(2000);
+  
 }

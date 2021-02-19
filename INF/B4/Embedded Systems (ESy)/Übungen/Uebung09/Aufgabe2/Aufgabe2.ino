@@ -5,6 +5,8 @@ void vBlinkLedTask(void *pvParameters );
   
 void setup() {
 
+  
+
   xTaskCreate(                    // set up the blink task 
     vBlinkLedTask
     ,  "Blinking LED Task"        // human-readable name
@@ -22,9 +24,11 @@ void loop() {                     // Empty: Things are done in tasks
 // implementation of tasks 
 void vBlinkLedTask(void *pvParameters)  {
   // TODO: DDR? to output
+  DDRB |= (1 << 7);
  
   for (;;)  {                                  // a task does not return or exit
     // TODO: toggle LED  
+    PORTB ^= (1 << 7);
     vTaskDelay(pdMS_TO_TICKS(1000));           // block / wait for 1 second
   }
 }

@@ -1,10 +1,12 @@
 int microPin = 24;
 int ledPin = 13;
+int counter = 0;
 
 typedef enum {
   START,
   CLAP1_DETECTED,
-  CLAP2_PENDING
+  CLAP2_PENDING,
+  LED
 } state_t;
 
 state_t state;                 // keeps current state
@@ -35,31 +37,59 @@ void state_machine() {
     case CLAP2_PENDING:
       clapTwo();
       break;
+    case LED:
+      led();
+      break;
   }
 }
 
   void start() {
+    counter = 0;
       if(digitalRead(microPin) == HIGH) {
-        timer100 = millis();
+        counter++;
+        Serial.print("clap ");
+        Serial.println(counter);
         state = CLAP1_DETECTED;
+        timer100 = millis();
+        timer300 = millis();
       }      
   }
 
   void clapOne() {
-      if(millis() - timer100 >= 100) {
-      state = CLAP2_PENDING;
+    
+    if(millis()- timer300 > 300) {
+      state = LED;
+    } else if(millis() - timer100 >= 100 && digitalRead(microPin) == HIGH) {
+      //state = CLAP2_PENDING;
+      if(counter >= 2) {
+        state = LED;
+      } else {
+        
+      
+      counter++;
+      Serial.print("clap ");
+      Serial.println(counter);
       timer300 = millis();
+      timer100 = millis();
+      }
       }
   }
 
   void clapTwo() {
-    if(millis()- timer300 > 300) {
-      Serial.println("timer300 expired");
-      state = START;
-    } else if(digitalRead(microPin) == HIGH) {
-      Serial.println("Second Clap detected");
-      digitalWrite(ledPin, !digitalRead(ledPin));
-      delay(100);
-      state = START;
+    
+if(millis() - timer100 >= 100) {
+      counter++;
+      Serial.print("clap ");
+      Serial.println(counter);
+      state = CLAP1_DETECTED;
+      timer300 = millis();
     }
+  }
+
+  void led()  {
+    for(int i = 0; i < counter * 2; i++) {
+      digitalWrite(ledPin, !digitalRead(ledPin));
+      delay(500);
+    }
+    state = START;
   }

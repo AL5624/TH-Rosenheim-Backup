@@ -35,5 +35,8 @@ void isr () {
 
 //2:
 ISR (INT0_vect) {
-  counter++;
+    if(millis() - polling > 250) {
+   counter++; 
+  }
+  polling = millis();
 }

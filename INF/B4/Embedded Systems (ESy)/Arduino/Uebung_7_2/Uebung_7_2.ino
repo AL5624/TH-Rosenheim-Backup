@@ -5,8 +5,8 @@ void setup() {
   Serial.println("System restart");
   
   // configure external interrupt on pin PD0
-  DDRD &= ~(1 << DDD0);   // configure PD0 as input
-  PORTD |= (1 << PORTD0); // pull up, write to PORT when in INPUT mode, p68
+  //DDRD &= ~(1 << DDD0);   // configure PD0 as input
+  //PORTD |= (1 << PORTD0); // pull up, write to PORT when in INPUT mode, p68
   EIMSK |= (1 << INT0);   // turn on INT0
   EICRA |= (1 << ISC01);  // set INT0 to trigger on falling edge
   sei();                  // globally activate interrupts
