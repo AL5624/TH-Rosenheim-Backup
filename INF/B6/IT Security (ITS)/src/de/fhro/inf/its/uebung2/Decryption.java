@@ -1,11 +1,16 @@
 package de.fhro.inf.its.uebung2;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import javax.crypto.*;
 import javax.crypto.Cipher;
+import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
+import java.security.Key;
+import java.security.KeyStore;
 import java.util.Base64;
 
 public class Decryption {
@@ -53,5 +58,39 @@ public class Decryption {
         byte[] cipherText = cipher.doFinal(data);
 
         return cipherText;
+    }
+
+    // U3
+
+    public static SecretKey readKey(char[] passwordForKeyCharArray) throws Exception
+    {
+        KeyStore ks = KeyStore.getInstance("JCEKS");
+        String keyFile = "D:\\Dokumente\\TH-Rosenheim-Backup\\INF\\B6\\IT Security (ITS)\\ITS_U3_KEY_FILE.ks";
+        InputStream readStream = new FileInputStream(keyFile);
+        ks.load(readStream, "password".toCharArray());
+        Key key = ks.getKey("keyAlias", passwordForKeyCharArray);
+        readStream.close();
+
+        return (SecretKey) key;
+    }
+
+    public static String decrypt(byte[] cipherText, SecretKey key, byte[] IV) throws Exception
+    {
+        // Get Cipher Instance
+        Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+
+        // Create SecretKeySpec
+        SecretKeySpec keySpec = new SecretKeySpec(key.getEncoded(), "AES");
+
+        // Create GCMParameterSpec
+        GCMParameterSpec gcmParameterSpec = new GCMParameterSpec(16 * 8, IV);
+
+        // Initialize Cipher for DECRYPT_MODE
+        cipher.init(Cipher.DECRYPT_MODE, keySpec, gcmParameterSpec);
+
+        // Perform Decryption
+        byte[] decryptedText = cipher.doFinal(cipherText);
+
+        return new String(decryptedText);
     }
 }
