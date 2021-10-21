@@ -6,38 +6,63 @@ import java.util.Iterator;
  * @author Peter Kurfer
  * Created on 10/6/17.
  */
-public class SimpleList implements SimpleListInterface
+public class SimpleList implements SimpleListInterface, Iterable
 {
     private Element head = null;
-    private Element last = null;
+    private Element tail = null;
     private int size = 0;
 
+    @Override
+    public Iterator iterator()
+    {
+        return new SimpleListIterator(head);
+    }
+
     private static class Element {
-        private Object element = null;
+        private Object item = null;
         private Element next = null;
 
         public Element(Object o) {
-            this.element = o;
+            item = o;
         }
 
         public void setNext(Element e) {
-            this.next = e;
+            next = e;
         }
 
         public Element getNext() {
-            return this.next;
+            return next;
         }
 
         public boolean hasNext() {
-            return this.next != null;
+            return next != null;
+        }
+
+        public Object getItem() {
+            return item;
         }
     }
 
-    private class Iterable implements java.lang.Iterable {
+    private class SimpleListIterator implements Iterator
+    {
+        private Element current = null;
+
+        public SimpleListIterator(Element head) {
+            current = head;
+        }
+
         @Override
-        public Iterator iterator()
+        public boolean hasNext()
         {
-            return null;
+            return current != null;
+        }
+
+        @Override
+        public Object next()
+        {
+            Element tmp = current;
+            current = current.getNext();
+            return tmp.getItem();
         }
     }
 
@@ -48,12 +73,11 @@ public class SimpleList implements SimpleListInterface
         Element element = new Element(o);
 
         if (head == null) {
-            this.head = element;
-            this.last = element;
+            head = tail = element;
         }
         else {
-            this.last.setNext(element);
-            this.last = element;
+            tail.setNext(element);
+            tail = element;
         }
     }
 
@@ -66,6 +90,14 @@ public class SimpleList implements SimpleListInterface
     @Override
     public SimpleListInterface filter(SimpleFilter filter)
     {
-        return null;
+        SimpleList newSimpleList = new SimpleList();
+
+        for (Object e : this) {
+            if (filter.include(e)) {
+                newSimpleList.add(e);
+            }
+        }
+
+        return newSimpleList;
     }
 }
