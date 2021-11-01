@@ -9,6 +9,10 @@ public abstract class State
     protected int time = 0;
     protected int duration = 0;
 
+    public State(int time) {
+        this.time = time;
+    }
+
     public State tick(Cat cat)
     {
         ++time;
@@ -16,4 +20,9 @@ public abstract class State
     }
 
     public abstract State successor(Cat cat);
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }

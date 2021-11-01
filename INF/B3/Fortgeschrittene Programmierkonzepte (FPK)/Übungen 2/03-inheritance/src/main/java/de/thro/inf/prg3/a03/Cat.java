@@ -22,7 +22,7 @@ public class Cat {
 		return currentState;
 	}
 
-	private de.thro.inf.prg3.a03.State currentState = new SleepingState();
+	private de.thro.inf.prg3.a03.State currentState = new SleepingState(0);
 
 	// state durations (set via constructor), ie. the number of ticks in each state
 	private final int sleep;
@@ -108,6 +108,7 @@ public class Cat {
 		logger.info("tick()");
 		// time = time + 1;
 		// stateMap.get(state).updateState(this);
+		// logger.info(state);
 		currentState = currentState.tick(this);
 		logger.info(currentState);
 	}
