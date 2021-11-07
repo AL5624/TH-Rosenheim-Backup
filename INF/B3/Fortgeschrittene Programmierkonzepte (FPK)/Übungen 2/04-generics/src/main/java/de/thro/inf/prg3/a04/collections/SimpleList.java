@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 public class SimpleList<T> implements SimpleListInterface<T>
 {
-    private ListElement head;
+    private ListElement<T> head;
 
     private int size;
 
@@ -15,7 +15,7 @@ public class SimpleList<T> implements SimpleListInterface<T>
         head = null;
     }
 
-    private class SimpleIterator implements Iterator {
+    private class SimpleIterator implements Iterator<T> {
 
         private ListElement<T> current = head;
 
@@ -35,7 +35,7 @@ public class SimpleList<T> implements SimpleListInterface<T>
     private static class ListElement<T> {
         T item;
 
-        private ListElement next;
+        private ListElement<T> next;
 
         public ListElement(T item) {
             this.item = item;
@@ -50,11 +50,11 @@ public class SimpleList<T> implements SimpleListInterface<T>
             this.item = item;
         }
 
-        public ListElement getNext() {
+        public ListElement<T> getNext() {
             return next;
         }
 
-        public void setNext(ListElement next) {
+        public void setNext(ListElement<T> next) {
             this.next = next;
         }
     }
@@ -83,13 +83,13 @@ public class SimpleList<T> implements SimpleListInterface<T>
     @Override
     public void add(T item) {
         if (head == null) {
-            head = new ListElement(item);
+            head = new ListElement<T>(item);
         } else {
-            ListElement current = head;
+            ListElement<T> current = head;
             while (current.getNext() != null) {
                 current = current.getNext();
             }
-            current.setNext(new ListElement(item));
+            current.setNext(new ListElement<T>(item));
         }
         ++size;
     }
@@ -105,6 +105,8 @@ public class SimpleList<T> implements SimpleListInterface<T>
             ++i;
         }
 
+        if (current == null) return null;
+
         return current.getItem();
     }
 
@@ -113,7 +115,15 @@ public class SimpleList<T> implements SimpleListInterface<T>
     {
         ListElement<T> current = head;
         int i = 0;
-        while (i != index -1 && current != null)
+
+        if (index == 0)
+        {
+            ListElement<T> next = head.getNext();
+            head = new ListElement<T>(item);
+            head.setNext(next);
+            return;
+        }
+        else while (i != index - 1 && current != null)
         {
             current = current.getNext();
             ++i;
@@ -122,7 +132,7 @@ public class SimpleList<T> implements SimpleListInterface<T>
         if (current != null)
         {
             ListElement<T> next = current.getNext().getNext();
-            current.setNext(new ListElement(item));
+            current.setNext(new ListElement<T>(item));
             current.getNext().setNext(next);
         }
         else

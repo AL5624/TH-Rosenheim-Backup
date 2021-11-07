@@ -3,6 +3,10 @@ package de.thro.inf.prg3.a04.utils;
 import de.thro.inf.prg3.a04.collections.SimpleListInterface;
 import de.thro.inf.prg3.a04.collections.SimpleList;
 
+import de.thro.inf.prg3.a04.model.Flower;
+import de.thro.inf.prg3.a04.model.Plant;
+import de.thro.inf.prg3.a04.model.PlantBed;
+import de.thro.inf.prg3.a04.model.PlantColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +21,6 @@ class PlantBedUtilityTest {
 
     @BeforeEach
     void setup() {
-
         flowerBed = new PlantBed<>();
 
         flowerBed.add(new Flower("Rosa", "Golden Celebration", 0.4, PlantColor.YELLOW));
@@ -61,7 +64,7 @@ class PlantBedUtilityTest {
     }
 
     @Test
-    void testPecs_with_filter(){
+    void testPecs_with_filter() {
         SimpleListInterface<Plant> dest = new SimpleList<>();
         PlantBedUtility.pecs_with_filter(dest,flowerBed.getPlants(),flower -> flower.getColor().equals(PlantColor.YELLOW));
         for (Plant plant : dest){

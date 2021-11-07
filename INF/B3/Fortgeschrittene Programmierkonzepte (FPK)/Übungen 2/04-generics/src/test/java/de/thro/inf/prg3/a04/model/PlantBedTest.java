@@ -68,5 +68,4 @@ class PlantBedTest {
         SimpleListInterface<Shrub> shrubs = shrubBed.getPlantsByColor(PlantColor.GREEN);
         assertEquals(4, shrubs.size());
     }
-
 }

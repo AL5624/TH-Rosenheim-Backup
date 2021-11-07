@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-class SimpleListTests {
+class SimpleListTest {
 
     private final Logger logger = LogManager.getLogger();
     private SimpleListInterface<Integer> testList;
@@ -77,13 +77,5 @@ class SimpleListTests {
         for (Integer i : result) {
             assertTrue(i % 2 == 0);
         }
-
-        testTest(result);
-    }
-
-    void testTest(SimpleListInterface<Integer> test)
-    {
-        test.addDefault(Integer.class);
-        test.add(new Integer("0"));
     }
 }

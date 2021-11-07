@@ -1,17 +1,18 @@
 package de.thro.inf.prg3.a04.collections;
 
+import de.thro.inf.prg3.a04.model.Flower;
+import de.thro.inf.prg3.a04.model.Plant;
+import de.thro.inf.prg3.a04.model.PlantColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CollectionsUtilityTest {
-
     private SimpleListInterface<Plant> flowerBed;
 
     @BeforeEach
     void setup() {
-
         flowerBed = new SimpleList<>();
 
         flowerBed.add(new Flower("Rosa", "Golden Celebration", 0.4, PlantColor.YELLOW));
@@ -25,12 +26,11 @@ class CollectionsUtilityTest {
 
     @Test
     void testSortFlowers() {
-
         CollectionsUtility.sort(flowerBed);
 
         double lastHeight = 0.0;
         for (Plant f : flowerBed) {
-            assertTrue(f.getHeight() > lastHeight);
+            assertTrue(f.getHeight() >= lastHeight);
             lastHeight = f.getHeight();
         }
     }
