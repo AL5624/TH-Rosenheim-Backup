@@ -1,7 +1,0 @@
-@startuml
-package de.thro.inf.prg3.a05.utils {
-    +abstract class PlantBedUtility{
-        +{static} <T> splitBedByColor(bed: PlantBed<T>) : Map<PlantColor, SimpleList<T>>
-    }
-}
-@enduml

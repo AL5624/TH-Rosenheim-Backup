@@ -1,8 +1,0 @@
-@startuml CanteenRetrievalFlow
-
-(*) --> "Retrieve page without index"
--->"Extract PageInfo"
--->"Retrieve remaining pages"
--->(*)
-
-@enduml
