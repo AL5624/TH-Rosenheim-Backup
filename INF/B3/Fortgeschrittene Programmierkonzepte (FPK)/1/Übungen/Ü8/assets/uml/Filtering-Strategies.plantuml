@@ -1,0 +1,30 @@
+@startuml FilteringStrategies
+
+package de.thro.inf.prg3.a08.filtering {
+
+    interface MealsFilter {
+        filter(meals: List<Meal>): List<Meal>
+    }
+
+    class AllMealsStrategy implements MealsFilter {
+
+    }
+
+    abstract class FilterBase implements MealsFilter {
+        #include(m: Meal): boolean
+    }
+
+    class VegetarianStrategy extends FilterBase {
+
+    }
+
+    class NoPorkStrategy extends FilterBase {
+
+    }
+
+    class NoSoyStrategy extends FilterBase {
+
+    }
+}
+
+@enduml
