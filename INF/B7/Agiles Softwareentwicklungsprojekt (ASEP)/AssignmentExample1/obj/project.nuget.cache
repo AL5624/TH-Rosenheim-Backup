@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lr6rZplqfDJMRDm55mvjrW9JCZ0hUBTyrt0lqpPxfkJvkJP3qWItnKRebBsfIxIrsauuJfRgtZDlow7QcQxInQ==",
+  "success": true,
+  "projectFilePath": "D:\\Dokumente\\TH-Rosenheim-Backup\\INF\\B7\\Agiles Softwareentwicklungsprojekt (ASEP)\\AssignmentExample1\\AssignmentExample1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anton\\.nuget\\packages\\google.ortools\\9.4.1874\\google.ortools.9.4.1874.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\google.ortools.runtime.win-x64\\9.4.1874\\google.ortools.runtime.win-x64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
