@@ -1,4 +1,4 @@
-﻿namespace AssignmentExample1;
+﻿namespace ExampleOptimizers;
 internal class Node
 {
     private Vector2D position;

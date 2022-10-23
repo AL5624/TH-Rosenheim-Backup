@@ -1,4 +1,4 @@
-﻿namespace AssignmentExample1;
+﻿namespace ExampleOptimizers;
 
 internal class Vector2D
 {

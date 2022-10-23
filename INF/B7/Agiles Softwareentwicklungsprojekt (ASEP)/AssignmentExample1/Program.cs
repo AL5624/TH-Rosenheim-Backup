@@ -1,12 +1,12 @@
 ﻿using Google.OrTools.LinearSolver;
 
-namespace AssignmentExample1;
+namespace ExampleOptimizers;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        int num = 3;
+        int num = 4;
         ExampleWithRandomVectors(num, num);
     }
 

@@ -1,6 +1,6 @@
 ﻿using Google.Protobuf.Collections;
 
-namespace AssignmentExample1;
+namespace ExampleOptimizers;
 internal class Utils
 {
     private static int tableWidth = 73;
@@ -172,7 +172,11 @@ internal class Utils
                         {
                             point = hitTop[ i ];
                             int m = 2;
-                            int Y() => y - (i * m);
+                            int Y()
+                            {
+                                return y - (i * m);
+                            }
+
                             string key = getKey(x, Y());
                             while (cache.ContainsKey(key))
                             {
@@ -206,7 +210,11 @@ internal class Utils
                         point = hitBottom[ 0 ];
                         int m = 2;
                         int X = x - tag.Length;
-                        int Y() => y - (1 * m);
+                        int Y()
+                        {
+                            return y - (1 * m);
+                        }
+
                         string key = getKey(X, Y());
                         while (cache.ContainsKey(key))
                         {
@@ -224,7 +232,10 @@ internal class Utils
                             point = hitBottom[ i ];
                             int m = 2;
                             int X = x - tag.Length;
-                            int Y() => y - ((i + (hitTop.Length < 1 ? 0 : 1)) * m);
+                            int Y()
+                            {
+                                return y - ((i + (hitTop.Length < 1 ? 0 : 1)) * m);
+                            }
 
                             string key = getKey(X, Y());
                             while (cache.ContainsKey(key))
