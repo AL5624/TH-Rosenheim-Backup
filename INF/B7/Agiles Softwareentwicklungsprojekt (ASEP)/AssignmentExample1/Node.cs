@@ -4,13 +4,15 @@ internal class Node
     private Vector2D position;
 
     public Vector2D Position { get => position; set => position = value; }
-    public ConsoleColor ConsoleColor { get => consoleColor; set => consoleColor = value; }
 
-    private ConsoleColor consoleColor;
+    private List<Worker> workers = new();
+    public List<Worker> Workers { get => workers; set => workers = value; }
 
-    public Node(Vector2D position, ConsoleColor consoleColor)
+    private List<Task> tasks = new();
+    public List<Task> Tasks { get => tasks; set => tasks = value; }
+
+    public Node(Vector2D position)
     {
         Position = position;
-        ConsoleColor = consoleColor;
     }
 }

@@ -1,7 +1,20 @@
 ﻿namespace AssignmentExample1;
-internal class Task : Node
+internal class Task
 {
-    public Task(Vector2D position, ConsoleColor consoleColor = ConsoleColor.Red) : base(position, consoleColor)
+    private Node node;
+    public Node Node { get => node; set => SetNode(value); }
+
+    public Task(Node node)
     {
+        this.node = node;
+        node.Tasks.Add(this);
+    }
+
+    private void SetNode(Node node)
+    {
+        this.node.Tasks.Remove(this);
+        node.Tasks.Add(this);
+
+        this.node = node;
     }
 }

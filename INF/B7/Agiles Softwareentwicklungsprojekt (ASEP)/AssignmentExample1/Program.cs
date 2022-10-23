@@ -6,56 +6,59 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int numWorkers = 2;
-        int numTasks = 2;
-
-        if (args.Length > 0)
-        {
-            int.TryParse(args[ 0 ], out numWorkers);
-        }
-
-        if (args.Length > 1)
-        {
-            int.TryParse(args[ 1 ], out numTasks);
-        }
-
-        FixedExampleOfMeeting();
+        int num = 3;
+        ExampleWithRandomVectors(num, num);
     }
 
-    private static void FixedExampleOfMeeting()
+    private static void FixedExampleOfMeeting(int numWorkers = 2, int numTasks = 2)
     {
+        Node[] nodes =
+        {
+            new Node(new Vector2D(10, 10)),
+            new Node(new Vector2D(0, 5)),
+            new Node(new Vector2D(0, 10)),
+            new Node(new Vector2D(0, 0))
+        };
+
         Worker[] workers =
         {
-            new Worker(new Vector2D(10, 10)),
-            new Worker(new Vector2D(0, 5))
+            new Worker(nodes[0]),
+            new Worker(nodes[1])
         };
 
         Task[] tasks =
         {
-            new Task(new Vector2D(0, 10)),
-            new Task(new Vector2D(0, 0))
+            new Task(nodes[2]),
+            new Task(nodes[3])
         };
 
         PrintPositionTable(workers, tasks);
 
-        double[,] costTable = GetCostTable(workers, tasks);
+        List<GraphPoint> costGrahpPoints = new();
 
-        Solve(costTable);
+        double[,] costTable = GetCostTable(workers, tasks, costGrahpPoints);
+
+        Solve(costTable, costGrahpPoints);
     }
 
     private static void ExampleWithRandomVectors(int numWorkers = 2, int numTasks = 2)
     {
-        Worker[] workers = new Worker[numWorkers];
-        Task[] tasks = new Task[numTasks];
+        Node[] nodes = new Node[numWorkers + numTasks];
+        Utils.FillArray(nodes, (i) => new Node(RandomVector2D()));
 
-        Utils.InitArray(workers, (i) => new Worker(RandomVector2D()));
-        Utils.InitArray(tasks, (i) => new Task(RandomVector2D()));
+        Worker[] workers = new Worker[numWorkers];
+        Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
+
+        Task[] tasks = new Task[numTasks];
+        Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
 
         PrintPositionTable(workers, tasks);
 
-        double[,] costTable = GetCostTable(workers, tasks);
+        List<GraphPoint> costGrahpPoints = new();
 
-        Solve(costTable);
+        double[,] costTable = GetCostTable(workers, tasks, costGrahpPoints);
+
+        Solve(costTable, costGrahpPoints);
     }
 
     private static Vector2D RandomVector2D()
@@ -65,17 +68,23 @@ internal class Program
 
     private static void PrintPositionTable(Worker[] workers, Task[] tasks)
     {
-        double[,] tableWorkers = new double[workers.Length, 2];
-        double[,] tableTasks = new double[tasks.Length, 2];
-        string [] header = { "", "X", "Y" };
-        List<Node> nodes = new();
+        List<GraphPoint> points = new();
 
-        for (int i = 0; i < workers.Length; i++)
+        double[,] tableWorkers = new double[ workers.Length, 2 ];
+        Utils.FillArray2D(tableWorkers, (index) =>
         {
-            nodes.Add(workers[ i ]);
-            tableWorkers[ i, 0 ] = workers[ i ].Position.X;
-            tableWorkers[ i, 1 ] = workers[ i ].Position.Y;
-        }
+            points.Add(new GraphPoint(workers[ index ].Node.Position, ConsoleColor.Blue, $"W{index}"));
+            return new double[] { workers[ index ].Node.Position.X, workers[ index ].Node.Position.Y };
+        });
+
+        double[,] tableTasks = new double[ tasks.Length, 2 ];
+        Utils.FillArray2D(tableTasks, (index) =>
+        {
+            points.Add(new GraphPoint(tasks[ index ].Node.Position, ConsoleColor.Red, $"T{index}"));
+            return new double[] { tasks[ index ].Node.Position.X, tasks[ index ].Node.Position.Y };
+        });
+
+        string [] header = { "", "X", "Y" };
 
         Console.WriteLine();
         Console.WriteLine("Worker Positions:");
@@ -83,46 +92,36 @@ internal class Program
 
         Utils.PrintTable(tableWorkers, header);
 
-        for (int i = 0; i < tasks.Length; i++)
-        {
-            nodes.Add(tasks[ i ]);
-            tableTasks[ i, 0 ] = tasks[ i ].Position.X;
-            tableTasks[ i, 1 ] = tasks[ i ].Position.Y;
-        }
-
         Console.WriteLine();
         Console.WriteLine("Task Positions:");
         Console.WriteLine();
 
         Utils.PrintTable(tableTasks, header, "Task");
-        Utils.DrawChart(nodes);
+        Utils.DrawChart(points);
 
     }
 
-    private static double[,] GetCostTable(Worker[] workers, Task[] tasks)
+    private static double[,] GetCostTable(Worker[] workers, Task[] tasks, List<GraphPoint> costGrahpPoints)
     {
-        double[,] costs = new double[workers.Length, tasks.Length];
+        double[,] costs = new double[ workers.Length, tasks.Length ];
 
-        for (int i = 0; i < workers.Length; i++)
+        for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
         {
-            Worker worker = workers[i];
-            for (int j = 0; j < tasks.Length; j++)
+            Worker worker = workers[workerIndex];
+            costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, 0), ConsoleColor.Blue, $"W{workerIndex}"));
+
+            for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
             {
-                Task task = tasks[j];
-                costs[ i, j ] = Vector2D.Distance(worker.Position, task.Position);
+                Task task = tasks[taskIndex];
+                costs[ workerIndex, taskIndex ] = Vector2D.Distance(worker.Node.Position, task.Node.Position);
+                costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, costs[ workerIndex, taskIndex ]), (ConsoleColor) taskIndex + 10, $"T{taskIndex} ({costs[ workerIndex, taskIndex ]:0.##})"));
             }
         }
-
-        Console.WriteLine();
-        Console.WriteLine("Costs Table:");
-        Console.WriteLine();
-
-        Utils.PrintTable(costs);
 
         return costs;
     }
 
-    private static void Solve(double[,] costs)
+    private static void Solve(double[,] costs, List<GraphPoint>? costGrahpPoints = null)
     {
         int numWorkers = costs.GetLength(0);
         int numTasks = costs.GetLength(1);
@@ -180,20 +179,57 @@ internal class Program
         // Check that the problem has a feasible solution.
         if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
         {
-            double[,] table = new double[assignments.GetLength(0), assignments.GetLength(1)];
-            for (int i = 0; i < assignments.GetLength(0); i++)
+            double[,] assignmentTable = new double[ assignments.GetLength(0) , assignments.GetLength(1) ];
+            Utils.FillArray2D(assignmentTable, (i) =>
             {
-                for (int j = 0; j < assignments.GetLength(1); j++)
+                double[] tmp = new double[assignments.GetLength(1)];
+                Utils.FillArray(tmp, (j) =>
                 {
                     double value = assignments[ i, j ].SolutionValue();
-                    table[ i, j ] = value;
-                }
+                    double cost = costs[ i, j ];
+                    if (value > 0.5 && costGrahpPoints is not null)
+                    {
+                        int index = (i * (numTasks + 1))  + j + 1;
+                        if (cost < 1)
+                        {
+                            GraphPoint t = costGrahpPoints[ index ];
+                            index = i * (numTasks + 1);
+                            costGrahpPoints[ index ].Label = "[" + t.Label + "]";
+                            costGrahpPoints[ index ].Color = t.Color;
+                        }
+                        else
+                        {
+                            costGrahpPoints[ index ].Label = "[" + costGrahpPoints[ index ].Label + "]";
+                        }
+                    }
+
+                    return value;
+                });
+
+                return tmp;
+            });
+
+            Console.WriteLine();
+            Console.WriteLine("Costs Table:");
+            Console.WriteLine();
+
+            Utils.PrintTable(costs);
+            Console.WriteLine();
+            Console.WriteLine($"{Utils.Factorial(numWorkers)} Possibilities");
+
+            if (costGrahpPoints is not null)
+            {
+                /*double totalCosts = solver.Objective().Value();
+                costGrahpPoints.Add(new GraphPoint(new Vector2D(numWorkers, 0), ConsoleColor.DarkBlue, "Minimal Costs"));
+                costGrahpPoints.Add(new GraphPoint(new Vector2D(numWorkers, totalCosts), ConsoleColor.DarkBlue, $"{totalCosts:0.##}"));*/
+                Console.WriteLine();
+                Utils.DrawChart(costGrahpPoints, false);
             }
 
             Console.WriteLine();
             Console.WriteLine("Assignment Table:");
             Console.WriteLine();
-            Utils.PrintTable(table);
+            Utils.PrintTable(assignmentTable);
             Console.WriteLine();
 
             Console.WriteLine($"Total cost: {solver.Objective().Value():#.##}\n");

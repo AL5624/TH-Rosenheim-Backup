@@ -1,7 +1,20 @@
 ﻿namespace AssignmentExample1;
-internal class Worker : Node
+internal class Worker
 {
-    public Worker(Vector2D position, ConsoleColor consoleColor = ConsoleColor.Blue) : base(position, consoleColor)
+    private Node node;
+    public Node Node { get => node; set => SetNode(value); }
+
+    public Worker(Node node)
     {
+        this.node = node;
+        node.Workers.Add(this);
+    }
+
+    private void SetNode(Node node)
+    {
+        this.node.Workers.Remove(this);
+        node.Workers.Add(this);
+
+        this.node = node;
     }
 }
