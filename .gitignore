@@ -1,7 +1,11 @@
+.*
+*.iml
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+*-git/
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,linux,aspnetcore,csharp,rider,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,linux,aspnetcore,csharp,rider,visualstudiocode,visualstudio
