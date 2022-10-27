@@ -1,4 +1,0 @@
-﻿  mainfile.c
-c:\users\anton\documents\fh-rosenheim\inf\b1\prozp (prozeduale programmierung)\übungen\ü5\adt listen v2\bruchrechnung\bruchrechnung\mainfile.c(106): warning C4477: "scanf": Die Formatzeichenfolge "%d" erfordert ein Argument vom Typ "int *", das variadic-Argument "1" weist aber den Typ "int" auf.
-c:\users\anton\documents\fh-rosenheim\inf\b1\prozp (prozeduale programmierung)\übungen\ü5\adt listen v2\bruchrechnung\bruchrechnung\mainfile.c(106): warning C4700: Die nicht initialisierte lokale Variable "g" wurde verwendet.
-  bruchrechnung.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\INF\B1\ProzP (Prozeduale Programmierung)\Übungen\Ü5\ADT Listen V2\bruchrechnung\Debug\bruchrechnung.exe
