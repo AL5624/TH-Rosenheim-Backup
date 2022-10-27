@@ -27,7 +27,7 @@ internal class Utils
         }
         else
         {
-            PrintHeader(table.GetLength(0));
+            PrintHeader(table.GetLength(1));
         }
 
         PrintLine();
@@ -295,5 +295,10 @@ internal class Utils
     {
         int r = x%m;
         return r < 0 ? r + m : r;
+    }
+
+    public static int RandomInt(int lb, int ub)
+    {
+        return new Random().Next(lb, ub);
     }
 }

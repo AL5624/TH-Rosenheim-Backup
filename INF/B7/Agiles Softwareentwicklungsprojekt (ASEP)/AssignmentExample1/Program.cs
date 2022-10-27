@@ -6,8 +6,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int num = 4;
-        ExampleWithRandomVectors(num, num);
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+        int numWorkers = Utils.RandomInt(1, 7);
+        int numTasks = Utils.RandomInt(1, 7);
+        Console.WriteLine("Number of Workers: " + numWorkers);
+        Console.WriteLine("Number of Tasks: " + numTasks);
+        ExampleWithRandomVectors(numWorkers, numTasks);
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
+        Console.WriteLine("Duration: " + elapsedMs + " ms");
     }
 
     private static void FixedExampleOfMeeting(int numWorkers = 2, int numTasks = 2)
@@ -52,13 +59,21 @@ internal class Program
         Task[] tasks = new Task[numTasks];
         Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
 
-        PrintPositionTable(workers, tasks);
+        if (IsPrintable(numWorkers, numTasks))
+        {
+            PrintPositionTable(workers, tasks);
+        }
 
-        List<GraphPoint> costGrahpPoints = new();
+        List<GraphPoint>? costGrahpPoints = IsPrintable(numWorkers, numTasks) ? new() : null;
 
         double[,] costTable = GetCostTable(workers, tasks, costGrahpPoints);
 
         Solve(costTable, costGrahpPoints);
+    }
+
+    private static bool IsPrintable(int numWorkers, int numTasks)
+    {
+        return numWorkers < 8 && numTasks < 8;
     }
 
     private static Vector2D RandomVector2D()
@@ -101,20 +116,26 @@ internal class Program
 
     }
 
-    private static double[,] GetCostTable(Worker[] workers, Task[] tasks, List<GraphPoint> costGrahpPoints)
+    private static double[,] GetCostTable(Worker[] workers, Task[] tasks, List<GraphPoint>? costGrahpPoints)
     {
         double[,] costs = new double[ workers.Length, tasks.Length ];
 
         for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
         {
             Worker worker = workers[workerIndex];
-            costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, 0), ConsoleColor.Blue, $"W{workerIndex}"));
+            if (costGrahpPoints is not null)
+            {
+                costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, 0), ConsoleColor.Blue, $"W{workerIndex}"));
+            }
 
             for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
             {
                 Task task = tasks[taskIndex];
                 costs[ workerIndex, taskIndex ] = Vector2D.Distance(worker.Node.Position, task.Node.Position);
-                costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, costs[ workerIndex, taskIndex ]), (ConsoleColor) taskIndex + 10, $"T{taskIndex} ({costs[ workerIndex, taskIndex ]:0.##})"));
+                if (costGrahpPoints is not null)
+                {
+                    costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, costs[ workerIndex, taskIndex ]), (ConsoleColor) taskIndex + 10, $"T{taskIndex} ({costs[ workerIndex, taskIndex ]:0.##})"));
+                }
             }
         }
 
@@ -146,7 +167,7 @@ internal class Program
         // Each worker is assigned to at most one task.
         for (int i = 0; i < numWorkers; ++i)
         {
-            Constraint constraint = solver.MakeConstraint(0, 1, "");
+            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 1 : 0, 1, "");
             for (int j = 0; j < numTasks; ++j)
             {
                 constraint.SetCoefficient(assignments[ i, j ], 1);
@@ -156,7 +177,7 @@ internal class Program
         // Each task is assigned to exactly one worker.
         for (int j = 0; j < numTasks; ++j)
         {
-            Constraint constraint = solver.MakeConstraint(1, 1, "");
+            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
             for (int i = 0; i < numWorkers; ++i)
             {
                 constraint.SetCoefficient(assignments[ i, j ], 1);
@@ -213,9 +234,12 @@ internal class Program
             Console.WriteLine("Costs Table:");
             Console.WriteLine();
 
-            Utils.PrintTable(costs);
+            if (IsPrintable(numWorkers, numTasks))
+            {
+                Utils.PrintTable(costs);
+            }
             Console.WriteLine();
-            Console.WriteLine($"{Utils.Factorial(numWorkers)} Possibilities");
+            // Console.WriteLine($"{Utils.Factorial(numWorkers)} Possibilities");
 
             if (costGrahpPoints is not null)
             {
@@ -229,10 +253,13 @@ internal class Program
             Console.WriteLine();
             Console.WriteLine("Assignment Table:");
             Console.WriteLine();
-            Utils.PrintTable(assignmentTable);
+            if (IsPrintable(numWorkers, numTasks))
+            {
+                Utils.PrintTable(assignmentTable);
+            }
             Console.WriteLine();
 
-            Console.WriteLine($"Total cost: {solver.Objective().Value():#.##}\n");
+            Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
             for (int i = 0; i < numWorkers; ++i)
             {
                 for (int j = 0; j < numTasks; ++j)
@@ -241,7 +268,7 @@ internal class Program
                     // arithmetic).
                     if (assignments[ i, j ].SolutionValue() > 0.5)
                     {
-                        Console.WriteLine($"Worker {i} assigned to Task {j}. Cost: {costs[ i, j ]:#.##}");
+                        Console.WriteLine($"Worker {i} assigned to Task {j}. Cost: {costs[ i, j ]:0.##}");
                     }
                 }
             }
