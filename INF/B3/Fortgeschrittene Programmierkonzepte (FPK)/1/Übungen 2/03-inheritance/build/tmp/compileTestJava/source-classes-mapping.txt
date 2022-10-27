@@ -1,0 +1,3 @@
+de/thro/inf/prg3/a03/tests/CatTest.java
+ de.thro.inf.prg3.a03.tests.CatTest
+ de.thro.inf.prg3.a03.tests.CatTest$1

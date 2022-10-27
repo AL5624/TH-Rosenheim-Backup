@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.thro.inf.prg3.a04.collections.SimpleListTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-11-07T17:37:25" hostname="DESKTOP-F11KS2C" time="0.035">
+  <properties/>
+  <testcase name="testFilterAnonymousClass()" classname="de.thro.inf.prg3.a04.collections.SimpleListTest" time="0.02"/>
+  <testcase name="testAddElements()" classname="de.thro.inf.prg3.a04.collections.SimpleListTest" time="0.002"/>
+  <testcase name="testFilterLambda()" classname="de.thro.inf.prg3.a04.collections.SimpleListTest" time="0.004"/>
+  <testcase name="testSize()" classname="de.thro.inf.prg3.a04.collections.SimpleListTest" time="0.001"/>
+  <testcase name="testAddEmpty()" classname="de.thro.inf.prg3.a04.collections.SimpleListTest" time="0.003"/>
+  <system-out><![CDATA[18:37:25.962 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing the filter possibilities by filtering for all elements greater 2
+18:37:25.977 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing if adding and iterating elements is implemented correctly
+18:37:25.979 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing the filter possibilities by filtering for all elements which are dividable by 2
+18:37:25.984 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing if size() method is implemented correctly
+18:37:25.987 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing to add a new empty list element
+18:37:25.989 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Person: Person{firstName='null', lastName='null'}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

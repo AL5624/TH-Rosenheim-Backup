@@ -1,0 +1,6 @@
+ù18:37:25.962 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing the filter possibilities by filtering for all elements greater 2
+ñ18:37:25.977 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing if adding and iterating elements is implemented correctly
+¨18:37:25.979 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing the filter possibilities by filtering for all elements which are dividable by 2
+Ü18:37:25.984 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing if size() method is implemented correctly
+|18:37:25.987 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Testing to add a new empty list element
+Ü18:37:25.989 [Test worker] INFO  de.thro.inf.prg3.a04.collections.SimpleListTest - Person: Person{firstName='null', lastName='null'}

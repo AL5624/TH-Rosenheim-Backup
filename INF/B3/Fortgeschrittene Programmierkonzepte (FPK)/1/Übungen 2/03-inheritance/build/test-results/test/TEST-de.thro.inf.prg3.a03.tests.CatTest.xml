@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.thro.inf.prg3.a03.tests.CatTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-11-01T10:22:19" hostname="DESKTOP-F11KS2C" time="0.345">
+  <properties/>
+  <testcase name="testAnimalGettingPlayful()" classname="de.thro.inf.prg3.a03.tests.CatTest" time="0.314"/>
+  <testcase name="testAnimalIsGoingToSleepAgain()" classname="de.thro.inf.prg3.a03.tests.CatTest" time="0.012"/>
+  <testcase name="testFeedHungryAnimal()" classname="de.thro.inf.prg3.a03.tests.CatTest" time="0.006"/>
+  <testcase name="testFeedNotHungryAnimal()" classname="de.thro.inf.prg3.a03.tests.CatTest" time="0.002"/>
+  <testcase name="testAnimalDying()" classname="de.thro.inf.prg3.a03.tests.CatTest" time="0.006"/>
+  <system-out><![CDATA[11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.State - Yoan... getting hungry!
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - You feed the cat...
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.State - Getting in a playful mood!
+11:22:19.575 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.State - Yoan... getting hungry!
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - You feed the cat...
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DigestingState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.State - Getting in a playful mood!
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.590 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - PlayfulState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.State - Yoan... getting tired!
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.State - Yoan... getting hungry!
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - You feed the cat...
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.606 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - SleepingState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.State - Yoan... getting hungry!
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - HungryState
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - tick()
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.State - I've starved for a too long time...good bye...
+11:22:19.621 [Test worker] INFO  de.thro.inf.prg3.a03.Cat - DeathState
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

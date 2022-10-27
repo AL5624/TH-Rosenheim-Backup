@@ -1,0 +1,19 @@
+@startuml Waiter
+
+package java.lang {
+    interface Runnable {
+        run();
+    }
+}
+
+package de.thro.inf.prg3.a10.kitchen.workers {
+
+    +class Waiter implements Runnable {
+        -name: String
+        -progressReporter: ProgressReporter
+        -IKitchenHatch: KitchenHatch
+        +Waiter(name: String, IKitchenHatch: KitchenHatch, progressReporter: ProgressReporter)
+    }
+}
+
+@enduml

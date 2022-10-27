@@ -1,0 +1,18 @@
+@startuml Cook
+
+package java.lang {
+    interface Runnable {
+        run();
+    }
+}
+
+package de.thro.inf.prg3.a10.kitchen.workers {
+    +class Cook implements Runnable {
+        -name: String
+        -progressReporter: ProgressReporter
+        -IKitchenHatch: KitchenHatch
+        +Cook(name: String, IKitchenHatch: KitchenHatch, progressReporter: ProgressReporter)
+    }
+}
+
+@enduml

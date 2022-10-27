@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-06-19T14:41:22" hostname="DESKTOP-F11KS2C" time="0.018">
+  <properties/>
+  <testcase name="testSplitByBedByColorPureness2()" classname="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" time="0.011"/>
+  <testcase name="testSplitByBedByColorResultingSize()" classname="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" time="0.0"/>
+  <testcase name="testPECS()" classname="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" time="0.001"/>
+  <testcase name="testSplitByBedByColorPureness()" classname="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" time="0.001"/>
+  <testcase name="testPecs_with_filter()" classname="de.thro.inf.prg3.a04.utils.PlantBedUtilityTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

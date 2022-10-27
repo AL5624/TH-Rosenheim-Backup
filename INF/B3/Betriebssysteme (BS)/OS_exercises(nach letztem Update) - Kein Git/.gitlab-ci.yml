@@ -1,7 +1,0 @@
-image: tutum/curl
-
-run:
-  script:
-  - curl -s --insecure --header "PRIVATE-TOKEN:$token" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/members/all" | grep -Po '(?<=\{"id":)(\d+)' | while read -r id; do curl -s --insecure --header "PRIVATE-TOKEN:$token" "$CI_API_V4_URL/users/$id" | grep -Po '(?<="email":")(.+?(?="))'; done | tr '\n\r' ' ' > emails.txt
-  artifacts:
-    untracked: true

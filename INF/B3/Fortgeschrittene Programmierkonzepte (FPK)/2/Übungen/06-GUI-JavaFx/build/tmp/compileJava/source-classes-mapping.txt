@@ -1,0 +1,4 @@
+de/thro/inf/prg3/a06/model/Person.java
+ de.thro.inf.prg3.a06.model.Person
+de/thro/inf/prg3/a06/App.java
+ de.thro.inf.prg3.a06.App

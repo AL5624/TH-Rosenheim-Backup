@@ -1,3 +1,0 @@
-﻿  funktionen.c
-c:\users\anton\documents\fh-rosenheim\prozp (prozeduale programmierung)\übungen\ü7\zahlenraten\zahlenraten\zahlenraten\funktionen.c(32): warning C4013: "rand" undefiniert; Annahme: extern mit Rückgabetyp int
-  zahlenraten.vcxproj -> C:\Users\Anton\Documents\Fh-Rosenheim\ProzP (Prozeduale Programmierung)\Übungen\Ü7\zahlenraten\zahlenraten\Debug\zahlenraten.exe

@@ -16,12 +16,7 @@ internal class Vector2D
 
     public static Vector2D RandomPosition(int lb = 0, int ub = 10)
     {
-        return new Vector2D(RandomInt(lb, ub), RandomInt(lb, ub));
-    }
-
-    private static int RandomInt(int lb, int ub)
-    {
-        return new Random().Next(lb, ub);
+        return new Vector2D(Utils.RandomInt(lb, ub), Utils.RandomInt(lb, ub));
     }
 
     public static double Distance(Vector2D v1, Vector2D v2)
