@@ -1,0 +1,2 @@
+add_subdirectory(polynomial_tests)
+add_subdirectory(rotate_tests)

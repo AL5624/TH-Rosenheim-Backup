@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Anton\Documents\Fh-Rosenheim\TH-Rosenheim-Backup\INF\PrgT\Cpp\01-cpp-introduction\polynomial\polynomial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Anton\Documents\Fh-Rosenheim\TH-Rosenheim-Backup\INF\PrgT\Cpp\01-cpp-introduction\polynomial\polynomial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Anton\Documents\Fh-Rosenheim\TH-Rosenheim-Backup\INF\PrgT\Cpp\01-cpp-introduction\polynomial\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{01DEE554-78BD-3794-ACB5-96FE4EE5678C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4D9AB30E-0C53-36F4-A558-E6825D723961}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

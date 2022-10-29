@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Anton\Documents\Fh-Rosenheim\TH-Rosenheim-Backup\INF\PrgT\Cpp\00-toolchain-setup\googletest\googletest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Anton\Documents\Fh-Rosenheim\TH-Rosenheim-Backup\INF\PrgT\Cpp\00-toolchain-setup\googletest\googletest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AE16D92D-C64B-3FA1-A107-9CF9EB76D37E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

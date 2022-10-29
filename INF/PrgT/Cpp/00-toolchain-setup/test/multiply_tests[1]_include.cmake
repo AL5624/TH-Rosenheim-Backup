@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Anton/Documents/Fh-Rosenheim/TH-Rosenheim-Backup/INF/PrgT/Cpp/00-toolchain-setup/test/multiply_tests[1]_tests.cmake")
+  include("C:/Users/Anton/Documents/Fh-Rosenheim/TH-Rosenheim-Backup/INF/PrgT/Cpp/00-toolchain-setup/test/multiply_tests[1]_tests.cmake")
+else()
+  add_test(multiply_tests_NOT_BUILT multiply_tests_NOT_BUILT)
+endif()

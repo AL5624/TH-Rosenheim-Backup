@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Anton/Documents/Fh-Rosenheim/TH-Rosenheim-Backup/INF/PrgT/Cpp/01-cpp-introduction/tests/rotate_tests/rotate_tests[1]_tests.cmake")
+  include("C:/Users/Anton/Documents/Fh-Rosenheim/TH-Rosenheim-Backup/INF/PrgT/Cpp/01-cpp-introduction/tests/rotate_tests/rotate_tests[1]_tests.cmake")
+else()
+  add_test(rotate_tests_NOT_BUILT rotate_tests_NOT_BUILT)
+endif()
