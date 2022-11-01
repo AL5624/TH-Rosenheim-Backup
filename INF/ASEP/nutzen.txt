@@ -1,0 +1,20 @@
+Beispiel: Autofabrik
+
+Ausgangssituation:
+
+- Roboter sind auf der Fabrikgelände verteilt
+- Es gibt mehrere Eingangshallen auf dem Gelände (an verschiedenen Orten) die Karosserien beinhalten
+- Jede Karosserie muss in eine Lagerhalle gebracht werden
+- Roboter müssen die Karosserien von den Eingangshallen in die Lagerhallen bringen
+
+Ziel:
+
+- Die effizienteste Aufteilung der Roboter auf die Eingangshallen, sodass insgesamt die geringsten Zeitkosten anfallen (Zeitkosten ist die Dauer die der Roboter von seiner derzeitigen Position zur Eingangshalle benötigt)
+
+Nutzen für den Kunden:
+
+* Verbesserung der Produktivität der Fabrik; durch die verbesserte Aufteilung werden mehr Karosserien in der gleichen Zeit transportiert
+
+Nutzen für den Kunden (allgemein formuliert):
+
+- Verbesserung der Produktivität der Produktionsstätte, dadurch verringerte Produktionskosten oder verbesserter Durchsatz (entweder wird das gleiche in weniger Zeit umgesetzt oder es wird mehr in der gleichen Zeit umgesetzt)
