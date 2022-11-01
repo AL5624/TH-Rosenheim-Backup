@@ -1,4 +1,5 @@
 ﻿using Google.OrTools.LinearSolver;
+using Google.Protobuf.Collections;
 
 namespace ExampleOptimizers;
 
@@ -6,14 +7,107 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var watch = System.Diagnostics.Stopwatch.StartNew();
         int numWorkers = Utils.RandomInt(1, 7);
         int numTasks = Utils.RandomInt(1, 7);
         Console.WriteLine("Number of Workers: " + numWorkers);
         Console.WriteLine("Number of Tasks: " + numTasks);
         ExampleWithRandomVectors(numWorkers, numTasks);
+    }
+
+    private void PerformaceExample()
+    {
+        int num = 50;
+        int numWorkers = num;
+        int numTasks = num;
+
+        Node[] nodes = new Node[numWorkers + numTasks];
+        Utils.FillArray(nodes, (i) => new Node(RandomVector2D()));
+
+        Worker[] workers = new Worker[numWorkers];
+        Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
+
+        Task[] tasks = new Task[numTasks];
+        Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
+
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+
+        Solver solver = Solver.CreateSolver("SCIP");
+        if (solver is null)
+        {
+            Console.WriteLine("Could not create Solver.");
+            return;
+        }
+
+        Objective objective = solver.Objective();
+        
+        MapField<Worker, MapField<Task, Variable>> assignments = new();
+
+        for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
+        {
+            Worker worker = workers[workerIndex];
+            MapField<Task, Variable> workerAssignments = new();
+
+            // Each worker is assigned to at most one task if the number of tasks is smaller than the number of worker
+            // Each worker is assigned to exactly one task if the number of tasks is more or equal than the number of worker
+            Constraint constraintWorker = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
+            // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
+            // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
+            Constraint constraintTask = solver.MakeConstraint(numTasks <= numWorkers ? 1 : 0, 1, "");
+
+            for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
+            {
+                Task task = tasks[taskIndex];
+
+                double cost = Vector2D.Distance(worker.Node.Position, task.Node.Position);
+                Variable variable = solver.MakeIntVar(0, 1, $"worker_{workerIndex}_task_{taskIndex}");
+
+                constraintWorker.SetCoefficient(variable, 1);
+                constraintTask.SetCoefficient(variable, 1);
+
+                objective.SetCoefficient(variable, cost);
+
+                workerAssignments.Add(task, variable);
+            }
+
+            assignments.Add(worker, workerAssignments);
+        }
+
+        objective.SetMinimization();
+
+        Solver.ResultStatus resultStatus = solver.Solve();
+
+        // Check that the problem has a feasible solution.
+        if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
+        {
+            for (int i = 0; i < assignments.Count; i++)
+            {
+                KeyValuePair<Worker, MapField<Task, Variable>> element = assignments.ElementAt(i);
+                Worker worker = element.Key;
+                MapField<Task, Variable> workerAssignments = element.Value;
+
+                for (int j = 0; j < workerAssignments.Count; j++)
+                {
+                    KeyValuePair<Task, Variable> element = workerAssignments.ElementAt(j);
+                    Variable variable = element.Value;
+
+                    if (variable.SolutionValue() > 0.5)
+                    {
+                        Task task = element.Key;
+                        worker.AddTask(task);
+                        break;
+                    }
+                }
+            }
+
+            Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
+        }
+        else
+        {
+            Console.WriteLine("No solution found.");
+        }
+
         watch.Stop();
-        var elapsedMs = watch.ElapsedMilliseconds;
+        long elapsedMs = watch.ElapsedMilliseconds;
         Console.WriteLine("Duration: " + elapsedMs + " ms");
     }
 
@@ -164,17 +258,19 @@ internal class Program
             }
         }
 
-        // Each worker is assigned to at most one task.
+        // Each worker is assigned to at most one task if the number of tasks is smaller than the number of worker
+        // Each worker is assigned to exactly one task if the number of tasks is more or equal than the number of worker
         for (int i = 0; i < numWorkers; ++i)
         {
-            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 1 : 0, 1, "");
+            Constraint constraint = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
             for (int j = 0; j < numTasks; ++j)
             {
                 constraint.SetCoefficient(assignments[ i, j ], 1);
             }
         }
 
-        // Each task is assigned to exactly one worker.
+        // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
+        // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
         for (int j = 0; j < numTasks; ++j)
         {
             Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");

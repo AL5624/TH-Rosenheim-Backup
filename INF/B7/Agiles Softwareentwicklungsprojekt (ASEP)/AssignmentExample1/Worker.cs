@@ -17,4 +17,9 @@ internal class Worker
 
         this.node = node;
     }
+
+    public void AddTask(Task task)
+    {
+        // add task to worker
+    }
 }
