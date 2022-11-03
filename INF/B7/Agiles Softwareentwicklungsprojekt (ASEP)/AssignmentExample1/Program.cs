@@ -1,5 +1,6 @@
 ﻿using Google.OrTools.LinearSolver;
 using Google.Protobuf.Collections;
+using System.ComponentModel;
 
 namespace ExampleOptimizers;
 
@@ -7,21 +8,24 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        /*
         int numWorkers = Utils.RandomInt(1, 7);
         int numTasks = Utils.RandomInt(1, 7);
         Console.WriteLine("Number of Workers: " + numWorkers);
         Console.WriteLine("Number of Tasks: " + numTasks);
         ExampleWithRandomVectors(numWorkers, numTasks);
+        */
+        PerformaceExample();
     }
 
-    private void PerformaceExample()
+    private static void PerformaceExample()
     {
-        int num = 50;
+        int num = 500;
         int numWorkers = num;
         int numTasks = num;
 
         Node[] nodes = new Node[numWorkers + numTasks];
-        Utils.FillArray(nodes, (i) => new Node(RandomVector2D()));
+        Utils.FillArray(nodes, (i) => new Node(RandomVector2D(0, num)));
 
         Worker[] workers = new Worker[numWorkers];
         Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
@@ -39,37 +43,34 @@ internal class Program
         }
 
         Objective objective = solver.Objective();
-        
-        MapField<Worker, MapField<Task, Variable>> assignments = new();
 
-        for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
+        Assignment[,] assignments = new Assignment[ numWorkers, numTasks ];
+        for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
         {
             Worker worker = workers[workerIndex];
-            MapField<Task, Variable> workerAssignments = new();
-
-            // Each worker is assigned to at most one task if the number of tasks is smaller than the number of worker
-            // Each worker is assigned to exactly one task if the number of tasks is more or equal than the number of worker
-            Constraint constraintWorker = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
-            // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
-            // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
-            Constraint constraintTask = solver.MakeConstraint(numTasks <= numWorkers ? 1 : 0, 1, "");
-
-            for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
+            Constraint constraint = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
+            for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
             {
                 Task task = tasks[taskIndex];
-
                 double cost = Vector2D.Distance(worker.Node.Position, task.Node.Position);
                 Variable variable = solver.MakeIntVar(0, 1, $"worker_{workerIndex}_task_{taskIndex}");
-
-                constraintWorker.SetCoefficient(variable, 1);
-                constraintTask.SetCoefficient(variable, 1);
-
+                constraint.SetCoefficient(variable, 1);
                 objective.SetCoefficient(variable, cost);
 
-                workerAssignments.Add(task, variable);
+                Assignment assignment = new Assignment(worker, task, variable);
+                assignments[ workerIndex, taskIndex ] = assignment;
             }
+        }
 
-            assignments.Add(worker, workerAssignments);
+        // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
+        // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
+        for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
+        {
+            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
+            for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
+            {
+                constraint.SetCoefficient(assignments[ workerIndex, taskIndex ].variable, 1);
+            }
         }
 
         objective.SetMinimization();
@@ -79,26 +80,6 @@ internal class Program
         // Check that the problem has a feasible solution.
         if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
         {
-            for (int i = 0; i < assignments.Count; i++)
-            {
-                KeyValuePair<Worker, MapField<Task, Variable>> element = assignments.ElementAt(i);
-                Worker worker = element.Key;
-                MapField<Task, Variable> workerAssignments = element.Value;
-
-                for (int j = 0; j < workerAssignments.Count; j++)
-                {
-                    KeyValuePair<Task, Variable> element = workerAssignments.ElementAt(j);
-                    Variable variable = element.Value;
-
-                    if (variable.SolutionValue() > 0.5)
-                    {
-                        Task task = element.Key;
-                        worker.AddTask(task);
-                        break;
-                    }
-                }
-            }
-
             Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
         }
         else
@@ -170,9 +151,9 @@ internal class Program
         return numWorkers < 8 && numTasks < 8;
     }
 
-    private static Vector2D RandomVector2D()
+    private static Vector2D RandomVector2D(int lb = 0, int up = 10)
     {
-        return Vector2D.RandomPosition();
+        return Vector2D.RandomPosition(lb, up);
     }
 
     private static void PrintPositionTable(Worker[] workers, Task[] tasks)

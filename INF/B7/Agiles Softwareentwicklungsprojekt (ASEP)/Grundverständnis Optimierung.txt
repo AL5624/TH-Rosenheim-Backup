@@ -1,0 +1,8 @@
+Dass Gebiet der Optimierung in der angewandten Mathematik beschäftigt sich damit, optimale Parameter eines – meist komplexen – Systems zu finden.
+Das einfachste Optimierungsproblem ist das Auffinden eines Minimums oder Maximums einer differenzierbaren eindimensionalen Funktion f(x), was in der Regel durch Auffinden der Nullstellen der ersten Ableitung gelingt.
+
+Skalare Optimierungsprobleme
+
+Ein skalares Optimierungsproblem lässt sich mathematisch als
+„Minimiere/maximiere f(x) unter der Nebenbedingung x in X“
+darstellen.
