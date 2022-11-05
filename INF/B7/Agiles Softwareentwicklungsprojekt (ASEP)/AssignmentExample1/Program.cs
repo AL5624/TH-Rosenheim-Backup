@@ -1,6 +1,4 @@
 ﻿using Google.OrTools.LinearSolver;
-using Google.Protobuf.Collections;
-using System.ComponentModel;
 
 namespace ExampleOptimizers;
 
@@ -15,7 +13,8 @@ internal class Program
         Console.WriteLine("Number of Tasks: " + numTasks);
         ExampleWithRandomVectors(numWorkers, numTasks);
         */
-        PerformaceExample();
+        FixedExampleOfMeeting();
+        // SatExample.Run();
     }
 
     private static void PerformaceExample()
@@ -33,6 +32,7 @@ internal class Program
         Task[] tasks = new Task[numTasks];
         Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
 
+        Console.WriteLine("Starting Watcher...");
         var watch = System.Diagnostics.Stopwatch.StartNew();
 
         Solver solver = Solver.CreateSolver("SCIP");
@@ -48,16 +48,16 @@ internal class Program
         for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
         {
             Worker worker = workers[workerIndex];
-            Constraint constraint = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
+            Constraint constraintWorker = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
             for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
             {
                 Task task = tasks[taskIndex];
                 double cost = Vector2D.Distance(worker.Node.Position, task.Node.Position);
                 Variable variable = solver.MakeIntVar(0, 1, $"worker_{workerIndex}_task_{taskIndex}");
-                constraint.SetCoefficient(variable, 1);
+                constraintWorker.SetCoefficient(variable, 1);
                 objective.SetCoefficient(variable, cost);
 
-                Assignment assignment = new Assignment(worker, task, variable);
+                Assignment assignment = new Assignment(worker, task, variable, cost);
                 assignments[ workerIndex, taskIndex ] = assignment;
             }
         }
@@ -66,10 +66,10 @@ internal class Program
         // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
         for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
         {
-            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
+            Constraint constraintTask = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
             for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
             {
-                constraint.SetCoefficient(assignments[ workerIndex, taskIndex ].variable, 1);
+                constraintTask.SetCoefficient(assignments[ workerIndex, taskIndex ].variable, 1);
             }
         }
 
@@ -81,6 +81,18 @@ internal class Program
         if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
         {
             Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
+            for (int i = 0; i < numWorkers; i++)
+            {
+                for (int j = 0; j < numTasks; j++)
+                {
+                    Assignment assignment = assignments[ i, j ];
+                    if (assignment.variable.SolutionValue() > 0.5)
+                    {
+                        assignment.worker.AddTask(assignment.task);
+                        break;
+                    }
+                }
+            } 
         }
         else
         {
@@ -145,6 +157,7 @@ internal class Program
 
         Solve(costTable, costGrahpPoints);
     }
+
 
     private static bool IsPrintable(int numWorkers, int numTasks)
     {
