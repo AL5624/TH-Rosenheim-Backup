@@ -18,7 +18,7 @@ public:
 
     Shape();
     Shape(std::string name, int x, int y, bool isVisible);
-    ~Shape();
+    virtual ~Shape();
 
     void setName(std::string name);
     void setPosition(int x, int y);

@@ -18,7 +18,7 @@ Circle::Circle(std::string name, int x, int y, bool isVisible, int r) : Shape(na
 }
 
 Circle::~Circle() {
-    Shape::~Shape();
+    std::cout << "Circle deconstructed\n";
 }
 
 // setter
@@ -36,7 +36,7 @@ int Circle::getRadius() {
 // methods
 
 void Circle::printOut() {
-    std::cout << "Circle {";
+    std::cout << "Circle {\n";
     std::cout << "  Name: " << this->getName() << ",\n";
     Position p = this->getPosition();
     std::cout << "  Position: x = " << p.x << ", y = "<< p.y << ",\n";

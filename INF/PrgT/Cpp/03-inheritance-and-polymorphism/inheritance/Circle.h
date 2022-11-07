@@ -15,7 +15,7 @@ public:
 
     Circle();
     Circle(std::string name, int x, int y, bool isVisible, int r);
-    ~Circle();
+    ~Circle() override;
 
     void setRadius(int r);
 
