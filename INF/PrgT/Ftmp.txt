@@ -1,0 +1,54 @@
+Which sensors and their core functionality are installed?
+
+GPS
+ - zur Bestimmung der momentanen Position
+GLONASS (Global Navigation Satellite System)
+ - russisches satellitengestütztes Navigationssystem, das neben dem Global Positioning System (GPS)
+GALILEO
+ - Galileo ist ein weltweit nutzbares Navigationssatelliten- und Zeitgebungssystem (GNSS)
+GARMIN ELEVATE™-TECHNOLOGIE FÜR DIE HERZFREQUENZMESSUNG AM HANDGELENK
+ - Garmin Connect berechnet die maximale Herzfrequenz
+BAROMETRISCHER HÖHENMESSER
+ - barometrische Druckänderungen, um die aktuelle Höhe an einem bestimmten Punkt zu ermitteln
+KOMPASS
+ - kompass
+GYROSKOP
+ - Gyrosensoren messen die Winkelgeschwindigkeit, also die Änderung des Rotationswinkel je Zeiteinheit
+ - Winkelgeschwindigkeit wird in der Regel in °/s (Grad pro Sekunde)
+BESCHLEUNIGUNGSMESSER
+ - Beschleunigungssensor besitzen eine Temperaturkompensation, damit sich die Änderung des Ausgangssignals infolge von Temperaturschwankungen im zulässigen Rahmen bewegt. Temperaturbereich: Dieser wird vom elektronischen Mikroschaltkreis begrenzt, der die elektrische Ladung in ein niederohmiges Ausgangssignal umwandelt.
+THERMOMETER
+ - temperatur messung
+PULSOXIMETER-AKKLIMATISIERUNG
+ - Er misst direkt am Handgelenk die Pulsoximeter-Akklimatisierung und informiert dich über die aktuelle Sauerstoffsättigung deines Blutes**. So kannst du überwachen, wie sich dein Körper an die Höhenluft anpasst und einer gefährlichen Überbeanspruchung vorbeugen, indem du zum Beispiel rechtzeitig Pausen einlegst.
+
+How flexible are the listed fitness tracker in terms of configuring the modules into the fit bit individually?
+
+ - Pair your smartphone with the Garmin Connect™ app (Pairing Your Smartphone).
+ - Set up Wi‑Fi® networks (Connecting to a Wi‑Fi Network).
+ - Set up music (Music).
+ - Set up your Garmin Pay™ wallet (Setting Up Your Garmin Pay Wallet).
+ - Set up safety features (Safety and Tracking Features).
+
+How does our Fitness Tracker compare in price to the of-the-shelf FitBits?
+Our raw costs are currently about 48.30 €.
+
+ - ab 195€
+
+Make a statement as to why a Fitness Tracker is important to you as a group and/or individually.
+What will you use it for?
+
+ - Ich bewege mich nicht viel => nicht viel nutzen
+
+What are your must-have components of a Fitness Tracker?
+
+ - statistik
+ - hydrierung
+ - ernährung
+ - doom sollte laufen
+
+What steps do you think are needed to move the PrgT FitBit towards a wristwatch-based fitness tracker that could be sold commercially?
+
+ - smaller
+ - better looking
+ - better display
