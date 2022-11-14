@@ -1,0 +1,17 @@
+| Aufwand                            | Schätzung in Stunden von |      |
+|------------------------------------|--------------------------|------|
+|                                    | Tobi                     | Leon |
+| Lernen C# / OR-Tools               |                          |      |
+| Raspberry Pi aufsetzen             |                          |      |
+| An Systemumgebung anbinden         |                          |      |
+| Finden aller Beschränkungen        |                          |      |
+| Implementierung von Beschränkungen |                          |      |
+| Code Test                          |                          |      |
+| Code Review                        |                          |      |
+| Präsentation                       |                          |      |
+| Angebot schreiben                  |                          |      |
+| Bericht schreiben                  |                          |      |
+| Workshops                          |                          |      |
+| Coaching                           |                          |      |
+|                                    |                          |      |
+| **Summe**                          |                          |      |

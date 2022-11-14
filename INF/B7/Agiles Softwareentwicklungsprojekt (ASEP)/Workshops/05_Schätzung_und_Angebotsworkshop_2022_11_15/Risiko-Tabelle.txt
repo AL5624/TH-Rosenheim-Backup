@@ -1,0 +1,11 @@
+Schadenshöhe: 0 - 10
+Eintrittswahrscheinlichkeit: 0% - 100%
+
+| Risiko                                                                               | Schadenshöhe | Eintrittswahrscheinlichkeit |
+|--------------------------------------------------------------------------------------|--------------|-----------------------------|
+| OR-Tools läuft nicht auf Raspberry Pi                                                | 4            | 10%                         |
+| Code / OR-Tools läuft nicht performant genug bei hoher Komplexität                   | 8            | 30%                         |
+| Teamkoordination misslingt (an einem Algorithmus zu arbeiten ist nicht einfach)      | 5            | 25%                         |
+| Code nicht maintainable durch zu hoher Komplexität und unperformanter Programmierung | 2            | 60%                         |
+| Zu wenig Beschränkungen implementiert                                                | 3            | 35%                         |
+| Falsche Umsetzung mit OR-Tools (Framework falsch benutzt)                            | 9            | 30%                         |
