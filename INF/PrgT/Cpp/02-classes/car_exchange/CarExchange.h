@@ -1,6 +1,0 @@
-#ifndef INC_02_CLASSES_CAR_EXCHANGE_H
-#define INC_02_CLASSES_CAR_EXCHANGE_H
-
-//TODO 2.3: Define the CarExchange class
-
-#endif //INC_02_CLASSES_CAR_EXCHANGE_H

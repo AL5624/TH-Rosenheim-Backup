@@ -1,3 +1,4 @@
+#pragma once
 #ifndef INC_02_CLASSES_DICE_H
 #define INC_02_CLASSES_DICE_H
 

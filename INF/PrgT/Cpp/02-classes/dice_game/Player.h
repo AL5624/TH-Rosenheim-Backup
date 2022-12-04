@@ -1,3 +1,4 @@
+#pragma once
 #ifndef INC_02_CLASSES_PLAYER_H
 #define INC_02_CLASSES_PLAYER_H
 #include "Dice.h"

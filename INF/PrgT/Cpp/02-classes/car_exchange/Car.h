@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef INC_02_CLASSES_CAR_H
 #define INC_02_CLASSES_CAR_H
 #include <string>
@@ -29,7 +31,7 @@ public:
 
 	void setLicensePlate(std::string);
 
-	std::string show();
+	void show();
 };
 
 #endif //INC_02_CLASSES_CAR_H

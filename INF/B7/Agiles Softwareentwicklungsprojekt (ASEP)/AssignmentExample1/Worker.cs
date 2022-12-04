@@ -4,6 +4,8 @@ internal class Worker
     private Node node;
     public Node Node { get => node; set => SetNode(value); }
 
+    public List<Task> Tasks;
+
     public Worker(Node node)
     {
         this.node = node;

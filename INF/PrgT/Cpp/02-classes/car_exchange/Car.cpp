@@ -5,7 +5,7 @@
 
 const std::string d = "n.a.";
 
-Car::Car() : brand(d), owner(d), licensePlate(d) {};
+Car::Car():Car(d, d, d) {};
 
 Car::Car(std::string b, std::string o, std::string lp) : brand(b), owner(o), licensePlate(lp) {
 	std::cout << "Car created;\n";
@@ -39,7 +39,7 @@ void Car::setLicensePlate(std::string value) {
 	licensePlate = value;
 }
 
-std::string Car::show() {
+void Car::show() {
 	std::cout << "Brand: " << brand << "Owner: " << owner << "License Plate: " << licensePlate << ";\n";
 };
 

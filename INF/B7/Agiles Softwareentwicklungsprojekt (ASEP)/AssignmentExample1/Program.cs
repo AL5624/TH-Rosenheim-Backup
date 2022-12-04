@@ -1,4 +1,5 @@
 ﻿using Google.OrTools.LinearSolver;
+using Google.Protobuf.Collections;
 
 namespace ExampleOptimizers;
 
@@ -6,15 +7,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var watch = System.Diagnostics.Stopwatch.StartNew();
-        int numWorkers = Utils.RandomInt(1, 7);
-        int numTasks = Utils.RandomInt(1, 7);
-        Console.WriteLine("Number of Workers: " + numWorkers);
-        Console.WriteLine("Number of Tasks: " + numTasks);
-        ExampleWithRandomVectors(numWorkers, numTasks);
-        watch.Stop();
-        var elapsedMs = watch.ElapsedMilliseconds;
-        Console.WriteLine("Duration: " + elapsedMs + " ms");
+        const int num = 100;
+        PerformanceExample(num, num);
     }
 
     private static void FixedExampleOfMeeting(int numWorkers = 2, int numTasks = 2)
@@ -48,6 +42,87 @@ internal class Program
         Solve(costTable, costGrahpPoints);
     }
 
+    private static void PerformanceExample(int numWorkers = 2, int numTasks = 2)
+    {
+        Solver solver = Solver.CreateSolver("SCIP");
+        if (solver is null)
+        {
+            return;
+        }
+
+        Node[] nodes = new Node[ numWorkers + numTasks ];
+        Utils.FillArray(nodes, (i) => new Node(RandomVector2D(0, numWorkers + numTasks)));
+
+        Worker[] workers = new Worker[numWorkers];
+        Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
+
+        Task[] tasks = new Task[numTasks];
+        Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
+
+        System.Diagnostics.Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
+
+        Variable[,] assignments = new Variable[numWorkers, numTasks];
+
+        Objective objective = solver.Objective();
+
+        MapField<Worker, MapField<Task, Variable>> vars = new();
+
+        for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
+        {
+            Worker worker = workers[workerIndex];
+            MapField<Task, Variable> keyValuePairs = new();
+
+            Constraint constraintWorker = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
+            Constraint constraintTask = solver.MakeConstraint(numTasks <= numWorkers ? 1 : 0, 1, "");
+            for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
+            {
+                Task task = tasks[taskIndex];
+                double cost = Vector2D.Distance(worker.Node.Position, task.Node.Position);
+                Variable assignment = solver.MakeIntVar(0, 1, $"worker_{workerIndex}_task_{taskIndex}");
+                constraintWorker.SetCoefficient(assignment, 1);
+                constraintTask.SetCoefficient(assignment, 1);
+                objective.SetCoefficient(assignment, cost);
+                keyValuePairs.Add(task, assignment);
+            }
+
+            vars.Add(worker, keyValuePairs);
+        }
+
+        objective.SetMinimization();
+
+        Solver.ResultStatus resultStatus = solver.Solve();
+
+        for (int i = 0; i < vars.Count; i++)
+        {
+            Worker worker = vars.ElementAt(i).Key;
+            MapField<Task, Variable> inner = vars.ElementAt(i).Value;
+            for (int j = 0; j < inner.Count; j++)
+            {
+                Task task = inner.ElementAt(j).Key;
+                Variable assignment = inner.ElementAt(j).Value;
+                if (assignment.SolutionValue() > 0.5)
+                {
+                    worker.Tasks.Add(task);
+                    break;
+                }
+            }
+        }
+
+        watch.Stop();
+
+        long elapsedMs = watch.ElapsedMilliseconds;
+        Console.WriteLine("Duration: " + elapsedMs + " ms\n\n");
+
+        if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
+        {
+            Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
+        }
+        else
+        {
+            Console.WriteLine("No solution found.");
+        }
+    }
+
     private static void ExampleWithRandomVectors(int numWorkers = 2, int numTasks = 2)
     {
         Node[] nodes = new Node[numWorkers + numTasks];
@@ -76,9 +151,9 @@ internal class Program
         return numWorkers < 8 && numTasks < 8;
     }
 
-    private static Vector2D RandomVector2D()
+    private static Vector2D RandomVector2D(int lb = 0, int ub = 10)
     {
-        return Vector2D.RandomPosition();
+        return Vector2D.RandomPosition(lb, ub);
     }
 
     private static void PrintPositionTable(Worker[] workers, Task[] tasks)
@@ -238,6 +313,7 @@ internal class Program
             {
                 Utils.PrintTable(costs);
             }
+
             Console.WriteLine();
             // Console.WriteLine($"{Utils.Factorial(numWorkers)} Possibilities");
 
@@ -257,6 +333,7 @@ internal class Program
             {
                 Utils.PrintTable(assignmentTable);
             }
+
             Console.WriteLine();
 
             Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
