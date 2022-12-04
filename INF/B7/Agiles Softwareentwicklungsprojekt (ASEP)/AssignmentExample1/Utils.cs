@@ -280,6 +280,17 @@ internal class Utils
         Console.WriteLine();
     }
 
+    public static List<T> ArrayToList<T>(T[] array)
+    {
+        List<T> result = new();
+        for (int i = 0; i < array.Length; i++)
+        {
+            result.Add(array[i]);
+        }
+
+        return result;
+    }
+
     public static int Factorial(int num)
     {
         int result = num;

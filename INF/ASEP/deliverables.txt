@@ -1,0 +1,7 @@
+| Ziel | Produkt | Wie? | Wann? |
+|---|---|---|---|
+| Den besten Algorithmus für unser Problem finden | Information | Verschiedene Algorithem testen und evaluieren welcher die Akzeptanzkriterien am besten erfüllt | 08.10.2022 |
+| Erstes einfaches Problem mit Algorithmus lösen zur Einarbeitung | Fähige Arbeitskräfte | Programmieren | 08.10.2022 |
+
+Weitere Deliverables werden erst zum nächsten Meeting mit dem Kunden am 08.10.2022 bekannt.
+

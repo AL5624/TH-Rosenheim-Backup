@@ -1,0 +1,2 @@
+add_subdirectory(inheritance_tests)
+add_subdirectory(virtual_methods_and_polymorphism_tests)

@@ -1,0 +1,11 @@
+1. Producer Consumer Problem
+2. Producer Consumer Problem mit Promise & Future
+3. Vor- und Nachteile von Promise & Future
+4. Promise Methoden
+5. Future Methoden
+6. Deadlock
+
+
+Future und Promise sind Klassen, die das asynchrone Programmieren mit parallelen Threads, die das Producer Consumer Problem haben, vereinfacht.
+Es wird die Grundfunktionalität beider Klassen begutachtet und auf Basis dieser, fortschritlichere Konzepte vorgeführt.
+Außerdem werden Vor- und Nachteile, sowie potentielle Gefahren evaluiert.

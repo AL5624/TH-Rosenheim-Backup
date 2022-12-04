@@ -2,21 +2,30 @@
 internal class Worker
 {
     private Node node;
-    public Node Node { get => node; set => SetNode(value); }
+    public Node Node { get => node; set => node = value; }
 
     public List<Task> Tasks;
 
     public Worker(Node node)
     {
         this.node = node;
-        node.Workers.Add(this);
     }
 
-    private void SetNode(Node node)
+    public uint GetNumberOfAssignableTasks()
     {
-        this.node.Workers.Remove(this);
-        node.Workers.Add(this);
+        return 1;
+    }
 
-        this.node = node;
+    public double AlterCosts(Task task, double cost)
+    {
+        if (cost < task.future)
+            return task.future;
+
+        return cost;
+    }
+
+    public bool IsCompatibleWith(Task task)
+    {
+        return Vector2D.Distance(this.Node.Position, task.Node.Position) > task.future;
     }
 }

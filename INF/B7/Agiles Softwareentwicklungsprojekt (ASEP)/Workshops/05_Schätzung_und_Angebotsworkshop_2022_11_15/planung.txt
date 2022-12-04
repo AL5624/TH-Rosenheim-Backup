@@ -1,0 +1,69 @@
+1.) Ressourcen-Tabelle
+
+ - ca. 6 Meetings
+ - Brainstrom-Timeline
+ - Ressourcen-Tabelle
+
+Brainstorm-Timeline:
+
+Bis Meeting 1:
+ - C# Basiskenntnisse erlangen
+ - OR-Tools Grundfunktionen
+
+Bis Meeting 2:
+ - C# in Kombination mit OR-Tools
+ - Besten OR-Tools Algorithmus evaluieren
+ - Besseres Framework als OR-Tools ermitteln
+ - Lösung für Grundbeispiel ermitteln
+
+Bis Meeting 3:
+ - 
+
+Ressourcen-Tabelle:
+
+| OK | Wir brauchen ...                 | Wir haben ...         | Es fehlt ...          | Wer?                                                       | Wann?      |
+|----|----------------------------------|-----------------------|-----------------------|------------------------------------------------------------|------------|
+| X  | 1 Raspberry Pi                   | 1 Raspberry Pi        |                       | @studweisbe9679                                            |            |
+| X  | 1 SD für Raspberry Pi            | 1 SD                  |                       | @studweisbe9679                                            |            |
+| X  | 1 Kabel für Raspberry Pi         | 1 Kabel               |                       | @studweisbe9679                                            |            |
+| X  | 1 Raspberry Pi                   | 1 Raspberry Pi        |                       | @studweisbe9679                                            |            |
+| X  | C# - Kenntnisse                  | C# - Kenntnisse       |                       | @studweisbe9679 @studvautle6263 @studbertan5624 @sWAtokipf |            |
+| X  | OR-Tools - Kenntnisse            | OR-Tools - Kenntnisse |                       | @studweisbe9679 @studvautle6263 @studbertan5624 @sWAtokipf |            |
+|    | Systemanbindung                  |                       | Anbindung von ScaliRo | ?                                                          | 06.12.2022 |
+
+2.) Brainstorming der Risiken
+
+ - Risiko-Diagramm Arbeit
+ - Risiko-Diagramm Produkt
+
+Schadenshöhe: 0 - 10
+Eintrittswahrscheinlichkeit: 0% - 100%
+
+| Risiko                                                                             | Schadenshöhe | Eintrittswahrscheinlichkeit |
+|------------------------------------------------------------------------------------|--------------|-----------------------------|
+| OR-Tools läuft nicht auf Raspberry Pi                                              | 4            | 10%                         |
+| Code / OR-Tools läuft nicht performant genug bei hoher Komplexität                 | 8            | 30%                         |
+| Teamkoordination misslingt (an einem Algorithmus zu arbeiten ist nicht einfach)    | 5            | 25%                         |
+| Code nicht maintainable durch zu hoher Komplexität und performanter Programmierung | 2            | 60%                         |
+| Zu wenig Beschränkungen implementiert                                              | 3            | 35%                         |
+| Falsche Umsetzung mit OR-Tools (Framework falsch benutzt)                          | 9            | 40%                         |
+
+Risiko-Diagramm Produkt:
+
+| Risiko                          | Schadenshöhe | Eintrittswahrscheinlichkeit |
+|---------------------------------|--------------|-----------------------------|
+| Produkt ist nicht einsatzbereit | 4            | 50%                         |
+|                                 |              |                             |
+
+3.) Aufwandskalkulation
+
+ - Lernen C# / OR-Tools
+ - Raspberry Pi aufsetzen
+ - An Systemumgebung anbinden bzw. nachsimulieren
+ - Finden aller Beschränkungen
+ - Prioritäteneinstufung von Beschränkungen
+ - Implementierung von Grundbeschränkungen
+ - Implementierung von erweiterten Beschränkungen
+ - Code Review
+
+4.) Angebot erstellen
