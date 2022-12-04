@@ -12,7 +12,13 @@ void consumer(std::future<int>& fut) {
 
     utils::print("Consumer: waiting for value");
     // waiting for value
-    int x = fut.get();
+    int x = 0;
+    try {
+       x = fut.get();
+    }
+    catch (const std::exception& e) {
+        utils::print("Exception");
+    }
 
     utils::print("Consumer: Got Value. Working with Value. Value: ", x);
     // some busy work with value

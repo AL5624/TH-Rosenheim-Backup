@@ -1,7 +1,7 @@
 #include <arduino.h>
 
 const int button = PIND2;
-const int debounceMs = 50;
+const int debounceMs = 100;
 
 volatile unsigned long millisLastInterrupt;
 volatile bool buttonPressed;
@@ -21,6 +21,7 @@ void buttonPressedISR() {
     }
     millisLastInterrupt = interruptTime;
 }
+
 /*
  * Everything is set up and set to a known state.
  * The LED pin is set to LOW to ensure that the LED always starts powered off.
@@ -45,7 +46,7 @@ void setup() {
 void loop() {
     // put your main code here, to run repeatedly:
     if (buttonPressed) {
-        Serial.print("Button was pressed.");
+        Serial.println("Button was pressed.");
         buttonPressed = false;
     }
 }

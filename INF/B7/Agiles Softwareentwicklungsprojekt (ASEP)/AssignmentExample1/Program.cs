@@ -1,172 +1,170 @@
 ﻿using Google.OrTools.LinearSolver;
+using Google.Protobuf.Collections;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ExampleOptimizers;
 
 internal class Program
 {
+    private static bool random = false;
     private static void Main(string[] args)
     {
-        /*
-        int numWorkers = Utils.RandomInt(1, 7);
-        int numTasks = Utils.RandomInt(1, 7);
-        Console.WriteLine("Number of Workers: " + numWorkers);
-        Console.WriteLine("Number of Tasks: " + numTasks);
-        ExampleWithRandomVectors(numWorkers, numTasks);
-        */
-        FixedExampleOfMeeting();
-        // SatExample.Run();
+        int numWorker = Utils.RandomInt(1, 8);
+        int numTasks = Utils.RandomInt(1, 8);
+        RandomTest(5, 7);
     }
 
-    private static void PerformaceExample()
+    private static void RandomTest(int numWorkers = 7, int numTasks = 7)
     {
-        int num = 500;
-        int numWorkers = num;
-        int numTasks = num;
-
-        Node[] nodes = new Node[numWorkers + numTasks];
-        Utils.FillArray(nodes, (i) => new Node(RandomVector2D(0, num)));
-
-        Worker[] workers = new Worker[numWorkers];
-        Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
-
-        Task[] tasks = new Task[numTasks];
-        Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
-
-        Console.WriteLine("Starting Watcher...");
-        var watch = System.Diagnostics.Stopwatch.StartNew();
-
-        Solver solver = Solver.CreateSolver("SCIP");
-        if (solver is null)
+        random = true;
+        Node[] nodes = new Node[ numWorkers + numTasks];
+        Utils.FillArray(nodes, (i) =>
         {
-            Console.WriteLine("Could not create Solver.");
-            return;
+            return new Node(Vector2D.RandomPosition(0, numWorkers + numTasks));
+        });
+
+        Worker[] workers = new Worker[ numWorkers ];
+        for (int i = 0; i < numWorkers; i++)
+        {
+            workers[ i ] = new Worker(nodes[ i ]);
         }
 
-        Objective objective = solver.Objective();
-
-        Assignment[,] assignments = new Assignment[ numWorkers, numTasks ];
-        for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
+        Task[] tasks = new Task[ numTasks ];
+        for (int i = numWorkers; i < numWorkers + numTasks; i++)
         {
-            Worker worker = workers[workerIndex];
-            Constraint constraintWorker = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
-            for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
-            {
-                Task task = tasks[taskIndex];
-                double cost = Vector2D.Distance(worker.Node.Position, task.Node.Position);
-                Variable variable = solver.MakeIntVar(0, 1, $"worker_{workerIndex}_task_{taskIndex}");
-                constraintWorker.SetCoefficient(variable, 1);
-                objective.SetCoefficient(variable, cost);
-
-                Assignment assignment = new Assignment(worker, task, variable, cost);
-                assignments[ workerIndex, taskIndex ] = assignment;
-            }
+            tasks[ i - numWorkers ] = new Task(nodes[ i ], "Task " + (i - numWorkers));
         }
 
-        // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
-        // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
-        for (int taskIndex = 0; taskIndex < numTasks; taskIndex++)
-        {
-            Constraint constraintTask = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
-            for (int workerIndex = 0; workerIndex < numWorkers; workerIndex++)
-            {
-                constraintTask.SetCoefficient(assignments[ workerIndex, taskIndex ].variable, 1);
-            }
-        }
-
-        objective.SetMinimization();
-
-        Solver.ResultStatus resultStatus = solver.Solve();
-
-        // Check that the problem has a feasible solution.
-        if (resultStatus is Solver.ResultStatus.OPTIMAL or Solver.ResultStatus.FEASIBLE)
-        {
-            Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
-            for (int i = 0; i < numWorkers; i++)
-            {
-                for (int j = 0; j < numTasks; j++)
-                {
-                    Assignment assignment = assignments[ i, j ];
-                    if (assignment.variable.SolutionValue() > 0.5)
-                    {
-                        assignment.worker.AddTask(assignment.task);
-                        break;
-                    }
-                }
-            } 
-        }
-        else
-        {
-            Console.WriteLine("No solution found.");
-        }
-
-        watch.Stop();
-        long elapsedMs = watch.ElapsedMilliseconds;
-        Console.WriteLine("Duration: " + elapsedMs + " ms");
+        TEST(workers, tasks);
     }
 
-    private static void FixedExampleOfMeeting(int numWorkers = 2, int numTasks = 2)
+    private static void DistanceTasks()
     {
-        Node[] nodes =
-        {
-            new Node(new Vector2D(10, 10)),
-            new Node(new Vector2D(0, 5)),
-            new Node(new Vector2D(0, 10)),
-            new Node(new Vector2D(0, 0))
-        };
+        random = false;
+        Node[] nodes = new Node[6];
+        nodes[ 0 ] = new(new(1, 1));
+        nodes[ 1 ] = new(new(1, 3));
+        nodes[ 2 ] = new(new(1, 5));
+        nodes[ 3 ] = new(new(10, 10));
+        nodes[ 4 ] = new(new(2, 2));
+        nodes[ 5 ] = new(new(2, 4));
 
-        Worker[] workers =
-        {
-            new Worker(nodes[0]),
-            new Worker(nodes[1])
-        };
 
-        Task[] tasks =
-        {
-            new Task(nodes[2]),
-            new Task(nodes[3])
-        };
+        Task[] tasks = new Task[4];
+        tasks[ 0 ] = new Task(nodes[ 0 ], "Task 0");
+        tasks[ 1 ] = new Task(nodes[ 1 ], "Task 1");
+        tasks[ 2 ] = new Task(nodes[ 2 ], "Task 2");
+        tasks[ 3 ] = new Task(nodes[ 3 ], "Task 3");
 
-        PrintPositionTable(workers, tasks);
+        Worker[] workers = new Worker[2];
+        workers[ 0 ] = new Worker(nodes[ 4 ]);
+        workers[ 1 ] = new Worker(nodes[ 5 ]);
 
-        List<GraphPoint> costGrahpPoints = new();
-
-        double[,] costTable = GetCostTable(workers, tasks, costGrahpPoints);
-
-        Solve(costTable, costGrahpPoints);
+        TEST(workers, tasks);
     }
 
-    private static void ExampleWithRandomVectors(int numWorkers = 2, int numTasks = 2)
+    private static void TEST(Worker[] workers, Task[] tasks)
     {
-        Node[] nodes = new Node[numWorkers + numTasks];
-        Utils.FillArray(nodes, (i) => new Node(RandomVector2D()));
-
-        Worker[] workers = new Worker[numWorkers];
-        Utils.FillArray(workers, (i) => new Worker(nodes[ i ]));
-
-        Task[] tasks = new Task[numTasks];
-        Utils.FillArray(tasks, (i) => new Task(nodes[ i + numWorkers ]));
-
-        if (IsPrintable(numWorkers, numTasks))
+        if (IsPrintable(workers.Length, tasks.Length))
         {
             PrintPositionTable(workers, tasks);
         }
 
-        List<GraphPoint>? costGrahpPoints = IsPrintable(numWorkers, numTasks) ? new() : null;
+        int createdTasks = 3;
 
-        double[,] costTable = GetCostTable(workers, tasks, costGrahpPoints);
+        for (int i = 0; i < 10; i++)
+        {
+            List<Worker> workerList = Utils.ArrayToList(workers);
+            List<Task> taskList = Utils.ArrayToList(tasks);
+            SortedDictionary<int, List<Task>> priorityDict = GetPriorityList(taskList);
 
-        Solve(costTable, costGrahpPoints);
+            Console.WriteLine("\nCurrent Round: " + (i + 1));
+
+            Console.WriteLine("\nAvailable Tasks:");
+            taskList.ForEach(task =>
+            {
+                Console.WriteLine(task.Name);
+            });
+
+            Console.WriteLine("\nNumber of Priority Dictionary Lists: " + priorityDict.Count);
+
+            for (int p = priorityDict.Count - 1; p > -1; p--)
+            {
+                Console.WriteLine("\nSelected Priority: " + (priorityDict.ElementAt(p).Key));
+                List<Task> currentTaskList = priorityDict.ElementAt(p).Value;
+                Console.WriteLine("\nCurrent selected Tasks:");
+                currentTaskList.ForEach(task =>
+                {
+                    Console.WriteLine(task.Name + ", Priority: " + task.Priority + ", Future: " + task.future + ", Rounds not taken: " + task.notTakenRounds);
+                });
+
+                List<Assignment> assignments = Solve(workerList, currentTaskList);
+
+                assignments.ForEach(assignment =>
+                {
+                    assignment.workers.ForEach(worker =>
+                    {
+                        workerList.Remove(worker);
+                    });
+
+                    currentTaskList.Remove(assignment.task);
+                    int index = taskList.FindIndex(0, taskList.Count, (t) => t == assignment.task);
+                    if (index > -1)
+                    {
+                        tasks[ index ] = new Task(random ? new Node(Vector2D.RandomPosition(0, workerList.Count + taskList.Count)) : assignment.task.Node, $"Task {++createdTasks}");
+                    }
+                });
+
+                currentTaskList.ForEach(task =>
+                {
+                    task.NotTaken();
+                });
+
+                if (workerList.Count < 1)
+                {
+                    for (int m = 0; m < p; m++)
+                    {
+                        priorityDict.ElementAt(m).Value.ForEach(task =>
+                        {
+                            task.NotTaken();
+                        });
+                    }
+
+                    p = -1;
+                }
+            }
+        }
     }
 
+    private static SortedDictionary<int, List<Task>> GetPriorityList(List<Task> taskList)
+    {
+        SortedDictionary<int, List<Task>> priorityList = new();
+
+        taskList.ForEach(task =>
+        {
+            if (!priorityList.ContainsKey(task.Priority))
+            {
+                priorityList.Add(task.Priority, new());
+            }
+
+            List<Task> ?priority = new();
+
+            priorityList.TryGetValue(task.Priority, out priority);
+
+            if (priority is not null)
+            {
+                priority.Add(task);
+            }
+        });
+
+        return priorityList;
+    }
 
     private static bool IsPrintable(int numWorkers, int numTasks)
     {
         return numWorkers < 8 && numTasks < 8;
-    }
-
-    private static Vector2D RandomVector2D(int lb = 0, int up = 10)
-    {
-        return Vector2D.RandomPosition(lb, up);
     }
 
     private static void PrintPositionTable(Worker[] workers, Task[] tasks)
@@ -204,47 +202,47 @@ internal class Program
 
     }
 
-    private static double[,] GetCostTable(Worker[] workers, Task[] tasks, List<GraphPoint>? costGrahpPoints)
+    private static double[,] GetCostTable(List<Worker> workers, List<Task> tasks)
     {
-        double[,] costs = new double[ workers.Length, tasks.Length ];
+        double[,] costs = new double[ workers.Count, tasks.Count ];
 
-        for (int workerIndex = 0; workerIndex < workers.Length; workerIndex++)
+        for (int workerIndex = 0; workerIndex < workers.Count; workerIndex++)
         {
-            Worker worker = workers[workerIndex];
-            if (costGrahpPoints is not null)
+            Worker worker = workers.ElementAt(workerIndex);
+            for (int taskIndex = 0; taskIndex < tasks.Count; taskIndex++)
             {
-                costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, 0), ConsoleColor.Blue, $"W{workerIndex}"));
-            }
-
-            for (int taskIndex = 0; taskIndex < tasks.Length; taskIndex++)
-            {
-                Task task = tasks[taskIndex];
+                Task task = tasks.ElementAt(taskIndex);
                 costs[ workerIndex, taskIndex ] = Vector2D.Distance(worker.Node.Position, task.Node.Position);
-                if (costGrahpPoints is not null)
-                {
-                    costGrahpPoints.Add(new GraphPoint(new Vector2D(workerIndex, costs[ workerIndex, taskIndex ]), (ConsoleColor) taskIndex + 10, $"T{taskIndex} ({costs[ workerIndex, taskIndex ]:0.##})"));
-                }
             }
         }
 
         return costs;
     }
 
-    private static void Solve(double[,] costs, List<GraphPoint>? costGrahpPoints = null)
+    private static List<Assignment> Solve(List<Worker> workerList, List<Task> taskList)
     {
-        int numWorkers = costs.GetLength(0);
+        int minimalRequiredWorkers = Enumerable.Range(1, taskList.Count).Aggregate(0, (acc, i) => acc + (int) taskList.ElementAt(i - 1).GetMinimalRequiredWorkers());
+
+        double[,] costs = GetCostTable(workerList, taskList);
+
+        Console.WriteLine("\nminimalRequiredWorkers: " + minimalRequiredWorkers);
+
+        int availableWorkers = workerList.Count;
+
+        Console.WriteLine("\navailableWorkers: " + availableWorkers);
+
         int numTasks = costs.GetLength(1);
 
         Solver solver = Solver.CreateSolver("SCIP");
         if (solver is null)
         {
-            return;
+            throw new Exception();
         }
 
         // x[i, j] is an array of 0-1 variables, which will be 1
         // if worker i is assigned to task j.
-        Variable[,] assignments = new Variable[numWorkers, numTasks];
-        for (int i = 0; i < numWorkers; ++i)
+        Variable[,] assignments = new Variable[availableWorkers, numTasks];
+        for (int i = 0; i < availableWorkers; ++i)
         {
             for (int j = 0; j < numTasks; ++j)
             {
@@ -254,32 +252,44 @@ internal class Program
 
         // Each worker is assigned to at most one task if the number of tasks is smaller than the number of worker
         // Each worker is assigned to exactly one task if the number of tasks is more or equal than the number of worker
-        for (int i = 0; i < numWorkers; ++i)
+        for (int i = 0; i < availableWorkers; ++i)
         {
-            Constraint constraint = solver.MakeConstraint(numTasks >= numWorkers ? 1 : 0, 1, "");
+            Worker worker = workerList.ElementAt(i);
+            Constraint constraint = solver.MakeConstraint(minimalRequiredWorkers >= availableWorkers ? 1 : 0, 1, $"c-w-{i}");
+
             for (int j = 0; j < numTasks; ++j)
             {
                 constraint.SetCoefficient(assignments[ i, j ], 1);
             }
         }
-
+        Console.WriteLine();
+        Console.WriteLine();
         // Each task is assigned to exactly one worker if the number of worker is equal or more than the number of tasks
         // Each task is assigned to at most one worker if the number of worker is smaller than the number of tasks
         for (int j = 0; j < numTasks; ++j)
         {
-            Constraint constraint = solver.MakeConstraint(numTasks > numWorkers ? 0 : 1, 1, "");
-            for (int i = 0; i < numWorkers; ++i)
+            Task task = taskList.ElementAt(j);
+            Constraint constraint = solver.MakeConstraint(minimalRequiredWorkers > availableWorkers ? 0 : 1, 1, $"c-t-{j}");
+
+            for (int i = 0; i < availableWorkers; ++i)
             {
+                Worker worker = workerList.ElementAt(i);
                 constraint.SetCoefficient(assignments[ i, j ], 1);
             }
         }
 
         Objective objective = solver.Objective();
-        for (int i = 0; i < numWorkers; ++i)
+        for (int i = 0; i < availableWorkers; ++i)
         {
+            Worker worker = workerList.ElementAt(i);
             for (int j = 0; j < numTasks; ++j)
             {
-                objective.SetCoefficient(assignments[ i, j ], costs[ i, j ]);
+                Task task = taskList.ElementAt(j);
+
+                costs[ i, j ] = worker.AlterCosts(task, costs[ i, j ]);
+                costs[ i, j ] = task.AlterCosts(costs[ i, j ]);
+
+                objective.SetCoefficient(assignments[ i, j ], costs[ i, j ] );
             }
         }
 
@@ -298,22 +308,6 @@ internal class Program
                 {
                     double value = assignments[ i, j ].SolutionValue();
                     double cost = costs[ i, j ];
-                    if (value > 0.5 && costGrahpPoints is not null)
-                    {
-                        int index = (i * (numTasks + 1))  + j + 1;
-                        if (cost < 1)
-                        {
-                            GraphPoint t = costGrahpPoints[ index ];
-                            index = i * (numTasks + 1);
-                            costGrahpPoints[ index ].Label = "[" + t.Label + "]";
-                            costGrahpPoints[ index ].Color = t.Color;
-                        }
-                        else
-                        {
-                            costGrahpPoints[ index ].Label = "[" + costGrahpPoints[ index ].Label + "]";
-                        }
-                    }
-
                     return value;
                 });
 
@@ -324,57 +318,71 @@ internal class Program
             Console.WriteLine("Costs Table:");
             Console.WriteLine();
 
-            if (IsPrintable(numWorkers, numTasks))
+            if (IsPrintable(availableWorkers, numTasks))
             {
-                Utils.PrintTable(costs);
+                string[] header = new string[ taskList.Count + 1 ];
+                header[ 0 ] = "";
+                for (int i = 0; i < taskList.Count; i++)
+                {
+                    header[ i + 1 ] = taskList.ElementAt(i).Name;
+                }
+                Utils.PrintTable(costs, header);
             }
-            Console.WriteLine();
-            // Console.WriteLine($"{Utils.Factorial(numWorkers)} Possibilities");
-
-            if (costGrahpPoints is not null)
-            {
-                /*double totalCosts = solver.Objective().Value();
-                costGrahpPoints.Add(new GraphPoint(new Vector2D(numWorkers, 0), ConsoleColor.DarkBlue, "Minimal Costs"));
-                costGrahpPoints.Add(new GraphPoint(new Vector2D(numWorkers, totalCosts), ConsoleColor.DarkBlue, $"{totalCosts:0.##}"));*/
-                Console.WriteLine();
-                Utils.DrawChart(costGrahpPoints, false);
-            }
-
             Console.WriteLine();
             Console.WriteLine("Assignment Table:");
             Console.WriteLine();
-            if (IsPrintable(numWorkers, numTasks))
+            if (IsPrintable(availableWorkers, numTasks))
             {
-                Utils.PrintTable(assignmentTable);
+                string[] header = new string[ taskList.Count + 1 ];
+                header[ 0 ] = "";
+                for (int i = 0; i < taskList.Count; i++)
+                {
+                    header[ i + 1 ] = taskList.ElementAt(i).Name;
+                }
+                Utils.PrintTable(assignmentTable, header);
             }
+
             Console.WriteLine();
 
             Console.WriteLine($"Total cost: {solver.Objective().Value():0.##}\n");
-            for (int i = 0; i < numWorkers; ++i)
+            List<Assignment> result = new();
+            for (int i = 0; i < availableWorkers; ++i)
             {
+                Worker worker = workerList.ElementAt(i);
+
                 for (int j = 0; j < numTasks; ++j)
                 {
                     // Test if x[i, j] is 0 or 1 (with tolerance for floating point
                     // arithmetic).
-                    if (assignments[ i, j ].SolutionValue() > 0.5)
+                    Task task = taskList.ElementAt(j);
+                    if (IsAssigned(assignments[ i, j ].SolutionValue(), task))
                     {
+                        int index = result.FindIndex(0, result.Count, (a) => a.task == task);
+                        if (index > -1)
+                        {
+                            result.ElementAt(index).workers.Add(worker);
+                        }
+                        else
+                        {
+                            result.Add(new(worker, task, assignments[ i, j ], costs[ i, j ]));
+                        }
+                        
                         Console.WriteLine($"Worker {i} assigned to Task {j}. Cost: {costs[ i, j ]:0.##}");
                     }
                 }
             }
+
+            return result;
         }
         else
         {
             Console.WriteLine("No solution found.");
+            throw new Exception();
         }
     }
 
-    private void Example()
+    public static bool IsAssigned(double solotionValue, Task task)
     {
-        double[,] costs = {
-            { 90, 80, 75, 70 }, { 35, 85, 55, 65 }, { 125, 95, 90, 95 }, { 45, 110, 95, 115 }, { 50, 100, 90, 100 },
-        };
-
-        Solve(costs);
+        return solotionValue > 0.5;// solotionValue - (1 / task.GetMinimalRequiredWorkers()) >= -0.0009;
     }
 }

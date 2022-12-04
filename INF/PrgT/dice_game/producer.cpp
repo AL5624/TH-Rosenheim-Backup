@@ -10,8 +10,18 @@ void producer(std::promise<int>& prom) {
     utils::print("Producer: calc value");
     int value = utils::complex_calculation();
 
+    std::promise<int>& prom2 = prom;
+
     utils::print("Producer: setting value to ", value);
-    prom.set_value(value);
+    // prom.set_value(value);
+
+    try {
+        // throw std::logic_error("some logic_error exception");
+        prom.set_value(1);
+    }
+    catch (std::exception&) {
+        prom.set_exception(std::current_exception());
+    }
 
     utils::print("Producer: free some memory.");
     utils::free_some_memory();

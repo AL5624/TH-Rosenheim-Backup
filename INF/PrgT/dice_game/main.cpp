@@ -16,13 +16,11 @@ void print_int(std::future<int>& fut) {
 }
 
 int main() {
-    utils::print("Consumer Example:\n");
-    run_consumer();
-    utils::print("\n\nProducer Example:\n");
-    run_producer();
-    utils::print("\n\nCombination Example:\n");
+    // utils::print("Consumer Example:\n");
+    // run_consumer();
+    // utils::print("\n\nProducer Example:\n");
+    // run_producer();
+    // utils::print("\n\nCombination Example:\n");
     run_combination();
-
-    run_equals_overload();
     return 0;
 }

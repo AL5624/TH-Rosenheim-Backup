@@ -1,0 +1,3 @@
+add_subdirectory(boost_test)
+add_subdirectory(catch2)
+add_subdirectory(googletest)

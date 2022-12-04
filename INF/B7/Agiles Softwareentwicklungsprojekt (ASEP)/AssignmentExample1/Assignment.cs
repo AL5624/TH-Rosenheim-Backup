@@ -5,14 +5,14 @@ namespace ExampleOptimizers;
 
 internal class Assignment
 {
-	public Worker worker;
+	public List<Worker> workers = new();
 	public Task task;
 	public Variable variable;
     public double cost;
 
 	public Assignment(Worker worker, Task task, Variable variable, double cost)
 	{
-		this.worker = worker;
+		this.workers.Add(worker);
 		this.task = task;
 		this.variable = variable;
 		this.cost = cost;
