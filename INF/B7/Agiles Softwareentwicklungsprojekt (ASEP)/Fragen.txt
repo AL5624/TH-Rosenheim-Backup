@@ -1,0 +1,25 @@
+1. Briefing des Usability-Testteilnehmers
+
+ - Was haben wir gemacht? (Optimierungsalgorithmus Assignment)
+ - Welche Probleme mussten wir lösen? (IncludeWorkerDropOff, JustInTime, RemoteTasks)
+ - Gui erklären
+
+2. Pre-Session-Interview mit dem Usability-Testteilnehmer
+
+ - 
+ 
+
+3. Übergabe der jeweiligen Usability-Testaufgabe
+
+ - verschiedene Anzahl an Workern/Tasks, max 10
+ - gib die Anzahl der Task mit Hilfe der Produktionskosten an max 10 (z.B 0, 5, 10 <=> Task1 cost = 0 , Task2 cost = 5 , Task3 cost = 10 
+
+4. Beobachtung der Durchführung der Usability-Testaufgabe durch den jeweiligen Testteilnehmer
+
+ - 
+
+5. Post-Session-Interview mit dem jeweiligen Testteilnehmer
+
+ - Alles verstanden?
+ - Wie hat es dir gefallen?
+ - Was hätte man besser machen können?

@@ -1,22 +1,23 @@
-#include "Dice.h"
-#include "Player.h"
 #include <iostream>
+#include <functional>
+#include <thread>
+#include <future>
 
-int main() {
-    Player p1;
-    Player p2;
+void print_int(std::future<int>& fut) {
+    int x = fut.get();
+    std::cout << "value: " << x << '\n';
+}
 
-    Dice dice;
+int main()
+{
+    std::promise<int> prom;
 
-    unsigned int numRounds = 5;
+    std::future<int> fut = prom.get_future();
 
-    for (int i = 0; i < numRounds; i++) {
-        p1.rollDice(dice);
-        std::cout << "P1 score: " << p1.getScore() << "\n";
+    std::thread th1(print_int, std::ref(fut));
 
-        p2.rollDice(dice);
-        std::cout << "P2 score: " << p2.getScore() << "\n";
-    }
+    prom.set_value_at_thread_exit(10);
 
+    th1.join();
     return 0;
 }
