@@ -1,112 +1,67 @@
-// This exercise is based on the simple ZeroDMA example by Adafruit
-// Because we use DMA, unlike memcpy(), our code could do other
-// things simultaneously while the copy operation runs.
+#include "I2Cdev.h"
+#include "MPU6050.h"
+#include <Adafruit_BMP085.h>
+#include <HMC5883L_Simple.h>
+#include <Adafruit_SSD1306.h>
 
-// You may need to checkout the header to fill in the Todos
-// https://github.com/adafruit/Adafruit_ZeroDMA/blob/master/Adafruit_ZeroDMA.h
+#define LCD_WIDTH 128
+#define LCD_HEIGHT 32
+#define OLED_RESET -1
+#define DISPLAY_ADDRESS 0x3C
 
-#include <Adafruit_ZeroDMA.h>  // lib Version 1.04
-#include "utility/dma.h"
+MPU6050 accelgyro;
+Adafruit_BMP085 bmp;
+HMC5883L_Simple Compass;
 
-Adafruit_ZeroDMA myDMA;
-ZeroDMAstatus    stat; // DMA status codes returned by some functions
 
-// The amount of memory we'll be moving:
-#define DATA_LENGTH 1024
+#define LED_PIN 13
+bool blinkState = false;
 
-//Arrays for source and destination
-uint8_t source_memory[DATA_LENGTH];
-uint8_t destination_memory[DATA_LENGTH];
+//Count Steps
+uint8_t steps = 0;
 
-volatile bool is_transfer_done = false; 
-
-//TODO: write a callback for the end-of-DMA-transfer and set 
-//      the is_transfer_done value to true
-
+//Display Variable
+Adafruit_SSD1306 display(LCD_WIDTH, LCD_HEIGHT, &Wire, OLED_RESET);
 
 void setup() {
-  uint32_t t;
-  
-  //Establish a connection to the serial monitor
   Serial.begin(9600);
-  while (!Serial); //wait until a serial port is connected
+  Wire.begin();
 
-  Serial.println("DMA test: memory copy");
-  Serial.print("Allocating DMA channel...");
+  // initialize devices
+  Serial.println("Initializing I2C devices...");
 
-  stat =  //TODO: allocate a DMA channel
-  myDMA.printStatus(stat);
+  // initialize mpu6050
+  accelgyro.initialize();
+  accelgyro.setI2CBypassEnabled(true); // set bypass mode for gateway to hmc5883L
 
-  Serial.println("Setting up transfer");
-  //TODO: set src, dest, count
-  myDMA.addDescriptor(/*TODO: src, dest, count*/);
 
-  //TODO: set your callback, use the default type
-  myDMA.setCallback(/*TODO: use your callback from above here */);
+  // initialize hmc5883l
+  Compass.SetDeclination(23, 35, 'E');
+  Compass.SetSamplingMode(COMPASS_SINGLE);
+  Compass.SetScale(COMPASS_SCALE_130);
+  Compass.SetOrientation(COMPASS_HORIZONTAL_X_NORTH);
 
-  // Fill the source buffer with incrementing bytes, dest buf with 0's
-  for (uint32_t i = 0; i < DATA_LENGTH; i++) {
-    source_memory[i] = i;
-  }
-  memset(destination_memory, 0, DATA_LENGTH); //clear destination memory
 
-  // Show the destination buffer is empty before transfer
-  Serial.println("Destination buffer before transfer:");
-  dump();
-
-  Serial.println("Starting transfer job");
-  //TODO: start the DMA transfer job
-
-  myDMA.printStatus(stat);
-
-  Serial.println("Triggering DMA transfer...");
-  t = micros();
-  myDMA.trigger();
-
-  // Your code could do other things here while copy happens!
-  int32_t x = 0;
-  while (!is_transfer_done) {
-    ++x; // Chill until DMA transfer completes
-  }
-
-  t = micros() - t; // Elapsed time
-
-  Serial.print("Done! ");
-  Serial.print(t);
-  Serial.println(" microseconds");
-
-  Serial.print("Did ");
-  Serial.print(x);
-  Serial.println(" loops while waiting until DMA has completed");
-
-  myDMA.free();
-
-  Serial.println("Destination buffer after transfer:");
-  dump();
-
-  copy_data_manually();
+  // configure Arduino LED for checking activity
+  pinMode(LED_PIN, OUTPUT);
 }
 
-// Show contents of destination_memory[] array
-void dump() {
-  for (uint32_t i = 0; i < DATA_LENGTH; i++) {
-    Serial.print(destination_memory[i], HEX); Serial.print(' ');
-    if ((i & 15) == 15) Serial.println();
-  }
+void loop() {
+  display.clearDisplay();
+  display.setTextSize(2);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(50, 0);
+  display.println(steps);
+  display.display();
+
+  float heading = Compass.GetHeadingDegrees();
+  Serial.print("Heading: \t");
+  Serial.println( heading );
+
+
+  // blink LED to indicate activity
+  blinkState = !blinkState;
+  digitalWrite(LED_PIN, blinkState);
+
+  delay(500);
 }
-
-// Repeat the same operation "manually" without DMA
-void copy_data_manually() {
-  uint32_t t = micros();
-  
-  //TODO: copy the memory "manually" without DMA in one line
-  
-  t = micros() - t; // Elapsed time
-  
-  Serial.print("Same operation without DMA: ");
-  Serial.print(t);
-  Serial.println(" microseconds");
-}
-
-
-void loop() { }
